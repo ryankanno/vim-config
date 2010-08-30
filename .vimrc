@@ -30,7 +30,8 @@ set hidden                      " enable hidden files
 set backspace=indent,eol,start  " enable backspace over indent, EOL, START
 
 set backupext=.bak              " append .bak to backup files
-set backupdir=~/.vim_backups    " directory to store backup files 
+set backupdir=$HOME/.vim_backups    " directory to store backup files 
+set directory=$HOME/.vim_swaps      " directory to store swap files 
 set autowrite                   " enable buffers to be saved on suspend
 
 cmap cwd lcd %:p:h              " change working directory to that of file
@@ -69,8 +70,8 @@ set textwidth=79                " sets the text width
 set tabpagemax=10 				" show 10 tabs
 
 " highlight lines over 80 characters
-" highlight OverLength ctermbg=darkred ctermfg=white guibg=#AE0000
-" match OverLength /\%80v.\+/
+highlight OverLength ctermbg=darkred ctermfg=white guibg=#AE0000
+match OverLength /\%80v.\+/
 
 " --------------------------------------------------------------------------- "
 " search
@@ -135,3 +136,6 @@ map <silent> <F2> :set invlist<CR>
 " --------------------------------------------------------------------------- "
 " plugins
 " --------------------------------------------------------------------------- "
+
+" allow pathogen to update runtime path
+call pathogen#runtime_append_all_bundles()
