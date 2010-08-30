@@ -1,3 +1,6 @@
 [submodule ".vim/autoload"]
 	path = .vim/autoload
 	url = git://github.com/paulnicholson/vim-pathogen.git
+[submodule ".vim/bundle/command-t"]
+	path = .vim/bundle/command-t
+	url = git://git.wincent.com/command-t.git
