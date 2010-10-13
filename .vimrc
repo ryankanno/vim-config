@@ -130,6 +130,12 @@ map <S-L> gt
 " <Leader>f to start an Ack search
 map <Leader>f :Ack<space>
 
+" <Leader>Ss to open scratch in split window
+map <Leader>Ss :Sscratch<CR>
+
+" <Leader>s to open scratch buffer in same window
+map <Leader>s :Scratch<CR>
+
 " <F2> to toggle invisible characters
 map <silent> <F2> :set invlist<CR>
 
