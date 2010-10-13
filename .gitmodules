@@ -28,3 +28,36 @@
 [submodule ".vim/bundle/scratch"]
 	path = .vim/bundle/scratch
 	url = git://github.com/duff/vim-scratch.git
+[submodule ".vim/bundle/abolish"]
+	path = .vim/bundle/abolish
+	url = git://github.com/tpope/vim-abolish.git
+[submodule ".vim/bundle/gist"]
+	path = .vim/bundle/gist
+	url = git://github.com/mattn/gist-vim.git
+[submodule ".vim/bundle/pastie"]
+	path = .vim/bundle/pastie
+	url = git://github.com/tpope/vim-pastie.git
+[submodule ".vim/bundle/pyflakes"]
+	path = .vim/bundle/pyflakes
+	url = git://github.com/kevinw/pyflakes-vim.git
+[submodule ".vim/bundle/repeat"]
+	path = .vim/bundle/repeat
+	url = git://github.com/tpope/vim-repeat.git
+[submodule ".vim/bundle/surround"]
+	path = .vim/bundle/surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/swapit"]
+	path = .vim/bundle/swapit
+	url = git://github.com/mjbrownie/swapit.git
+[submodule ".vim/bundle/markdown"]
+	path = .vim/bundle/markdown
+	url = git://github.com/tpope/vim-markdown.git
+[submodule ".vim/bundle/diffchanges"]
+	path = .vim/bundle/diffchanges
+	url = git://github.com/jmcantrell/vim-diffchanges.git
+[submodule ".vim/bundle/cocoa"]
+	path = .vim/bundle/cocoa
+	url = git://github.com/msanders/cocoa.vim.git
+[submodule ".vim/bundle/align"]
+	path = .vim/bundle/align
+	url = git://github.com/tsaleh/vim-align.git
