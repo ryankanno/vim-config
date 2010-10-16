@@ -25,7 +25,7 @@ set laststatus=1                " always show last status
 set history=1000                " 1000 lines of history 
 set undolevels=500              " 500 levels of undo
 set clipboard=unnamed           " share clipboard with win
-set ffs=mac,unix,dos            " set file format to mac, unix, then win
+set ffs=unix,dos,mac            " set file format to unix, win, then old mac
 set hidden                      " enable hidden files 
 set backspace=indent,eol,start  " enable backspace over indent, EOL, START
 
@@ -135,6 +135,12 @@ map <Leader>Ss :Sscratch<CR>
 
 " <Leader>s to open scratch buffer in same window
 map <Leader>s :Scratch<CR>
+
+" <Leader>dc to show diff of current buffer
+map <Leader>dc :DiffChangesDiffToggle<CR>
+
+" <Leader>dc to show patch of current buffer
+map <Leader>dp :DiffChangesPatchToggle<CR>
 
 " <F2> to toggle invisible characters
 map <silent> <F2> :set invlist<CR>
