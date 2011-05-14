@@ -113,6 +113,17 @@ autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
 " --------------------------------------------------------------------------- "
+" command line
+" --------------------------------------------------------------------------- "
+
+" bash like commands
+cnoremap <C-A> <Home>
+cnoremap <C-E> <End>
+cnoremap <C-K> <C-U>
+cnoremap <C-P> <Up>
+cnoremap <C-N> <Down>
+
+" --------------------------------------------------------------------------- "
 " keyboard mapping
 " --------------------------------------------------------------------------- "
 
@@ -126,6 +137,9 @@ map <C-K> <C-W>k
 " simplify tabbed navigation with shift
 map <S-H> gT
 map <S-L> gt
+
+" <Leader>cd switches to directory of open buffer
+map <Leader>cd :cd %:p:h<CR>
 
 " <Leader>f to start an Ack search
 map <Leader>f :Ack<space>
@@ -142,8 +156,21 @@ map <Leader>dc :DiffChangesDiffToggle<CR>
 " <Leader>dc to show patch of current buffer
 map <Leader>dp :DiffChangesPatchToggle<CR>
 
+" <Leader>o to open bufExplorer
+let g:bufExplorerDefaultHelp=0
+let g:bufExplorerShowRelativePath=1
+map <Leader>o :BufExplorerVerticalSplit<CR>
+
 " <F2> to toggle invisible characters
 map <silent> <F2> :set invlist<CR>
+
+" <Leader>T to flush command-t
+set wildignore+=*.o,*.obj,.git,.svn,.hg,*.pyc
+map <Leader>t :CommandT<CR>
+map <Leader>T :CommandTFlush<CR>
+
+" <Leader>W to clean whitespace
+map <Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 
 " --------------------------------------------------------------------------- "
 " plugins
