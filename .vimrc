@@ -182,6 +182,10 @@ map <Leader>tl :TlistToggle<CR>
 " <Leader><Leader> to ZoomWin 
 map <Leader><Leader> :ZoomWin<CR>
 
+" Source a local config to override stuffs
+if filereadable(expand("~/.vimrc.local"))
+    source ~/.vimrc.local
+endif
 
 " --------------------------------------------------------------------------- "
 " plugins
