@@ -179,6 +179,10 @@ map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 let Tlist_WinWidth = 50
 map <Leader>tl :TlistToggle<CR>
 
+" <Leader><Leader> to ZoomWin 
+map <Leader><Leader> :ZoomWin<CR>
+
+
 " --------------------------------------------------------------------------- "
 " plugins
 " --------------------------------------------------------------------------- "
