@@ -1,5 +1,7 @@
 # My .vim configuration
 
+## Shortcuts
+
 ## Plugins 
 
 Plugins I use on the daily
@@ -26,4 +28,5 @@ Plugins I use on the daily
 * [surround](http://github.com/tpope/vim-surround)
 * [swapit](http://github.com/mjbrownie/swapit)
 * [taglist-plus](http://github.com/vim-scripts/taglist-plus)
+* [tasklist](http://github.com/vim-scripts/TaskList)
 * [zoomwin](http://github.com/vim-scripts/ZoomWin)
