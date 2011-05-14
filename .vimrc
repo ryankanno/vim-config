@@ -172,6 +172,13 @@ map <Leader>T :CommandTFlush<CR>
 " <Leader>W to clean whitespace
 map <Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 
+" CTags
+map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+
+" <Leader>tl to open Taglist project
+let Tlist_WinWidth = 50
+map <Leader>tl :TlistToggle<CR>
+
 " --------------------------------------------------------------------------- "
 " plugins
 " --------------------------------------------------------------------------- "
