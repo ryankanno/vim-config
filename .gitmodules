@@ -61,3 +61,6 @@
 [submodule ".vim/bundle/align"]
 	path = .vim/bundle/align
 	url = git://github.com/tsaleh/vim-align.git
+[submodule ".vim/bundle/taglist-plus"]
+	path = .vim/bundle/taglist-plus
+	url = https://github.com/vim-scripts/taglist-plus
