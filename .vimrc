@@ -182,6 +182,9 @@ map <Leader>tl :TlistToggle<CR>
 " <Leader><Leader> to ZoomWin 
 map <Leader><Leader> :ZoomWin<CR>
 
+" <Leader>x to show TODO list
+map <Leader>x <Plug>TaskList
+
 " Source a local config to override stuffs
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
