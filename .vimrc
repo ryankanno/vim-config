@@ -73,6 +73,9 @@ set tabpagemax=10 				" show 10 tabs
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#AE0000
 match OverLength /\%80v.\+/
 
+" show color column
+set colorcolumn=80
+
 " --------------------------------------------------------------------------- "
 " search
 " --------------------------------------------------------------------------- "
