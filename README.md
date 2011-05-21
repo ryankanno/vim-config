@@ -17,7 +17,6 @@ Plugins I use on the daily
 * [fugitive](http://github.com/tpope/vim-fugitive)
 * [gist](http://github.com/mattn/gist-vim)
 * [markdown](http://github.com/tpope/vim-markdown)
-* [matrix](https://github.com/vim-scripts/matrix.vim--Yang.git)
 * [nerdcommenter](http://github.com/scrooloose/nerdcommenter)
 * [pastie](http://github.com/tpope/vim-pastie)
 * [py-flakes](http://github.com/kevinw/pyflakes-vim)

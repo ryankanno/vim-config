@@ -70,6 +70,3 @@
 [submodule ".vim/bundle/tasklist"]
 	path = .vim/bundle/tasklist
 	url = https://github.com/vim-scripts/TaskList.vim.git
-[submodule ".vim/bundle/matrix"]
-	path = .vim/bundle/matrix
-	url = https://github.com/vim-scripts/matrix.vim--Yang.git
