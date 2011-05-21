@@ -74,7 +74,9 @@ highlight OverLength ctermbg=darkred ctermfg=white guibg=#AE0000
 match OverLength /\%80v.\+/
 
 " show color column
-set colorcolumn=80
+if exists('+colorcolumn')
+  set colorcolumn=80
+endif
 
 " --------------------------------------------------------------------------- "
 " search
