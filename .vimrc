@@ -137,7 +137,6 @@ map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-L> <C-W>l
 map <C-H> <C-W>h
-map <C-K> <C-W>k
 
 " simplify tabbed navigation with shift
 map <S-H> gT
