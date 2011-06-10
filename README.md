@@ -2,7 +2,21 @@
 
 ## Shortcuts
 
-## Plugins 
+<S-H> - Tab left
+<S-H> - Tab right
+
+<Leader>f  - Start Ack search
+<Leader>Ss - Open scratch in split window
+<Leader>s  - Open scratch in same window
+<Leader>o  - Open BufExplorer
+<Leader>t  - Open Command-T
+<Leader>rt - Create ctags
+<Leader>tl - Open Taglist
+<Leader>x  - Toggle TODO
+<Leader><Leader> - Toggle ZoomWin
+
+
+## Plugins
 
 Plugins I use on the daily
 
