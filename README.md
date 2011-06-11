@@ -30,6 +30,7 @@ Plugins I use on the daily
 * [diffchanges](http://github.com/jmcantrell/vim-diffchanges)
 * [fugitive](http://github.com/tpope/vim-fugitive)
 * [gist](http://github.com/mattn/gist-vim)
+* [hammer](https://github.com/robgleeson/hammer.vim.git)
 * [markdown](http://github.com/tpope/vim-markdown)
 * [nerdcommenter](http://github.com/scrooloose/nerdcommenter)
 * [pastie](http://github.com/tpope/vim-pastie)
