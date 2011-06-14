@@ -2,18 +2,24 @@
 
 ## Shortcuts
 
-<S-H> - Tab left
-<S-H> - Tab right
-
-<Leader>f  - Start Ack search
-<Leader>Ss - Open scratch in split window
-<Leader>s  - Open scratch in same window
-<Leader>o  - Open BufExplorer
-<Leader>t  - Open Command-T
-<Leader>rt - Create ctags
-<Leader>tl - Open Taglist
-<Leader>x  - Toggle TODO
-<Leader><Leader> - Toggle ZoomWin
+* &lt;S-H&gt; - Tab left
+* &lt;S-L&gt; - Tab right
+* &lt;Leader&gt;f - Start Ack search
+* &lt;Leader&gt;Ss - Open scratch in split window
+* &lt;Leader&gt;s - Open scratch in same window
+* &lt;Leader&gt;o - Open BufExplorer
+* &lt;Leader&gt;dc - Shows diff of current buffer
+* &lt;Leader&gt;dp - Shows patch of current buffer
+* &lt;Leader&gt;p - Preview current buffer using hammer.vim
+* &lt;Leader&gt;g - Creates public gist
+* &lt;Leader&gt;pg - Creates private gist
+* &lt;Leader&gt;t - Open Command-T
+* &lt;Leader&gt;T - Flush Command-T
+* &lt;Leader&gt;rt - Create ctags
+* &lt;Leader&gt;tl - Open Taglist
+* &lt;Leader&gt;x - Toggle TODO
+* &lt;Leader&gt;W - Clean whitespace
+* &lt;Leader&gt;&lt;Leader&gt; - Toggle ZoomWin
 
 
 ## Plugins
@@ -33,7 +39,6 @@ Plugins I use on the daily
 * [hammer](https://github.com/robgleeson/hammer.vim.git)
 * [markdown](http://github.com/tpope/vim-markdown)
 * [nerdcommenter](http://github.com/scrooloose/nerdcommenter)
-* [pastie](http://github.com/tpope/vim-pastie)
 * [py-flakes](http://github.com/kevinw/pyflakes-vim)
 * [repeat](http://github.com/tpope/vim-repeat)
 * [scratch](http://github.com/duff/vim-scratch)
