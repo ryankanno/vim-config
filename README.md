@@ -20,7 +20,6 @@
 * &lt;Leader&gt;x - Toggle TODO
 * &lt;Leader&gt;W - Clean whitespace
 * &lt;Leader&gt;&lt;Leader&gt; - Toggle ZoomWin
-
 * [num]&lt;Leader&gt;cc - Comment out num lines
 * [num]&lt;Leader&gt;cm - Minimal comment out num lines
 * [num]&lt;Leader&gt;c&lt;space&gt; - Toggle comment on num lines
