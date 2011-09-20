@@ -109,7 +109,7 @@ set foldlevel=0
 set commentstring=\ #\ %s
 
 " --------------------------------------------------------------------------- "
-" folding
+" filetype
 " --------------------------------------------------------------------------- "
 
 filetype plugin on
@@ -210,6 +210,9 @@ endif
 " --------------------------------------------------------------------------- "
 " plugins
 " --------------------------------------------------------------------------- "
+
+" Snipmate snippets
+let g:snippets_dir="$HOME/.vim/bundle/snipmate-snippets"
 
 " allow pathogen to update runtime path
 runtime! autoload/pathogen.vim
