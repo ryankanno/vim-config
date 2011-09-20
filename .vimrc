@@ -114,6 +114,8 @@ set commentstring=\ #\ %s
 
 filetype plugin on
 autocmd FileType css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType html setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
@@ -210,4 +212,6 @@ endif
 " --------------------------------------------------------------------------- "
 
 " allow pathogen to update runtime path
-call pathogen#runtime_append_all_bundles()
+runtime! autoload/pathogen.vim
+silent! call pathogen#helptags()
+silent! call pathogen#runtime_append_all_bundles()
