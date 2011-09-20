@@ -73,6 +73,11 @@ set tabpagemax=10 				" show 10 tabs
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#AE0000
 match OverLength /\%80v.\+/
 
+" show color column
+if exists('+colorcolumn')
+  set colorcolumn=80
+endif
+
 " --------------------------------------------------------------------------- "
 " search
 " --------------------------------------------------------------------------- "
@@ -132,7 +137,6 @@ map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-L> <C-W>l
 map <C-H> <C-W>h
-map <C-K> <C-W>k
 
 " simplify tabbed navigation with ctrl
 map <C-H> gT
@@ -153,13 +157,16 @@ map <Leader>s :Scratch<CR>
 " <Leader>dc to show diff of current buffer
 map <Leader>dc :DiffChangesDiffToggle<CR>
 
-" <Leader>dc to show patch of current buffer
+" <Leader>dp to show patch of current buffer
 map <Leader>dp :DiffChangesPatchToggle<CR>
 
 " <Leader>o to open bufExplorer
 let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 map <Leader>o :BufExplorerVerticalSplit<CR>
+
+" <Leader>p to preview buffer with hammer.vim
+map <Leader>p :Hammer<CR>
 
 " <F2> to toggle invisible characters
 map <silent> <F2> :set invlist<CR>
@@ -184,6 +191,14 @@ map <Leader><Leader> :ZoomWin<CR>
 
 " <Leader>x to show TODO list
 map <Leader>x <Plug>TaskList
+
+" <Leader>g to create public Gist of entire buffer
+map <Leader>g :Gist<CR>
+cmap <Leader>g Gist<CR>
+
+" <Leader>pg to create private Gist of entire buffer
+map <Leader>pg :Gist -p<CR>
+cmap <Leader>pg Gist -p<CR>
 
 " Source a local config to override stuffs
 if filereadable(expand("~/.vimrc.local"))
