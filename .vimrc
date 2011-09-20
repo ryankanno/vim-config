@@ -134,9 +134,9 @@ map <C-L> <C-W>l
 map <C-H> <C-W>h
 map <C-K> <C-W>k
 
-" simplify tabbed navigation with shift
-map <S-H> gT
-map <S-L> gt
+" simplify tabbed navigation with ctrl
+map <C-H> gT
+map <C-L> gt
 
 " <Leader>cd switches to directory of open buffer
 map <Leader>cd :cd %:p:h<CR>
