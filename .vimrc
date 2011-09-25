@@ -202,11 +202,6 @@ cmap <Leader>g Gist<CR>
 map <Leader>pg :Gist -p<CR>
 cmap <Leader>pg Gist -p<CR>
 
-" Source a local config to override stuffs
-if filereadable(expand("~/.vimrc.local"))
-    source ~/.vimrc.local
-endif
-
 " --------------------------------------------------------------------------- "
 " plugins
 " --------------------------------------------------------------------------- "
@@ -218,3 +213,8 @@ let g:snippets_dir="$HOME/.vim/bundle/snipmate-snippets"
 runtime! autoload/pathogen.vim
 silent! call pathogen#helptags()
 silent! call pathogen#runtime_append_all_bundles()
+
+" Source a local config to override stuffs
+if filereadable(expand("~/.vimrc.local"))
+    source ~/.vimrc.local
+endif
