@@ -95,6 +95,36 @@ set commentstring=\ #\ %s
 
 nnoremap <Space> za             " space toggles folding
 vnoremap <Space> za             " space toggles folding
+
+function! CustomFoldText(spacer, ...) " {{{
+    let spacer = a:spacer
+
+    if exists("a:1")
+        let max_num_cols = a:1
+    else
+        let max_num_cols = winwidth(0)
+    endif
+
+    " Skip empty lines"
+    let first_line_start = v:foldstart
+    while getline(first_line_start) =~ '^\s*$' | let first_line_start = nextnonblank(first_line_start + 1)
+    endwhile
+
+    if first_line_start > v:foldend
+        let line = getline(v:foldstart)
+    else
+        let line = substitute(getline(first_line_start), '\t', repeat(' ', &tabstop), 'g')
+    endif
+
+    let num_folded_lines = v:foldend - v:foldstart
+    let fold_percentage =  printf("%.1f", (num_folded_lines * 1.0) / line("$")* 100) 
+
+    let folded_line_display = num_folded_lines . " lines [" . fold_percentage . "%]"
+
+    let spacer_fill = max_num_cols - len(line) - len(folded_line_display)
+    return line . repeat(spacer, spacer_fill) . folded_line_display
+endfunction " }}}
+set foldtext=CustomFoldText('.',80)
 " }}}
 
 " Filetype {{{
