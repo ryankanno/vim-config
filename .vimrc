@@ -1,16 +1,11 @@
 " Follow me on Twitter @ryankanno
 
-" --------------------------------------------------------------------------- "
-" abbreviations
-" --------------------------------------------------------------------------- "
-
+" Abbreviations {{{
 iab _me Ryan Kanno <ryankanno@localkinegrinds.com>
 iab _date <C-R>=strftime("%A, %B %e %Y %I:%M:%S %p %Z")<CR>
+" }}}
 
-" --------------------------------------------------------------------------- "
-" general
-" --------------------------------------------------------------------------- "
-
+" General {{{
 set nocompatible                " disable older vi compatibility 
 set modeline                    " respect other
 set encoding=utf-8              " use utf-8 encoding 
@@ -29,29 +24,24 @@ set ffs=unix,dos,mac            " set file format to unix, win, then old mac
 set hidden                      " enable hidden files 
 set backspace=indent,eol,start  " enable backspace over indent, EOL, START
 
-set backupext=.bak              " append .bak to backup files
-set backupdir=$HOME/.vim_backups    " directory to store backup files 
-set directory=$HOME/.vim_swaps      " directory to store swap files 
-set autowrite                   " enable buffers to be saved on suspend
+set backupext=.bak               " append .bak to backup files
+set backupdir=$HOME/.vim_backups " directory to store backup files 
+set directory=$HOME/.vim_swaps   " directory to store swap files 
+set autowrite                    " enable buffers to be saved on suspend
 
 cmap cwd lcd %:p:h              " change working directory to that of file
+" }}}
 
-" --------------------------------------------------------------------------- "
-" themes
-" --------------------------------------------------------------------------- "
-
+" Theme {{{
 if has("syntax")
     syntax on
 endif
 
 set background=dark             " sets the background color (I like it dark)
-"colorscheme desert             " <3 desert/molokai ftw.
 colorscheme molokai             " <3 colorscheme ftw.
+" }}}
 
-" --------------------------------------------------------------------------- "
-" visual
-" --------------------------------------------------------------------------- "
-
+" Visual {{{
 set cursorline                  " highlight current line
 
 set nowrap                      " nowrap
@@ -77,20 +67,16 @@ match OverLength /\%80v.\+/
 if exists('+colorcolumn')
   set colorcolumn=80
 endif
+" }}}
 
-" --------------------------------------------------------------------------- "
-" search
-" --------------------------------------------------------------------------- "
-
+" Search {{{
 set ignorecase                  " case insensitive search
 set smartcase
 set magic                       " enable advanced regular expressions
 set hlsearch                    " enables highlighting search
+" }}}
 
-" --------------------------------------------------------------------------- "
-" text
-" --------------------------------------------------------------------------- "
-
+" Text {{{
 set autoindent                  " use curr line's indent to set indent of new line 
 set smartindent                 " vim guesses indent level 
 set tabstop=4     
@@ -98,19 +84,20 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set gdefault					" the /g flag on :s substitutions by default
+" }}}
 
-" --------------------------------------------------------------------------- "
-" folding
-" --------------------------------------------------------------------------- "
+" Folding {{{
 
 set foldenable                  " enable folding
 set foldmethod=marker
 set foldlevel=0
 set commentstring=\ #\ %s
 
-" --------------------------------------------------------------------------- "
-" filetype
-" --------------------------------------------------------------------------- "
+nnoremap <Space> za             " space toggles folding
+vnoremap <Space> za             " space toggles folding
+" }}}
+
+" Filetype {{{
 
 filetype plugin on
 autocmd FileType css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
@@ -118,10 +105,9 @@ autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabsto
 autocmd FileType html setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+" }}}
 
-" --------------------------------------------------------------------------- "
-" command line
-" --------------------------------------------------------------------------- "
+" Command Line {{{
 
 " bash like commands
 cnoremap <C-A> <Home>
@@ -129,11 +115,9 @@ cnoremap <C-E> <End>
 cnoremap <C-K> <C-U>
 cnoremap <C-P> <Up>
 cnoremap <C-N> <Down>
+" }}}
 
-" --------------------------------------------------------------------------- "
-" keyboard mapping
-" --------------------------------------------------------------------------- "
-
+" Keyboard Mapping {{{
 " simplify window navigation with ctrl
 map <C-J> <C-W>j
 map <C-K> <C-W>k
@@ -201,18 +185,131 @@ cmap <Leader>g Gist<CR>
 " <Leader>pg to create private Gist of entire buffer
 map <Leader>pg :Gist -p<CR>
 cmap <Leader>pg Gist -p<CR>
+" }}}
 
-" --------------------------------------------------------------------------- "
-" plugins
-" --------------------------------------------------------------------------- "
-
+" Plugins {{{
 " Snipmate snippets
 let g:snippets_dir="$HOME/.vim/bundle/snipmate-snippets"
+
+function! NyanMe() " {{{
+    hi NyanFur             guifg=#BBBBBB
+    hi NyanPoptartEdge     guifg=#ffd0ac
+    hi NyanPoptartFrosting guifg=#fd3699 guibg=#fe98ff
+    hi NyanRainbow1        guifg=#6831f8
+    hi NyanRainbow2        guifg=#0099fc
+    hi NyanRainbow3        guifg=#3cfa04
+    hi NyanRainbow4        guifg=#fdfe00
+    hi NyanRainbow5        guifg=#fc9d00
+    hi NyanRainbow6        guifg=#fe0000
+
+    echohl NyanRainbow1
+    echon "≈"
+    echohl NyanRainbow2
+    echon "≋"
+    echohl NyanRainbow3
+    echon "≈"
+    echohl NyanRainbow4
+    echon "≋"
+    echohl NyanRainbow5
+    echon "≈"
+    echohl NyanRainbow6
+    echon "≋"
+    echohl NyanRainbow1
+    echon "≈"
+    echohl NyanRainbow2
+    echon "≋"
+    echohl NyanRainbow3
+    echon "≈"
+    echohl NyanRainbow4
+    echon "≋"
+    echohl NyanRainbow5
+    echon "≈"
+    echohl NyanRainbow6
+    echon "≋"
+    echohl None
+    echo ""
+
+    echohl NyanRainbow1
+    echon "≈"
+    echohl NyanRainbow2
+    echon "≋"
+    echohl NyanRainbow3
+    echon "≈"
+    echohl NyanRainbow4
+    echon "≋"
+    echohl NyanRainbow5
+    echon "≈"
+    echohl NyanRainbow6
+    echon "≋"
+    echohl NyanRainbow1
+    echon "≈"
+    echohl NyanRainbow2
+    echon "≋"
+    echohl NyanRainbow3
+    echon "≈"
+    echohl NyanRainbow4
+    echon "≋"
+    echohl NyanRainbow5
+    echon "≈"
+    echohl NyanRainbow6
+    echon "≋"
+    echohl NyanFur
+    echon "╰"
+    echohl NyanPoptartEdge
+    echon "⟨"
+    echohl NyanPoptartFrosting
+    echon "⣮⣯⡿"
+    echohl NyanPoptartEdge
+    echon "⟩"
+    echohl NyanFur
+    echon "⩾^ω^⩽"
+    echohl None
+    echo ""
+
+    echohl NyanRainbow1
+    echon "≈"
+    echohl NyanRainbow2
+    echon "≋"
+    echohl NyanRainbow3
+    echon "≈"
+    echohl NyanRainbow4
+    echon "≋"
+    echohl NyanRainbow5
+    echon "≈"
+    echohl NyanRainbow6
+    echon "≋"
+    echohl NyanRainbow1
+    echon "≈"
+    echohl NyanRainbow2
+    echon "≋"
+    echohl NyanRainbow3
+    echon "≈"
+    echohl NyanRainbow4
+    echon "≋"
+    echohl NyanRainbow5
+    echon "≈"
+    echohl NyanRainbow6
+    echon "≋"
+    echohl None
+    echon " "
+    echohl NyanFur
+    echon "”   ‟"
+    echohl None
+
+    sleep 1
+    redraw
+    echo " "
+    echo " "
+    echo "Noms?"
+    redraw
+endfunction " }}}
+command! Nyan call NyanMe()
 
 " allow pathogen to update runtime path
 runtime! autoload/pathogen.vim
 silent! call pathogen#helptags()
 silent! call pathogen#runtime_append_all_bundles()
+" }}}
 
 " Source a local config to override stuffs
 if filereadable(expand("~/.vimrc.local"))
