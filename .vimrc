@@ -102,7 +102,7 @@ function! CustomFoldText(spacer, ...) " {{{
     if exists("a:1")
         let max_num_cols = a:1
     else
-        let max_num_cols = winwidth(0)
+        let max_num_cols = winwidth(0) - &fdc - 4
     endif
 
     " Skip empty lines"
@@ -121,7 +121,7 @@ function! CustomFoldText(spacer, ...) " {{{
 
     let folded_line_display = num_folded_lines . " lines [" . fold_percentage . "%]"
 
-    let spacer_fill = max_num_cols - len(line) - len(folded_line_display)
+    let spacer_fill = max_num_cols - strwidth(line) - strwidth(folded_line_display)
     return line . repeat(spacer, spacer_fill) . folded_line_display
 endfunction " }}}
 set foldtext=CustomFoldText('.',80)
