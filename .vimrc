@@ -6,27 +6,30 @@ iab _date <C-R>=strftime("%A, %B %e %Y %I:%M:%S %p %Z")<CR>
 " }}}
 
 " General {{{
-set nocompatible                " disable older vi compatibility 
+let mapleader=","               " set mapleader
+set nocompatible                " disable older vi compatibility
 set modeline                    " respect other
-set encoding=utf-8              " use utf-8 encoding 
+set encoding=utf-8              " use utf-8 encoding
 
-set number                      " set line numbers 
+set number                      " set line numbers
 
-set ruler                       " show ruler 
+set ruler                       " show ruler
 set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 
-set laststatus=1                " always show last status
+set laststatus=2                " always show last status
 
-set history=1000                " 1000 lines of history 
-set undolevels=500              " 500 levels of undo
+set history=1000                " 1000 lines of history
+set undolevels=1000             " 1000 levels of undo
 set clipboard=unnamed           " share clipboard with win
 set ffs=unix,dos,mac            " set file format to unix, win, then old mac
-set hidden                      " enable hidden files 
+set hidden                      " enable hidden files
 set backspace=indent,eol,start  " enable backspace over indent, EOL, START
 
+set undodir=$HOME/.vim_undo      " directory to store backup files
+set undofile                     " save undo history to an undo file"
 set backupext=.bak               " append .bak to backup files
-set backupdir=$HOME/.vim_backups " directory to store backup files 
-set directory=$HOME/.vim_swaps   " directory to store swap files 
+set backupdir=$HOME/.vim_backups " directory to store backup files
+set directory=$HOME/.vim_swaps   " directory to store swap files
 set autowrite                    " enable buffers to be saved on suspend
 
 cmap cwd lcd %:p:h              " change working directory to that of file
@@ -77,10 +80,10 @@ set hlsearch                    " enables highlighting search
 " }}}
 
 " Text {{{
-set autoindent                  " use curr line's indent to set indent of new line 
-set smartindent                 " vim guesses indent level 
-set tabstop=4     
-set softtabstop=4 
+set autoindent                  " use curr line's indent to set indent of new line
+set smartindent                 " vim guesses indent level
+set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 set expandtab
 set gdefault					" the /g flag on :s substitutions by default
@@ -117,7 +120,7 @@ function! CustomFoldText(spacer, ...) " {{{
     endif
 
     let num_folded_lines = v:foldend - v:foldstart
-    let fold_percentage =  printf("%.1f", (num_folded_lines * 1.0) / line("$")* 100) 
+    let fold_percentage =  printf("%.1f", (num_folded_lines * 1.0) / line("$")* 100)
 
     let folded_line_display = num_folded_lines . " lines [" . fold_percentage . "%]"
 
@@ -202,15 +205,11 @@ map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 let Tlist_WinWidth = 50
 map <Leader>tl :TlistToggle<CR>
 
-" <Leader><Leader> to ZoomWin 
+" <Leader><Leader> to ZoomWin
 map <Leader><Leader> :ZoomWin<CR>
 
 " <Leader>x to show TODO list
 map <Leader>x <Plug>TaskList
-
-" <Leader>g to create public Gist of entire buffer
-map <Leader>g :Gist<CR>
-cmap <Leader>g Gist<CR>
 
 " <Leader>pg to create private Gist of entire buffer
 map <Leader>pg :Gist -p<CR>
