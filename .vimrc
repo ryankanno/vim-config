@@ -25,8 +25,11 @@ set ffs=unix,dos,mac            " set file format to unix, win, then old mac
 set hidden                      " enable hidden files
 set backspace=indent,eol,start  " enable backspace over indent, EOL, START
 
-set undodir=$HOME/.vim_undo      " directory to store backup files
-set undofile                     " save undo history to an undo file"
+if has("undodir")
+    set undodir=$HOME/.vim_undo " directory to store backup files
+    set undofile                " save undo history to an undo file"
+endif
+
 set backupext=.bak               " append .bak to backup files
 set backupdir=$HOME/.vim_backups " directory to store backup files
 set directory=$HOME/.vim_swaps   " directory to store swap files
