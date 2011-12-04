@@ -1,4 +1,6 @@
 " Follow me on Twitter @ryankanno
+"
+call pathogen#infect()
 
 " Abbreviations {{{
 iab _me Ryan Kanno <ryankanno@localkinegrinds.com>
@@ -134,8 +136,7 @@ set foldtext=CustomFoldText('.',80)
 " }}}
 
 " Filetype {{{
-
-filetype plugin on
+filetype plugin indent on
 autocmd FileType css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType html setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
@@ -340,7 +341,6 @@ command! Nyan call NyanMe()
 " allow pathogen to update runtime path
 runtime! autoload/pathogen.vim
 silent! call pathogen#helptags()
-silent! call pathogen#runtime_append_all_bundles()
 " }}}
 
 " Source a local config to override stuffs
