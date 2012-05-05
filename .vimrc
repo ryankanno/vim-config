@@ -3,8 +3,8 @@
 call pathogen#infect()
 
 " Abbreviations {{{
-iab _me Ryan Kanno <ryankanno@localkinegrinds.com>
-iab _date <C-R>=strftime("%A, %B %e %Y %I:%M:%S %p %Z")<CR>
+iab me@ Ryan Kanno <ryankanno@localkinegrinds.com>
+iab date@ <C-R>=strftime("%A, %B %e %Y %I:%M:%S %p %Z")<CR>
 " }}}
 
 " General {{{
@@ -30,11 +30,23 @@ set backspace=indent,eol,start  " enable backspace over indent, EOL, START
 if has("undodir")
     set undodir=$HOME/.vim_undo " directory to store backup files
     set undofile                " save undo history to an undo file"
+    if ! isdirectory(expand(&undodir))
+        call mkdir(&undodir, 'p', 0700 )
+    endif
 endif
 
 set backupext=.bak               " append .bak to backup files
+
 set backupdir=$HOME/.vim_backups " directory to store backup files
+if ! isdirectory(expand(&backupdir))
+    call mkdir(&backupdir, 'p', 0700)
+endif
+
 set directory=$HOME/.vim_swaps   " directory to store swap files
+if ! isdirectory(expand(&directory))
+    call mkdir(&directory, 'p', 0700)
+endif
+
 set autowrite                    " enable buffers to be saved on suspend
 
 cmap cwd lcd %:p:h              " change working directory to that of file
@@ -146,24 +158,34 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
 " Command Line {{{
 
-" bash like commands
-cnoremap <C-A> <Home>
-cnoremap <C-E> <End>
-cnoremap <C-K> <C-U>
-cnoremap <C-P> <Up>
-cnoremap <C-N> <Down>
+" bash like commands in command mode
+cnoremap <C-a> <home>
+cnoremap <C-e> <end>
+cnoremap <C-k> <C-U>
+cnoremap <C-p> <up>
+cnoremap <C-n> <down>
 " }}}
 
 " Keyboard Mapping {{{
-" simplify window navigation with ctrl
-map <C-J> <C-W>j
-map <C-K> <C-W>k
-map <C-L> <C-W>l
-map <C-H> <C-W>h
 
-" simplify tabbed navigation with ctrl
-map <C-H> gT
-map <C-L> gt
+" remap ESC in insert mode to jk - faster than jj?
+inoremap jk <ESC>
+
+" simplify window navigation with ctrl
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-l> <C-W>l
+map <C-h> <C-W>h
+
+" make Y act like C/D
+nnoremap Y y$
+xnoremap Y y$
+
+" clear search matching
+noremap <Leader><space> :noh<CR>:call clearmatches()<CR>
+
+" match braces using a tab
+map <TAB> %
 
 " <Leader>cd switches to directory of open buffer
 map <Leader>cd :cd %:p:h<CR>
@@ -194,9 +216,12 @@ map <Leader>p :Hammer<CR>
 " <F2> to toggle invisible characters
 map <silent> <F2> :set invlist<CR>
 
-" <Leader>T to flush command-t
+" command-t shortcuts
 set wildignore+=*.o,*.obj,.git,.svn,.hg,*.pyc
-map <Leader>t :CommandT<CR>
+map <Leader>tt :CommandT<CR>
+map <leader>tb :CommandTBuffer<CR>
+map <leader>t. :execute "CommandT " . expand("%:p:h")<CR>
+map <Leader>t :CommandT<space>
 map <Leader>T :CommandTFlush<CR>
 
 " <Leader>W to clean whitespace
@@ -215,9 +240,8 @@ map <Leader><Leader> :ZoomWin<CR>
 " <Leader>x to show TODO list
 map <Leader>x <Plug>TaskList
 
-" <Leader>pg to create private Gist of entire buffer
-map <Leader>pg :Gist -p<CR>
-cmap <Leader>pg Gist -p<CR>
+" <Leader>G to create private Gist of entire buffer
+map <Leader>G :Gist -p<CR>
 " }}}
 
 " Plugins {{{
@@ -337,6 +361,14 @@ function! NyanMe() " {{{
     redraw
 endfunction " }}}
 command! Nyan call NyanMe()
+
+" command-t
+let g:CommandTMaxFiles=50000
+let g:CommandTMaxHeight=20
+if has("autocmd") && exists(":CommandTFlush") && has("ruby")
+  " this is required for Command-T to pickup the setting(s)
+  au VimEnter * CommandTFlush
+endif
 
 " allow pathogen to update runtime path
 runtime! autoload/pathogen.vim
