@@ -181,7 +181,11 @@ map <C-h> <C-W>h
 nnoremap Y y$
 xnoremap Y y$
 
-" clear search matching
+" ; for : in normal/visual
+nnoremap ; :
+vnoremap ; :
+
+" clear search matching across all buffers
 noremap <Leader><space> :noh<CR>:call clearmatches()<CR>
 
 " match braces using a tab
@@ -224,8 +228,8 @@ map <leader>t. :execute "CommandT " . expand("%:p:h")<CR>
 map <Leader>t :CommandT<space>
 map <Leader>T :CommandTFlush<CR>
 
-" <Leader>W to clean whitespace
-map <Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
+" <Leader>ws to clean trailing white space
+map <Leader>ws :%s/\s\+$//e<CR>
 
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
@@ -366,13 +370,25 @@ command! Nyan call NyanMe()
 let g:CommandTMaxFiles=50000
 let g:CommandTMaxHeight=20
 if has("autocmd") && exists(":CommandTFlush") && has("ruby")
-  " this is required for Command-T to pickup the setting(s)
-  au VimEnter * CommandTFlush
+    " this is required for Command-T to pickup the setting(s)
+    au VimEnter * CommandTFlush
 endif
 
 " allow pathogen to update runtime path
 runtime! autoload/pathogen.vim
 silent! call pathogen#helptags()
+" }}}
+
+" Platform Specific Stuffs {{{
+if has('win32') || has('win64')
+  " Windows
+elseif has('gui_macvim')
+    " No gui for you!
+    if has("gui_running")
+        set guioptions=egmrt
+    endif
+endif
+"
 " }}}
 
 " Source a local config to override stuffs
