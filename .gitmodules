@@ -85,3 +85,6 @@
 [submodule ".vim/bundle/webapi-vim"]
 	path = .vim/bundle/webapi-vim
 	url = http://github.com/mattn/webapi-vim.git
+[submodule ".vim/bundle/hammer.vim"]
+	path = .vim/bundle/hammer.vim
+	url = https://github.com/vim-scripts/hammer.vim.git
