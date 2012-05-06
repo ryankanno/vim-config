@@ -1,4 +1,4 @@
-" Follow me on Twitter @ryankanno
+
 "
 call pathogen#infect()
 
@@ -168,6 +168,10 @@ cnoremap <C-n> <down>
 
 " Keyboard Mapping {{{
 
+" fix teh broken
+nnoremap / /\v
+vnoremap / /\v
+
 " remap ESC in insert mode to jk - faster than jj?
 inoremap jk <ESC>
 
@@ -194,20 +198,20 @@ map <TAB> %
 " <Leader>cd switches to directory of open buffer
 map <Leader>cd :cd %:p:h<CR>
 
-" <Leader>f to start an Ack search
-map <Leader>f :Ack<space>
-
-" <Leader>Ss to open scratch in split window
-map <Leader>Ss :Sscratch<CR>
-
-" <Leader>s to open scratch buffer in same window
-map <Leader>s :Scratch<CR>
+" <Leader>D to make you smile
+map <Leader>d :Nyan<CR>
 
 " <Leader>dc to show diff of current buffer
 map <Leader>dc :DiffChangesDiffToggle<CR>
 
 " <Leader>dp to show patch of current buffer
 map <Leader>dp :DiffChangesPatchToggle<CR>
+
+" <Leader>f to start an Ack search
+map <Leader>f :Ack<space>
+
+" <Leader>G to create private Gist of entire buffer
+map <Leader>G :Gist -p<CR>
 
 " <Leader>o to open bufExplorer
 let g:bufExplorerDefaultHelp=0
@@ -217,35 +221,38 @@ map <Leader>o :BufExplorerVerticalSplit<CR>
 " <Leader>p to preview buffer with hammer.vim
 map <Leader>p :Hammer<CR>
 
-" <F2> to toggle invisible characters
-map <silent> <F2> :set invlist<CR>
+" CTags
+map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+
+" <Leader>Ss to open scratch in split window
+map <Leader>s :Sscratch<CR>
 
 " command-t shortcuts
 set wildignore+=*.o,*.obj,.git,.svn,.hg,*.pyc
-map <Leader>tt :CommandT<CR>
+map <Leader>t :CommandT<CR>
 map <leader>tb :CommandTBuffer<CR>
 map <leader>t. :execute "CommandT " . expand("%:p:h")<CR>
-map <Leader>t :CommandT<space>
+map <Leader>tt :CommandT<space>
 map <Leader>T :CommandTFlush<CR>
-
-" <Leader>ws to clean trailing white space
-map <Leader>ws :%s/\s\+$//e<CR>
-
-" CTags
-map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 
 " <Leader>tl to open Taglist project
 let Tlist_WinWidth = 50
 map <Leader>tl :TlistToggle<CR>
 
-" <Leader><Leader> to ZoomWin
-map <Leader><Leader> :ZoomWin<CR>
+" <Leader>ws to clean trailing white space
+map <Leader>ws :%s/\s\+$//e<CR>
 
 " <Leader>x to show TODO list
 map <Leader>x <Plug>TaskList
 
-" <Leader>G to create private Gist of entire buffer
-map <Leader>G :Gist -p<CR>
+" <Leader>Y to bring up YankRing
+map <Leader>Y :YRShow<CR>
+
+" <Leader><Leader> to ZoomWin
+map <Leader><Leader> :ZoomWin<CR>
+
+" <F2> to toggle invisible characters
+map <silent> <F2> :set invlist<CR>
 " }}}
 
 " Plugins {{{
@@ -367,8 +374,8 @@ endfunction " }}}
 command! Nyan call NyanMe()
 
 " command-t
-let g:CommandTMaxFiles=50000
-let g:CommandTMaxHeight=20
+let g:CommandTMaxFiles=10000
+let g:CommandTMaxHeight=15
 if has("autocmd") && exists(":CommandTFlush") && has("ruby")
     " this is required for Command-T to pickup the setting(s)
     au VimEnter * CommandTFlush
