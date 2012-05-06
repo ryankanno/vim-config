@@ -48,8 +48,6 @@ if ! isdirectory(expand(&directory))
 endif
 
 set autowrite                    " enable buffers to be saved on suspend
-
-cmap cwd lcd %:p:h              " change working directory to that of file
 " }}}
 
 " Theme {{{
@@ -158,6 +156,10 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
 " Command Line {{{
 
+" change working directory to that of file
+cmap cwd lcd %:p:h              
+cmap cd. lcd %:p:h              
+
 " bash like commands in command mode
 cnoremap <C-a> <home>
 cnoremap <C-e> <end>
@@ -209,6 +211,9 @@ map <Leader>dp :DiffChangesPatchToggle<CR>
 
 " <Leader>f to start an Ack search
 map <Leader>f :Ack<space>
+
+" <Leader>g to toggle Gundo
+nnoremap <Leader>g :GundoToggle<CR>
 
 " <Leader>G to create private Gist of entire buffer
 map <Leader>G :Gist -p<CR>
