@@ -157,8 +157,7 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 " Command Line {{{
 
 " change working directory to that of file
-cmap cwd lcd %:p:h              
-cmap cd. lcd %:p:h              
+cmap <Leader>cd lcd %:p:h              
 
 " bash like commands in command mode
 cnoremap <C-a> <home>
@@ -215,6 +214,10 @@ map <Leader>f :Ack<space>
 " <Leader>g to toggle Gundo
 nnoremap <Leader>g :GundoToggle<CR>
 
+" <Leader>h/l to go to previous/next in jumplist
+nnoremap <Leader>h <C-O>
+nnoremap <Leader>l <C-i>
+
 " <Leader>G to create private Gist of entire buffer
 map <Leader>G :Gist -p<CR>
 
@@ -234,11 +237,8 @@ map <Leader>s :Sscratch<CR>
 
 " command-t shortcuts
 set wildignore+=*.o,*.obj,.git,.svn,.hg,*.pyc
-map <Leader>t :CommandT<CR>
-map <leader>tb :CommandTBuffer<CR>
-map <leader>t. :execute "CommandT " . expand("%:p:h")<CR>
-map <Leader>tt :CommandT<space>
-map <Leader>T :CommandTFlush<CR>
+nnoremap <silent> <Leader>t :CommandT<CR>
+nnoremap <silent> <Leader>T :CommandTFlush<CR>
 
 " <Leader>tl to open Taglist project
 let Tlist_WinWidth = 50
@@ -378,7 +378,7 @@ function! NyanMe() " {{{
 endfunction " }}}
 command! Nyan call NyanMe()
 
-" command-t
+" command-t options
 let g:CommandTMaxFiles=10000
 let g:CommandTMaxHeight=15
 if has("autocmd") && exists(":CommandTFlush") && has("ruby")
