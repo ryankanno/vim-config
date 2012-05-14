@@ -160,14 +160,17 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 cmap <Leader>cd lcd %:p:h              
 
 " bash like commands in command mode
-cnoremap <C-a> <home>
-cnoremap <C-e> <end>
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
 cnoremap <C-k> <C-U>
-cnoremap <C-p> <up>
-cnoremap <C-n> <down>
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
 " }}}
 
 " Keyboard Mapping {{{
+
+" remap 0 to first word (going to the first col is kinda useless)
+map 0 ^
 
 " fix teh broken
 nnoremap / /\v
@@ -175,6 +178,7 @@ vnoremap / /\v
 
 " remap ESC in insert mode to jk - faster than jj?
 inoremap jk <ESC>
+inoremap kj <ESC>
 
 " simplify window navigation with ctrl
 map <C-j> <C-W>j
