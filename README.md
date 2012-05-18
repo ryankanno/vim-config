@@ -23,8 +23,10 @@ with me.
 
 <table cellspacing="0">
     <thead>
-        <tr><th>Shortcut</th></tr>
-        <tr><th>Action</th></tr>
+        <tr>
+            <th>Shortcut</th>
+            <th>Action</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
