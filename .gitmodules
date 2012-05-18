@@ -91,3 +91,6 @@
 [submodule ".vim/bundle/bufexplorer"]
 	path = .vim/bundle/bufexplorer
 	url = https://github.com/vim-scripts/bufexplorer.zip.git
+[submodule ".vim/bundle/yankring.vim"]
+	path = .vim/bundle/yankring.vim
+	url = https://github.com/vim-scripts/YankRing.vim.git
