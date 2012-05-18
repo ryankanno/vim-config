@@ -215,9 +215,6 @@ map <Leader>dp :DiffChangesPatchToggle<CR>
 " <Leader>f to start an Ack search
 map <Leader>f :Ack<space>
 
-" <Leader>g to toggle Gundo
-nnoremap <Leader>g :GundoToggle<CR>
-
 " <Leader>h/l to go to previous/next in jumplist
 nnoremap <Leader>h <C-O>
 nnoremap <Leader>l <C-i>
@@ -247,6 +244,9 @@ nnoremap <silent> <Leader>T :CommandTFlush<CR>
 " <Leader>tl to open Taglist project
 let Tlist_WinWidth = 50
 map <Leader>tl :TlistToggle<CR>
+
+" <Leader>u to toggle Gundo
+nnoremap <Leader>u :GundoToggle<CR>
 
 " <Leader>ws to clean trailing white space
 map <Leader>ws :%s/\s\+$//e<CR>

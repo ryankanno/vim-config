@@ -1,25 +1,28 @@
 # My .vim configuration
 
-Here be dragons.  I periodically walk through my configuration file and fix
+Here be dragons.  I periodically walk my configuration file and fix
 things that aren't working for me and/or try to better optimize my development
-environment.  If that doesn't suit you, you have been warned.  On the flip,
-this means you'll have an awesome dev environment.
+environment.  As humans, we're generally terrible about it since we're
+resistant to change.  If that doesn't suit you, you've been warned.  On the flip,
+if this does suit you, it means you'll have an amazing dev editing environment.
 
 People have asked why I don't use [Vundle](https://github.com/gmarik/vundle). I
-would if you could map to particular git commit, but it doesn't look
-like you can. Unfortunately, I do enjoy explicit dependency management. 
+totally would if you could map to a particular git commit/has, but it doesn't look
+like you can. Unfortunately, I enjoy explicit dependency management. 
 
 
 ## Quick Setup
 
 curl -o - https://raw.github.com/ryankanno/vim-config/master/install.sh | bash
 
+At some point, I will detect if you already have this installed and do the
+right thing, like compile command-t and detect a previous installation, but for
+now, just bear with me.
+
 ## Shortcuts
 
-Here's a list of shortcuts I use on the daily.
-
-* Remap jk/kj in insert mode to ESC. - Remapping ESC is good for the soul.
-* Remap ; to : - Not having to press shift is pretty amazing.
+* Remap jk/kj in insert mode to ESC
+* Remap ; to : 
 
 
 ## Plugins
