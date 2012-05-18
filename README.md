@@ -8,7 +8,7 @@ if this does suit you, it means you'll have an amazing dev editing environment.
 
 People have asked why I don't use [Vundle](http://github.com/gmarik/vundle). I
 totally would if you could map to a particular git commit/hash, but it doesn't look
-like you can. Unfortunately, I enjoy explicit dependency management. 
+like you can. Unfortunately, I enjoy explicit dependency management.
 
 
 ## Quick Setup
@@ -16,22 +16,76 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 curl -o - https://raw.github.com/ryankanno/vim-config/master/install.sh | bash
 
 At some point, I will detect if you already have this installed and do the
-right thing like detect a previous installation, but for now, just bear 
+right thing like detect a previous installation, but for now, just bear
 with me.
 
 ## Shortcuts
 
 <table cellspacing="0">
     <thead>
-        <tr>
-            <th>Shortcut</th>
-            <th>Action</th>
-        </tr>
+        <tr><th>Shortcut</th></tr>
+        <tr><th>Action</th></tr>
     </thead>
     <tbody>
         <tr>
             <td>jk/kj</td>
             <td>ESC in insert mode</td>
+        </tr>
+        <tr>
+            <td>;</td>
+            <td>:</td>
+        </tr>
+        <tr>
+            <td><TAB></td>
+            <td>%</td>
+        </tr>
+        <tr>
+            <td><Leader>f</td>
+            <td>Start an Ack search</td>
+        </tr>
+        <tr>
+            <td><Leader>h/l</td>
+            <td>Next/prev in jumplist</td>
+        </tr>
+        <tr>
+            <td><Leader>G</td>
+            <td>Private gist (assuming you complete the github api install)</td>
+        </tr>
+        <tr>
+            <td><Leader>p</td>
+            <td>Load up current buffer into Hammer</td>
+        </tr>
+        <tr>
+            <td><Leader>s</td>
+            <td>Open scratch in split window</td>
+        </tr>
+        <tr>
+            <td><Leader>t</td>
+            <td>Start a command-t search</td>
+        </tr>
+        <tr>
+            <td><Leader>T</td>
+            <td>Flush command-t</td>
+        </tr>
+        <tr>
+            <td><Leader>u</td>
+            <td>Toggle gundo</td>
+        </tr>
+        <tr>
+            <td><Leader>ws</td>
+            <td>Clean whitespace</td>
+        </tr>
+        <tr>
+            <td><Leader>x</td>
+            <td>Show TODOs in its own buffer</td>
+        </tr>
+        <tr>
+            <td><Leader>Y</td>
+            <td>Bring up the YankRing</td>
+        </tr>
+        <tr>
+            <td><Leader><Leader></td>
+            <td>Toggle the current window</td>
         </tr>
     </tbody>
 </table>
