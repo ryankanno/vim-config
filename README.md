@@ -23,8 +23,10 @@ with me.
 
 <table cellspacing="0">
     <thead>
-        <tr><th>Shortcut</th></tr>
-        <tr><th>Action</th></tr>
+        <tr>
+            <th>Shortcut</th>
+            <th>Action</th>
+        </tr>
     </thead>
     <tbody>
         <tr>
@@ -36,19 +38,19 @@ with me.
             <td>:</td>
         </tr>
         <tr>
-            <td><TAB></td>
+            <td>&lt;TAB&gt;</td>
             <td>%</td>
         </tr>
         <tr>
-            <td><Leader>f</td>
+            <td>&lt;Leader&gt;f</td>
             <td>Start an Ack search</td>
         </tr>
         <tr>
-            <td><Leader>h/l</td>
+            <td>&lt;Leader&gt;h/l</td>
             <td>Next/prev in jumplist</td>
         </tr>
         <tr>
-            <td><Leader>G</td>
+            <td>&lt;Leader&gt;G</td>
             <td>Private gist (assuming you complete the github api install)</td>
         </tr>
         <tr>
