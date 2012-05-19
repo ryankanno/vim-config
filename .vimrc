@@ -1,5 +1,8 @@
-
 "
+" Ryan Kanno <ryankanno@hotmail.com>
+" @ryankanno
+"
+
 call pathogen#infect()
 
 " Abbreviations {{{
@@ -187,8 +190,7 @@ map <C-l> <C-W>l
 map <C-h> <C-W>h
 
 " make Y act like C/D
-nnoremap Y y$
-xnoremap Y y$
+nmap Y y$
 
 " ; for : in normal/visual
 nnoremap ; :
