@@ -54,39 +54,39 @@ with me.
             <td>Private gist (assuming you complete the github api install)</td>
         </tr>
         <tr>
-            <td><Leader>p</td>
+            <td>&lt;Leader&gt;p</td>
             <td>Load up current buffer into Hammer</td>
         </tr>
         <tr>
-            <td><Leader>s</td>
+            <td>&lt;Leader&gt;s</td>
             <td>Open scratch in split window</td>
         </tr>
         <tr>
-            <td><Leader>t</td>
+            <td>&lt;Leader&gt;t</td>
             <td>Start a command-t search</td>
         </tr>
         <tr>
-            <td><Leader>T</td>
+            <td>&lt;Leader&gt;T</td>
             <td>Flush command-t</td>
         </tr>
         <tr>
-            <td><Leader>u</td>
+            <td>&lt;Leader&gt;u</td>
             <td>Toggle gundo</td>
         </tr>
         <tr>
-            <td><Leader>ws</td>
+            <td>&lt;Leader&gt;ws</td>
             <td>Clean whitespace</td>
         </tr>
         <tr>
-            <td><Leader>x</td>
+            <td>&lt;Leader&gt;x</td>
             <td>Show TODOs in its own buffer</td>
         </tr>
         <tr>
-            <td><Leader>Y</td>
+            <td>&lt;Leader&gt;Y</td>
             <td>Bring up the YankRing</td>
         </tr>
         <tr>
-            <td><Leader><Leader></td>
+            <td>&lt;Leader&gt;&lt;Leader&gt;</td>
             <td>Toggle the current window</td>
         </tr>
     </tbody>
