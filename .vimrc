@@ -233,7 +233,7 @@ map <Leader>o :BufExplorerVerticalSplit<CR>
 map <Leader>p :Hammer<CR>
 
 " CTags
-map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+map <Leader>tag :!ctags --extra=+f -R *<CR><CR>
 
 " <Leader>s to open scratch in split window
 map <Leader>s :Sscratch<CR>
@@ -244,7 +244,6 @@ nnoremap <silent> <Leader>t :CommandT<CR>
 nnoremap <silent> <Leader>T :CommandTFlush<CR>
 
 " <Leader>tl to open Taglist project
-let Tlist_WinWidth = 50
 map <Leader>tl :TlistToggle<CR>
 
 " <Leader>u to toggle Gundo
