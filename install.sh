@@ -28,7 +28,8 @@ function update_symlink() {
 git clone git://github.com/ryankanno/vim-config.git "$VIMINSTALL"
 cd "$VIMINSTALL"
 git submodule update --init
-ruby "$VIMINSTALL/.vim/bundle/command-t/ruby/command-t/extconf.rb" && make
+cd "$VIMINSTALL/.vim/bundle/command-t/ruby/command-t/" 
+ruby extconf.rb && make
 
 update_symlink "$VIMINSTALL/.vim" "$HOME/.vim"
 update_symlink "$VIMINSTALL/.vimrc" "$HOME/.vimrc"
