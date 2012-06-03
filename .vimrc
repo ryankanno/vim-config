@@ -254,8 +254,6 @@ map <Leader>ws :%s/\s\+$//e<CR>
 
 " <Leader>x to show TODO list
 map <Leader>x <Plug>TaskList
-command! todo call TaskList()
-command! TODO call TaskList()
 
 " <Leader>Y to bring up YankRing
 map <Leader>Y :YRShow<CR>
