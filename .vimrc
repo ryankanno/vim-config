@@ -224,6 +224,9 @@ nnoremap <Leader>l <C-i>
 " <Leader>G to create private Gist of entire buffer
 map <Leader>G :Gist -p<CR>
 
+" <Leader>G to toggle NerdTreeTabs
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
+
 " <Leader>o to open bufExplorer
 let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
