@@ -13,11 +13,20 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 
 ## Quick Setup
 
+Install
+-------
+
 curl -o - https://raw.github.com/ryankanno/vim-config/master/install.sh | bash
 
-At some point, I will detect if you already have this installed and do the
-right thing like detect a previous installation, but for now, just bear
-with me.
+**Note** If you already have this installed, the installation script will
+instead just pull instead of update.
+
+
+Uninstall
+---------
+
+Just pass "UNINSTALL" to the install.sh script.
+
 
 ## Shortcuts
 
