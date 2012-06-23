@@ -42,6 +42,14 @@ with me.
             <td>%</td>
         </tr>
         <tr>
+            <td>dc</td>
+            <td>Diff of current buffer</td>
+        </tr>
+        <tr>
+            <td>dp</td>
+            <td>Patch of current buffer</td>
+        </tr>
+        <tr>
             <td>&lt;Leader&gt;f</td>
             <td>Start an Ack search</td>
         </tr>
@@ -52,6 +60,14 @@ with me.
         <tr>
             <td>&lt;Leader&gt;G</td>
             <td>Private gist (assuming you complete the github api install)</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;n</td>
+            <td>Toggle NERDTreeTabs</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;o (or bv)</td>
+            <td>Toggle BufExplorer</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;p</td>
@@ -68,6 +84,14 @@ with me.
         <tr>
             <td>&lt;Leader&gt;T</td>
             <td>Flush command-t</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;tag</td>
+            <td>Generate ctags</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;tl</td>
+            <td>Toggle Taglist</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;u</td>

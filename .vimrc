@@ -235,9 +235,6 @@ map <Leader>o :BufExplorerVerticalSplit<CR>
 " <Leader>p to preview buffer with hammer.vim
 map <Leader>p :Hammer<CR>
 
-" CTags
-map <Leader>tag :!ctags --extra=+f -R *<CR><CR>
-
 " <Leader>s to open scratch in split window
 map <Leader>s :Sscratch<CR>
 
@@ -245,6 +242,10 @@ map <Leader>s :Sscratch<CR>
 set wildignore+=*.o,*.obj,.git,.svn,.hg,*.pyc
 nnoremap <silent> <Leader>t :CommandT<CR>
 nnoremap <silent> <Leader>T :CommandTFlush<CR>
+
+" CTags
+map <Leader>tag :!ctags --extra=+f -R *<CR><CR>
+
 
 " <Leader>tl to open Taglist project
 map <Leader>tl :TlistToggle<CR>
