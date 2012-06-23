@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 VIMINSTALL=~/.vim-config
 
@@ -25,11 +25,22 @@ function update_symlink() {
     echo "Created symlink from $SOURCE to $TARGET"
 }
 
-git clone git://github.com/ryankanno/vim-config.git "$VIMINSTALL"
-cd "$VIMINSTALL"
-git submodule update --init
-cd "$VIMINSTALL/.vim/bundle/command-t/ruby/command-t/" 
-ruby extconf.rb && make
+if [[ -n "$1" && "$1" == "UNINSTALL" ]]; then 
+    echo "Uninstalling from: $VIMINSTALL"
+    rm -rf "$VIMINSTALL"
+else
+    if [ -d "$VIMINSTALL" ]; then # pull if already installed
+        cd "$VIMINSTALL"
+        git pull "$VIMINSTALL"
+        git submodule update --init
+    else                          # clone if not
+        git clone git://github.com/ryankanno/vim-config.git "$VIMINSTALL"
+        cd "$VIMINSTALL"
+        git submodule update --init
+        cd "$VIMINSTALL/.vim/bundle/command-t/ruby/command-t/" 
+        ruby extconf.rb && make
+    fi
 
-update_symlink "$VIMINSTALL/.vim" "$HOME/.vim"
-update_symlink "$VIMINSTALL/.vimrc" "$HOME/.vimrc"
+    update_symlink "$VIMINSTALL/.vim" "$HOME/.vim"
+    update_symlink "$VIMINSTALL/.vimrc" "$HOME/.vimrc"
+fi
