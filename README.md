@@ -13,8 +13,7 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 
 ## Quick Setup
 
-Install
--------
+### Install
 
 curl -o - https://raw.github.com/ryankanno/vim-config/master/install.sh | bash
 
@@ -22,8 +21,7 @@ curl -o - https://raw.github.com/ryankanno/vim-config/master/install.sh | bash
 instead just pull instead of update.
 
 
-Uninstall
----------
+### Uninstall
 
 Just pass "UNINSTALL" to the install.sh script.
 
