@@ -29,7 +29,7 @@ if [[ -n "$1" && "$1" == "UNINSTALL" ]]; then
     echo "Uninstalling from: $VIMINSTALL"
     rm -rf "$VIMINSTALL"
 else
-    if [ -d "$VIMINSTALL" ]; then # pull if already installed
+    if [[ -d "${VIMINSTALL}" && ! -L "${VIMINSTALL}" ]]; then # pull if installed
         cd "$VIMINSTALL"
         git pull "$VIMINSTALL"
         git submodule update --init
