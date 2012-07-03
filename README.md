@@ -30,7 +30,7 @@ Just pass "UNINSTALL" to the install.sh script.
 
 ## Shortcuts
 
-<table cellspacing="0">
+<table> 
     <thead>
         <tr>
             <th>Shortcut</th>
