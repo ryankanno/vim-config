@@ -224,7 +224,10 @@ nnoremap <Leader>l <C-i>
 " <Leader>G to create private Gist of entire buffer
 map <Leader>G :Gist -p<CR>
 
-" <Leader>G to toggle NerdTreeTabs
+" <Leader>l to toggle relative numbers
+map <Leader>l :NumbersToggle<CR>
+
+" <Leader>n to toggle NerdTreeTabs
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
 " <Leader>o to open bufExplorer
@@ -267,6 +270,7 @@ map <Leader><Leader> :ZoomWin<CR>
 
 " <F2> to toggle invisible characters
 map <silent> <F2> :set invlist<CR>
+
 " }}}
 
 " Plugins {{{
