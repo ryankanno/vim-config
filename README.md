@@ -146,6 +146,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [hammer.vim](http://github.com/vim-scripts/hammer.vim)
 * [markdown](http://github.com/tpope/vim-markdown)
 * [nerdcommenter](http://github.com/scrooloose/nerdcommenter)
+* [numbers.vim](https://github.com/myusuf3/numbers.vim/)
 * [py-flakes](http://github.com/kevinw/pyflakes-vim)
 * [repeat](http://github.com/tpope/vim-repeat)
 * [scratch](http://github.com/duff/vim-scratch)
