@@ -73,6 +73,10 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Toggle NERDTreeTabs</td>
         </tr>
         <tr>
+            <td>&lt;Leader&gt;num</td>
+            <td>Toggle Numbers.vim (relative/absolute)</td>
+        </tr>
+        <tr>
             <td>&lt;Leader&gt;o (or bv)</td>
             <td>Toggle BufExplorer</td>
         </tr>

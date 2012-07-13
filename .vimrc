@@ -224,11 +224,11 @@ nnoremap <Leader>l <C-i>
 " <Leader>G to create private Gist of entire buffer
 map <Leader>G :Gist -p<CR>
 
-" <Leader>l to toggle relative numbers
-map <Leader>l :NumbersToggle<CR>
-
 " <Leader>n to toggle NerdTreeTabs
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
+
+" <Leader>num to toggle relative numbers
+map <Leader>num :NumbersToggle<CR>
 
 " <Leader>o to open bufExplorer
 let g:bufExplorerDefaultHelp=0
@@ -248,7 +248,6 @@ nnoremap <silent> <Leader>T :CommandTFlush<CR>
 
 " CTags
 map <Leader>tag :!ctags --extra=+f -R *<CR><CR>
-
 
 " <Leader>tl to open Taglist project
 map <Leader>tl :TlistToggle<CR>
