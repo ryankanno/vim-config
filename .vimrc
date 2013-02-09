@@ -235,16 +235,16 @@ let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 map <Leader>o :BufExplorerVerticalSplit<CR>
 
-" <Leader>p to preview buffer with hammer.vim
-map <Leader>p :Hammer<CR>
+" ctrl-p shortcuts
+set wildignore+=*.o,*.obj,.git,.svn,.hg,*.pyc
+let g:ctrlp_map = '<Leader>p'
+let g:ctrlp_cmd = 'CtrlPMixed'
+
+" <Leader>pb to preview buffer with hammer.vim
+map <Leader>pb :Hammer<CR>
 
 " <Leader>s to open scratch in split window
 map <Leader>s :Sscratch<CR>
-
-" command-t shortcuts
-set wildignore+=*.o,*.obj,.git,.svn,.hg,*.pyc
-nnoremap <silent> <Leader>t :CommandT<CR>
-nnoremap <silent> <Leader>T :CommandTFlush<CR>
 
 " CTags
 map <Leader>tag :!ctags --extra=+f -R *<CR><CR>
@@ -389,14 +389,6 @@ function! NyanMe() " {{{
     redraw
 endfunction " }}}
 command! Nyan call NyanMe()
-
-" command-t options
-let g:CommandTMaxFiles=10000
-let g:CommandTMaxHeight=15
-if has("autocmd") && exists(":CommandTFlush") && has("ruby")
-    " this is required for Command-T to pickup the setting(s)
-    au VimEnter * CommandTFlush
-endif
 
 " allow pathogen to update runtime path
 runtime! autoload/pathogen.vim

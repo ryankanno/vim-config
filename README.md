@@ -82,19 +82,15 @@ Just pass "UNINSTALL" to the install.sh script.
         </tr>
         <tr>
             <td>&lt;Leader&gt;p</td>
+            <td>Ctrl-P</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;pb</td>
             <td>Load up current buffer into Hammer</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;s</td>
             <td>Open scratch in split window</td>
-        </tr>
-        <tr>
-            <td>&lt;Leader&gt;t</td>
-            <td>Start a command-t search</td>
-        </tr>
-        <tr>
-            <td>&lt;Leader&gt;T</td>
-            <td>Flush command-t</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;tag</td>
@@ -137,7 +133,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [align](http://github.com/tsaleh/vim-align)
 * [bufexplorer](http://github.com/vim-scripts/bufexplorer.zip)
 * [cocoa](http://github.com/msanders/cocoa.vim)
-* [command-t](http://git.wincent.com/command-t)
+* [ctrlp](http://github.com/kien/ctrlp.vim)
 * [delimitMate](http://github.com/Raimondi/delimitMate)
 * [diffchanges](http://github.com/jmcantrell/vim-diffchanges)
 * [fugitive](http://github.com/tpope/vim-fugitive)
