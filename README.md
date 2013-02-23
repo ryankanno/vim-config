@@ -157,6 +157,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [supertab](http://github.com/ervandew/supertab)
 * [surround](http://github.com/tpope/vim-surround)
 * [swapit](http://github.com/mjbrownie/swapit)
+* [syntastic](http://github.com/scrooloose/syntastic)
 * [taglist-plus](http://github.com/vim-scripts/taglist-plus)
 * [tasklist](http://github.com/vim-scripts/TaskList)
 * [ultisnips](http://github.com/SirVer/ultisnips)
