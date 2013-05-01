@@ -12,6 +12,10 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 
 ## Updates
 
+### 2013-05-01
+
+* Migrated from ack -> the silver searcher
+
 ### 2013-02-09 
 
 * Migrated from snipmate -> ultisnips (still waiting to see what will happen to snipmate snippets)
