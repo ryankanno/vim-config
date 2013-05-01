@@ -10,6 +10,12 @@ People have asked why I don't use [Vundle](http://github.com/gmarik/vundle). I
 totally would if you could map to a particular git commit/hash, but it doesn't look
 like you can. Unfortunately, I enjoy explicit dependency management.
 
+## Updates
+
+### 2013-02-09 
+
+* Migrated from snipmate -> ultisnips (still waiting to see what will happen to snipmate snippets)
+* Switched from command-t -> ctrlp
 
 ## Quick Setup
 
@@ -146,7 +152,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [py-flakes](http://github.com/kevinw/pyflakes-vim)
 * [repeat](http://github.com/tpope/vim-repeat)
 * [scratch](http://github.com/duff/vim-scratch)
-* [snipmate](http://github.com/spf13/snipmate.vim)
 * [snipmate-snippets](http://github.com/spf13/snipmate-snippets)
 * [sparkup](http://github.com/bingaman/vim-sparkup)
 * [supertab](http://github.com/ervandew/supertab)
@@ -154,6 +159,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [swapit](http://github.com/mjbrownie/swapit)
 * [taglist-plus](http://github.com/vim-scripts/taglist-plus)
 * [tasklist](http://github.com/vim-scripts/TaskList)
+* [ultisnips](http://github.com/SirVer/ultisnips)
 * [vim-rails](http://github.com/tpope/vim-rails)
 * [yankring](http://github.com/vim-scripts/YankRing.vim)
 * [zoomwin](http://github.com/vim-scripts/ZoomWin)
