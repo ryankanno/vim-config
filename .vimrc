@@ -71,8 +71,6 @@ set showmatch                   " show matching brackets
 set showbreak=...               " show '...' if line is longer than screen
 set mat=5                       " how many tenths of a second to blink matching brackets
 set incsearch                   " show search matches as you type
-set lines=58                    " height
-set columns=180                 " width
 set novisualbell                " no error bells
 set noerrorbells                " no error bells
 set title                       " sets the title
@@ -83,6 +81,18 @@ set tabpagemax=10 				" show 10 tabs
 " highlight lines over 80 characters
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#AE0000
 match OverLength /\%80v.\+/
+
+if has("gui_running")
+  set lines=999
+  set columns=999
+else
+  if exists("+lines")
+    set lines=64
+  endif
+  if exists("+columns")
+    set columns=100
+  endif
+endif
 
 " show color column
 if exists('+colorcolumn')
