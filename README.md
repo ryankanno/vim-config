@@ -127,7 +127,7 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Bring up the YankRing</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;&lt;Leader&gt;</td>
+            <td>&lt;Leader&gt;&lt;Leader&gt;&lt;Leader&gt;</td>
             <td>Toggle the current window</td>
         </tr>
     </tbody>

@@ -275,8 +275,8 @@ map <Leader>x <Plug>TaskList
 " <Leader>Y to bring up YankRing
 map <Leader>Y :YRShow<CR>
 
-" <Leader><Leader> to ZoomWin
-map <Leader><Leader> :ZoomWin<CR>
+" <Leader><Leader><Leader> to ZoomWin
+map <Leader><Leader><Leader> :ZoomWin<CR>
 
 " <F2> to toggle invisible characters
 map <silent> <F2> :set invlist<CR>
