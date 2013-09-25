@@ -12,11 +12,16 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 
 ## Updates
 
+### 2013-09-25
+
+* Added vim-easymotion
+* Changed zoomwin from &lt;Leader&gt;&lt;Leader&gt; to &lt;Leader&gt;w
+
 ### 2013-05-01
 
 * Migrated from ack -> the silver searcher
 
-### 2013-02-09 
+### 2013-02-09
 
 * Migrated from snipmate -> ultisnips (still waiting to see what will happen to snipmate snippets)
 * Switched from command-t -> ctrlp
@@ -38,7 +43,7 @@ Just pass "UNINSTALL" to the install.sh script.
 
 ## Shortcuts
 
-<table> 
+<table>
     <thead>
         <tr>
             <th>Shortcut</th>
@@ -115,6 +120,10 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Toggle gundo</td>
         </tr>
         <tr>
+            <td>&lt;Leader&gt;w</td>
+            <td>Toggle the current window</td>
+        </tr>
+        <tr>
             <td>&lt;Leader&gt;ws</td>
             <td>Clean whitespace</td>
         </tr>
@@ -128,7 +137,7 @@ Just pass "UNINSTALL" to the install.sh script.
         </tr>
         <tr>
             <td>&lt;Leader&gt;&lt;Leader&gt;</td>
-            <td>Toggle the current window</td>
+            <td>Toggle vim-easymotion</td>
         </tr>
     </tbody>
 </table>
@@ -165,6 +174,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [taglist-plus](http://github.com/vim-scripts/taglist-plus)
 * [tasklist](http://github.com/vim-scripts/TaskList)
 * [ultisnips](http://github.com/SirVer/ultisnips)
+* [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
 * [vim-rails](http://github.com/tpope/vim-rails)
 * [yankring](http://github.com/vim-scripts/YankRing.vim)
 * [zoomwin](http://github.com/vim-scripts/ZoomWin)

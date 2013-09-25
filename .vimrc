@@ -170,7 +170,7 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 " Command Line {{{
 
 " change working directory to that of file
-cmap <Leader>cd lcd %:p:h              
+cmap <Leader>cd lcd %:p:h
 
 " bash like commands in command mode
 cnoremap <C-a> <Home>
@@ -266,6 +266,9 @@ map <Leader>tl :TlistToggle<CR>
 " <Leader>u to toggle Gundo
 nnoremap <Leader>u :GundoToggle<CR>
 
+" <Leader>w to ZoomWin
+map <Leader>w :ZoomWin<CR>
+
 " <Leader>ws to clean trailing white space
 map <Leader>ws :%s/\s\+$//e<CR>
 
@@ -275,11 +278,8 @@ map <Leader>x <Plug>TaskList
 " <Leader>Y to bring up YankRing
 map <Leader>Y :YRShow<CR>
 
-" <Leader><Leader> to ZoomWin
-map <Leader><Leader> :ZoomWin<CR>
-
-" <Leader>\ to load up vim-easymotion
-let g:EasyMotion_leader_key = '<Leader>\' 
+" <Leader><Leader> to load up vim-easymotion
+let g:EasyMotion_leader_key = '<Leader><Leader>'
 
 " <F2> to toggle invisible characters
 map <silent> <F2> :set invlist<CR>
