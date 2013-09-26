@@ -1,5 +1,5 @@
 "
-" Ryan Kanno <ryankanno@hotmail.com>
+" Ryan Kanno <ryankanno@gmail.com>
 " @ryankanno
 "
 
@@ -68,7 +68,7 @@ set cursorline                  " highlight current line
 set nowrap                      " nowrap
 set showcmd                     " show cmd
 set showmatch                   " show matching brackets
-set showbreak=...               " show '...' if line is longer than screen
+set showbreak=↪                 " show '↪' if line is longer than screen
 set mat=5                       " how many tenths of a second to blink matching brackets
 set incsearch                   " show search matches as you type
 set novisualbell                " no error bells
@@ -409,7 +409,7 @@ runtime! autoload/pathogen.vim
 silent! call pathogen#helptags()
 " }}}
 
-" Platform Specific Stuffs {{{
+" Platform Specific {{{
 if has('win32') || has('win64')
   " Windows
 elseif has('gui_macvim')
@@ -418,8 +418,20 @@ elseif has('gui_macvim')
         set guioptions=egmrt
     endif
 endif
-"
 " }}}
+
+" Code {{{
+" improve commit messages
+autocmd FileType gitcommit setlocal spell
+autocmd FileType svn       setlocal spell
+autocmd FileType asciidoc  setlocal spell
+" }}}
+
+" auto reload .vimrc
+augroup reload_vimrc " {
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }
 
 " Source a local config to override stuffs
 if filereadable(expand("~/.vimrc.local"))
