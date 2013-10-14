@@ -425,16 +425,8 @@ endif
 autocmd FileType gitcommit setlocal spell
 autocmd FileType svn       setlocal spell
 autocmd FileType asciidoc  setlocal spell
-" }}}
-
-" auto reload .vimrc
-augroup reload_vimrc " {
-    autocmd!
-    autocmd BufWritePost $MYVIMRC source $MYVIMRC
-augroup END " }
 
 " highlights (and trims) whitespaces
-
 function! TrimWhiteSpace()
     %s/\s\+$//e
 endfunction
@@ -445,10 +437,18 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
-
 autocmd FileType c,cpp,python,ruby,java autocmd BufWritePre <buffer> :call TrimWhiteSpace()
+" }}}
 
-" Source a local config to override stuffs
+" auto reload .vimrc {{{
+augroup reload_vimrc 
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END 
+" }}}
+
+" Source a local config to override stuffs {{{
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
 endif
+" }}}
