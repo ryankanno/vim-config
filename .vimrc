@@ -25,7 +25,9 @@ set laststatus=2                " always show last status
 
 set history=1000                " 1000 lines of history
 set undolevels=1000             " 1000 levels of undo
-set clipboard=unnamed           " share clipboard with win
+if $TMUX = ''
+    set clipboard+=unnamed      " share clipboard with win
+endif
 set ffs=unix,dos,mac            " set file format to unix, win, then old mac
 set hidden                      " enable hidden files
 set backspace=indent,eol,start  " enable backspace over indent, EOL, START
