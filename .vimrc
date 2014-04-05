@@ -164,7 +164,9 @@ autocmd FileType css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType html setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 " }}}
 
 " Command Line {{{
