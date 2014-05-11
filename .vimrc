@@ -257,7 +257,7 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 map <Leader>pb :Hammer<CR>
 
 " <Leader>s to open scratch in split window
-map <Leader>s :Sscratch<CR>
+map <Leader>sb :Sscratch<CR>
 
 " CTags
 map <Leader>tag :!ctags --extra=+f -R *<CR><CR>

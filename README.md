@@ -108,8 +108,8 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Load up current buffer into Hammer</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;s</td>
-            <td>Open scratch in split window</td>
+            <td>&lt;Leader&gt;sb</td>
+            <td>Open scratch buffer in split window</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;tag</td>
