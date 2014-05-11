@@ -15,6 +15,8 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 ### 2014-05-11
 
 * Updated plugins
+* Added vim-indent-guides
+* Changed scratch buffer from &lt;Leader&gt;s to &lt;Leader&gt;sb
 
 ### 2013-09-25
 
@@ -163,6 +165,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [gist](http://github.com/mattn/gist-vim)
 * [gundo](http://github.com/vim-scripts/Gundo)
 * [hammer.vim](http://github.com/vim-scripts/hammer.vim)
+* [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 * [markdown](http://github.com/tpope/vim-markdown)
 * [nerdcommenter](http://github.com/scrooloose/nerdcommenter)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim/)
