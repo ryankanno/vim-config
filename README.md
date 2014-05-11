@@ -12,6 +12,10 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 
 ## Updates
 
+### 2014-05-11
+
+* Updated plugins
+
 ### 2013-09-25
 
 * Added vim-easymotion
