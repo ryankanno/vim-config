@@ -87,10 +87,10 @@ if has("gui_running")
   set columns=999
 else
   if exists("+lines")
-    set lines=64
+    set lines=40
   endif
   if exists("+columns")
-    set columns=100
+    set columns=120
   endif
 endif
 
