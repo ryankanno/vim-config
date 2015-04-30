@@ -217,6 +217,12 @@ map <TAB> %
 " <Leader>cd switches to directory of open buffer
 map <Leader>cd :cd %:p:h<CR>
 
+" <Leader>cf copies relative path to clipboard
+nnoremap <Leader>cf :let @+=expand("%")<CR>
+
+" <Leader>cf copies absolute path to clipboard
+nnoremap <Leader>cF :let @+=expand("%:p")<CR>
+
 " <Leader>D to make you smile
 map <Leader>d :Nyan<CR>
 
