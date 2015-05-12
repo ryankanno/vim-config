@@ -262,8 +262,11 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 " <Leader>pb to preview buffer with hammer.vim
 map <Leader>pb :Hammer<CR>
 
-" <Leader>s to open scratch in split window
+" <Leader>sb to open scratch in horizontal split window
 map <Leader>sb :Sscratch<CR>
+
+" <Leader>Sb to open scratch in vertical split window
+map <Leader>Sb :Vscratch<CR>
 
 " CTags
 map <Leader>tag :!ctags --extra=+f -R *<CR><CR>

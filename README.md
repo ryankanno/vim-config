@@ -12,6 +12,11 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 
 ## Updates
 
+### 2015-05-11
+
+* Changed scratch buffer to https://github.com/ethanmuller/scratch.vim
+* Mapped &lt;Leader&gt;Sb to a scratch buffer in a new vertical split
+
 ### 2014-05-11
 
 * Updated plugins
