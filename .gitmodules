@@ -124,3 +124,6 @@
 [submodule ".vim/bundle/omnisharp-vim"]
 	path = .vim/bundle/omnisharp-vim
 	url = https://github.com/OmniSharp/omnisharp-vim.git
+[submodule ".vim/bundle/scratch"]
+	path = .vim/bundle/scratch
+	url = https://github.com/ethanmuller/scratch.vim
