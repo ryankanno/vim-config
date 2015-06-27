@@ -18,6 +18,7 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 * Added vim-autoformat
 * Added vim-go
 * Added vim-mutiple-cursors
+* Added vim-over
 * Added vim-speeddating
 * Added vimproc
 
