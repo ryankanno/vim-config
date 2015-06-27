@@ -12,6 +12,10 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 
 ## Updates
 
+### 2015-06-24
+
+* Updated all plugins to latest
+
 ### 2015-05-11
 
 * Changed scratch buffer to https://github.com/ethanmuller/scratch.vim
