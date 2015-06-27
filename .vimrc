@@ -164,7 +164,6 @@ autocmd FileType css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType html setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 " }}}
@@ -443,7 +442,7 @@ function! TrimWhiteSpace()
 endfunction
 
 highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/ 
+match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
@@ -471,10 +470,10 @@ command! -bang TabCloseLeft call TabCloseLeft('<bang>')
 " }}}
 
 " auto reload .vimrc {{{
-augroup reload_vimrc 
+augroup reload_vimrc
     autocmd!
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
-augroup END 
+augroup END
 " }}}
 
 " Source a local config to override stuffs {{{
