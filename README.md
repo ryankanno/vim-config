@@ -16,6 +16,7 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 
 * Updated all plugins to latest
 * Added vim-autoformat
+* Added vim-erl
 * Added vim-go
 * Added vim-mutiple-cursors
 * Added vim-over
@@ -171,6 +172,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [abolish](http://github.com/tpope/vim-abolish)
 * [ack](http://github.com/mileszs/ack.vim)
 * [align](http://github.com/tsaleh/vim-align)
+* [autotag](https://github.com/vim-scripts/AutoTag)
 * [bufexplorer](http://github.com/vim-scripts/bufexplorer.zip)
 * [cocoa](http://github.com/msanders/cocoa.vim)
 * [ctrlp](http://github.com/kien/ctrlp.vim)
@@ -180,16 +182,15 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [gist](http://github.com/mattn/gist-vim)
 * [gundo](http://github.com/vim-scripts/Gundo)
 * [hammer.vim](http://github.com/vim-scripts/hammer.vim)
-* [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 * [markdown](http://github.com/tpope/vim-markdown)
 * [nerdcommenter](http://github.com/scrooloose/nerdcommenter)
+* [nerdtree](https://github.com/scrooloose/nerdtree)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim/)
 * [omnisharp-vim](https://github.com/OmniSharp/omnisharp-vim)
 * [py-flakes](http://github.com/kevinw/pyflakes-vim)
 * [repeat](http://github.com/tpope/vim-repeat)
 * [scratch](http://github.com/duff/vim-scratch)
 * [snipmate-snippets](http://github.com/spf13/snipmate-snippets)
-* [sparkup](http://github.com/bingaman/vim-sparkup)
 * [supertab](http://github.com/ervandew/supertab)
 * [surround](http://github.com/tpope/vim-surround)
 * [swapit](http://github.com/mjbrownie/swapit)
@@ -197,12 +198,20 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [taglist-plus](http://github.com/vim-scripts/taglist-plus)
 * [tasklist](http://github.com/vim-scripts/TaskList)
 * [ultisnips](http://github.com/SirVer/ultisnips)
-* [vimproc](https://github.com/Shougo/vimproc.vim)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
+* [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
 * [vim-go](https://github.com/fatih/vim-go)
+* [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 * [vim-mutiple-cursors](https://github.com/terryma/vim-multiple-cursors)
+* [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs)
+* [vim-over](https://github.com/osyo-manga/vim-over)
+* [vim-pathogen](https://github.com/tpope/vim-pathogen)
+* [vim-powerline](https://github.com/Lokaltog/vim-powerline)
 * [vim-rails](https://github.com/tpope/vim-rails)
+* [vim-sparkup](http://github.com/bingaman/vim-sparkup)
 * [vim-speeddating](https://github.com/tpope/vim-speeddating)
+* [vimerl](https://github.com/jimenezrick/vimerl)
+* [vimproc](https://github.com/Shougo/vimproc.vim)
 * [yankring](http://github.com/vim-scripts/YankRing.vim)
 * [zoomwin](http://github.com/vim-scripts/ZoomWin)
