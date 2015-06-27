@@ -18,6 +18,7 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 * Added vim-autoformat
 * Added vim-go
 * Added vim-mutiple-cursors
+* Added vim-speeddating
 * Added vimproc
 
 ### 2015-05-11
@@ -201,5 +202,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-go](https://github.com/fatih/vim-go)
 * [vim-mutiple-cursors](https://github.com/terryma/vim-multiple-cursors)
 * [vim-rails](https://github.com/tpope/vim-rails)
+* [vim-speeddating](https://github.com/tpope/vim-speeddating)
 * [yankring](http://github.com/vim-scripts/YankRing.vim)
 * [zoomwin](http://github.com/vim-scripts/ZoomWin)
