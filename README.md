@@ -16,6 +16,7 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 
 * Updated all plugins to latest
 * Added vim-autoformat
+* Added vim-go
 * Added vim-mutiple-cursors
 * Added vimproc
 
@@ -194,10 +195,11 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [taglist-plus](http://github.com/vim-scripts/taglist-plus)
 * [tasklist](http://github.com/vim-scripts/TaskList)
 * [ultisnips](http://github.com/SirVer/ultisnips)
-* [vimproc](https://github.com/Shougo/vimproc.vim.git)
+* [vimproc](https://github.com/Shougo/vimproc.vim)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
-* [vim-mutiple-cursors](https://github.com/terryma/vim-multiple-cursors.git)
+* [vim-go](https://github.com/fatih/vim-go)
+* [vim-mutiple-cursors](https://github.com/terryma/vim-multiple-cursors)
 * [vim-rails](https://github.com/tpope/vim-rails)
 * [yankring](http://github.com/vim-scripts/YankRing.vim)
 * [zoomwin](http://github.com/vim-scripts/ZoomWin)
