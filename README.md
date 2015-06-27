@@ -15,6 +15,8 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 ### 2015-06-24
 
 * Updated all plugins to latest
+* Added vim-autoformat
+* Added vimproc
 
 ### 2015-05-11
 
@@ -191,6 +193,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [taglist-plus](http://github.com/vim-scripts/taglist-plus)
 * [tasklist](http://github.com/vim-scripts/TaskList)
 * [ultisnips](http://github.com/SirVer/ultisnips)
+* [vimproc](https://github.com/Shougo/vimproc.vim.git)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
 * [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
 * [vim-rails](https://github.com/tpope/vim-rails)
