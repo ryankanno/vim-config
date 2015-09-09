@@ -259,6 +259,7 @@ map <Leader>G :Gist -p<CR>
 
 " <Leader>n to toggle NerdTreeTabs
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
+let NERDTreeShowHidden=1
 
 " <Leader>num to toggle relative numbers
 map <Leader>num :NumbersToggle<CR>
