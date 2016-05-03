@@ -5,6 +5,9 @@
 
 call pathogen#infect()
 
+let g:user="Ryan Kanno"
+let g:email="ryankanno@localkinegrinds.com"
+
 " Abbreviations {{{
 iab me@ Ryan Kanno <ryankanno@localkinegrinds.com>
 iab date@ <C-R>=strftime("%A, %B %e %Y %I:%M:%S %p %Z")<CR>
@@ -313,6 +316,10 @@ map <silent> <F2> :set invlist<CR>
 " }}}
 
 " Plugins {{{
+
+" vim-template directory
+let g:templates_directory="$HOME/.vim/templates"
+
 " Snipmate snippets
 let g:snippets_dir="$HOME/.vim/bundle/snipmate-snippets"
 

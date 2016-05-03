@@ -148,3 +148,6 @@
 [submodule ".vim/bundle/python-mode"]
 	path = .vim/bundle/python-mode
 	url = https://github.com/klen/python-mode.git
+[submodule ".vim/bundle/vim-template"]
+	path = .vim/bundle/vim-template
+	url = https://github.com/aperezdc/vim-template.git
