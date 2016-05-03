@@ -145,3 +145,6 @@
 [submodule ".vim/bundle/vim-over"]
 	path = .vim/bundle/vim-over
 	url = https://github.com/osyo-manga/vim-over.git
+[submodule ".vim/bundle/python-mode"]
+	path = .vim/bundle/python-mode
+	url = https://github.com/klen/python-mode.git
