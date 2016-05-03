@@ -12,6 +12,11 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 
 ## Updates
 
+### 2016-05-03
+
+* Added python-mode
+* Added vim-template
+
 ### 2015-06-24
 
 * Updated all plugins to latest
@@ -187,6 +192,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim/)
 * [omnisharp-vim](https://github.com/OmniSharp/omnisharp-vim)
+* [python-mode](https://github.com/klen/python-mode)
 * [py-flakes](http://github.com/kevinw/pyflakes-vim)
 * [repeat](http://github.com/tpope/vim-repeat)
 * [scratch](http://github.com/duff/vim-scratch)
@@ -211,6 +217,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-rails](https://github.com/tpope/vim-rails)
 * [vim-sparkup](http://github.com/bingaman/vim-sparkup)
 * [vim-speeddating](https://github.com/tpope/vim-speeddating)
+* [vim-template](https://github.com/aperezdc/vim-template)
 * [vimerl](https://github.com/jimenezrick/vimerl)
 * [vimproc](https://github.com/Shougo/vimproc.vim)
 * [yankring](http://github.com/vim-scripts/YankRing.vim)
