@@ -164,9 +164,10 @@ set foldtext=CustomFoldText('.',80)
 " Filetype {{{
 filetype plugin indent on
 autocmd BufNewFile,BufRead *.json set filetype=javascript
+autocmd BufNewFile,BufRead *.vue set filetype=javascript
 autocmd FileType css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType html setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType html,htmldjango,xhtml,haml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 textwidth=0
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
@@ -304,8 +305,8 @@ map <Leader>ws :%s/\s\+$//e<CR>
 " <Leader>x to show TODO list
 map <Leader>x <Plug>TaskList
 
-" <Leader>Y to bring up YankRing
-map <Leader>Y :YRShow<CR>
+" <Leader>y to bring up YankRing
+map <Leader>y :YRShow<CR>
 
 " <Leader><Leader> to load up vim-easymotion
 let g:EasyMotion_leader_key = '<Leader><Leader>'
