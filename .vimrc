@@ -163,7 +163,7 @@ set foldtext=CustomFoldText('.',80)
 
 " Filetype {{{
 filetype plugin indent on
-autocmd BufNewFile,BufRead *.json set filetype=javascript
+autocmd BufNewFile,BufRead *.json set filetype=json
 autocmd BufNewFile,BufRead *.vue set filetype=javascript
 autocmd FileType css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
