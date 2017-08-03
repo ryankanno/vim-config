@@ -91,9 +91,6 @@
 [submodule ".vim/bundle/gundo"]
 	path = .vim/bundle/gundo
 	url = https://github.com/vim-scripts/Gundo.git
-[submodule ".vim/bundle/AutoTag"]
-	path = .vim/bundle/AutoTag
-	url = https://github.com/vim-scripts/AutoTag
 [submodule ".vim/bundle/vim-nerdtree-tabs"]
 	path = .vim/bundle/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
