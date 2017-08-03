@@ -151,3 +151,6 @@
 [submodule ".vim/bundle/vim-json"]
 	path = .vim/bundle/vim-json
 	url = https://github.com/elzr/vim-json.git
+[submodule ".vim/bundle/AutoTag"]
+	path = .vim/bundle/AutoTag
+	url = https://github.com/vim-scripts/AutoTag.git
