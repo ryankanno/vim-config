@@ -12,6 +12,11 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 
 ## Updates
 
+### 2018-05-31
+
+* Removed syntastic :(
+* Added ale
+
 ### 2016-05-03
 
 * Added python-mode
