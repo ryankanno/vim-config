@@ -310,6 +310,7 @@ map <Leader>x <Plug>TaskList
 map <Leader>y :YRShow<CR>
 
 " <Leader><Leader> to load up vim-easymotion
+let g:EasyMotion_smartcase = 1
 let g:EasyMotion_leader_key = '<Leader><Leader>'
 
 " <F2> to toggle invisible characters
