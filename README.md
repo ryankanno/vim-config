@@ -14,6 +14,7 @@ like you can. Unfortunately, I enjoy explicit dependency management.
 
 ### 2018-05-31
 
+* Removed py-flakes
 * Removed syntastic :(
 * Added ale
 
@@ -181,6 +182,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 
 * [abolish](http://github.com/tpope/vim-abolish)
 * [ack](http://github.com/mileszs/ack.vim)
+* [ale](https://github.com/w0rp/ale)
 * [align](http://github.com/tsaleh/vim-align)
 * [autotag](https://github.com/vim-scripts/AutoTag)
 * [bufexplorer](http://github.com/vim-scripts/bufexplorer.zip)
@@ -198,14 +200,12 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [numbers.vim](https://github.com/myusuf3/numbers.vim/)
 * [omnisharp-vim](https://github.com/OmniSharp/omnisharp-vim)
 * [python-mode](https://github.com/klen/python-mode)
-* [py-flakes](http://github.com/kevinw/pyflakes-vim)
 * [repeat](http://github.com/tpope/vim-repeat)
 * [scratch](http://github.com/duff/vim-scratch)
 * [snipmate-snippets](http://github.com/spf13/snipmate-snippets)
 * [supertab](http://github.com/ervandew/supertab)
 * [surround](http://github.com/tpope/vim-surround)
 * [swapit](http://github.com/mjbrownie/swapit)
-* [syntastic](http://github.com/scrooloose/syntastic)
 * [taglist-plus](http://github.com/vim-scripts/taglist-plus)
 * [tasklist](http://github.com/vim-scripts/TaskList)
 * [ultisnips](http://github.com/SirVer/ultisnips)
@@ -225,5 +225,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-template](https://github.com/aperezdc/vim-template)
 * [vimerl](https://github.com/jimenezrick/vimerl)
 * [vimproc](https://github.com/Shougo/vimproc.vim)
+* [webapi-vim](http://github.com/mattn/webapi-vim.git)
 * [yankring](http://github.com/vim-scripts/YankRing.vim)
 * [zoomwin](http://github.com/vim-scripts/ZoomWin)
