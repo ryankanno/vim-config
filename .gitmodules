@@ -148,3 +148,6 @@
 [submodule ".vim/pack/plugins/start/numbers.vim"]
 	path = .vim/pack/plugins/start/numbers.vim
 	url = https://github.com/myusuf3/numbers.vim
+[submodule ".vim/pack/plugins/start/scratch.vim"]
+	path = .vim/pack/plugins/start/scratch.vim
+	url = https://github.com/ethanmuller/scratch.vim
