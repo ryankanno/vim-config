@@ -275,9 +275,15 @@ let g:bufExplorerShowRelativePath=1
 map <Leader>o :BufExplorerVerticalSplit<CR>
 
 " ctrl-p shortcuts
-set wildignore+=*.o,*.obj,.git,.svn,.hg,*.pyc
+set wildignore+=*/.svn/*,*/.hg/*,*/.git/*,*/tmp/*,*.swp,*.o,*.obj,*.pyc
 let g:ctrlp_map = '<Leader>p'
 let g:ctrlp_cmd = 'CtrlPMixed'
+
+if executable('rg')
+  set grepprg=rg\ --color=never
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_use_caching = 0
+endif
 
 " <Leader>pb to preview buffer with hammer.vim
 map <Leader>pb :Hammer<CR>
@@ -308,6 +314,8 @@ map <Leader>x <Plug>TaskList
 
 " <Leader>y to bring up YankRing
 map <Leader>y :YRShow<CR>
+let g:yankring_window_height = 16
+let g:yankring_max_history = 1024
 
 " <Leader><Leader> to load up vim-easymotion
 let g:EasyMotion_smartcase = 1
@@ -323,8 +331,18 @@ map <silent> <F2> :set invlist<CR>
 " vim-template directory
 let g:templates_directory="$HOME/.vim/templates"
 
-" Snipmate snippets
+" snipmate snippets
 let g:snippets_dir="$HOME/.vim/bundle/snipmate-snippets"
+
+" nerdcomment
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+
+" vim-indent-guides
+let g:indent_guides_enable_on_vim_startup = 1
 
 function! NyanMe() " {{{
     hi NyanFur             guifg=#BBBBBB
