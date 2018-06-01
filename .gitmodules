@@ -76,9 +76,6 @@
 [submodule ".vim/bundle/bufexplorer"]
 	path = .vim/bundle/bufexplorer
 	url = https://github.com/vim-scripts/bufexplorer.zip.git
-[submodule ".vim/bundle/yankring.vim"]
-	path = .vim/bundle/yankring.vim
-	url = https://github.com/vim-scripts/YankRing.vim.git
 [submodule ".vim/bundle/vim-sparkup"]
 	path = .vim/bundle/vim-sparkup
 	url = http://github.com/bingaman/vim-sparkup.git
