@@ -82,9 +82,6 @@
 [submodule ".vim/bundle/vim-nerdtree-tabs"]
 	path = .vim/bundle/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
-[submodule ".vim/bundle/numbers.vim"]
-	path = .vim/bundle/numbers.vim
-	url = https://github.com/myusuf3/numbers.vim.git
 [submodule ".vim/bundle/vim-powerline"]
 	path = .vim/bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline
