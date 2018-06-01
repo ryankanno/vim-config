@@ -148,3 +148,6 @@
 [submodule ".vim/pack/plugins/start/yankring"]
 	path = .vim/pack/plugins/start/yankring
 	url = https://github.com/vim-scripts/YankRing.vim.git
+[submodule ".vim/pack/plugins/start/ale"]
+	path = .vim/pack/plugins/start/ale
+	url = https://github.com/w0rp/ale.git
