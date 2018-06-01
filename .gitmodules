@@ -148,3 +148,6 @@
 [submodule ".vim/pack/plugins/start/ctrlp"]
 	path = .vim/pack/plugins/start/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule ".vim/pack/plugins/start/yankring"]
+	path = .vim/pack/plugins/start/yankring
+	url = https://github.com/vim-scripts/YankRing.vim.git
