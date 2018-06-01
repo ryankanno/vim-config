@@ -148,3 +148,6 @@
 [submodule ".vim/pack/plugins/start/vim-indent-guides"]
 	path = .vim/pack/plugins/start/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides
+[submodule ".vim/pack/plugins/start/numbers.vim"]
+	path = .vim/pack/plugins/start/numbers.vim
+	url = https://github.com/myusuf3/numbers.vim
