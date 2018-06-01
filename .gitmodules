@@ -148,3 +148,6 @@
 [submodule ".vim/pack/plugins/start/ZoomWin"]
 	path = .vim/pack/plugins/start/ZoomWin
 	url = https://github.com/regedarek/ZoomWin
+[submodule ".vim/pack/plugins/start/vim-indent-guides"]
+	path = .vim/pack/plugins/start/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides
