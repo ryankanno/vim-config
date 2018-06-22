@@ -10,21 +10,9 @@
 [submodule ".vim/bundle/fugitive"]
 	path = .vim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule ".vim/bundle/delimitMate"]
-	path = .vim/bundle/delimitMate
-	url = https://github.com/Raimondi/delimitMate.git
-[submodule ".vim/bundle/abolish"]
-	path = .vim/bundle/abolish
-	url = https://github.com/tpope/vim-abolish.git
 [submodule ".vim/bundle/gist"]
 	path = .vim/bundle/gist
 	url = https://github.com/mattn/gist-vim.git
-[submodule ".vim/bundle/repeat"]
-	path = .vim/bundle/repeat
-	url = https://github.com/tpope/vim-repeat.git
-[submodule ".vim/bundle/swapit"]
-	path = .vim/bundle/swapit
-	url = https://github.com/mjbrownie/swapit.git
 [submodule ".vim/bundle/markdown"]
 	path = .vim/bundle/markdown
 	url = https://github.com/tpope/vim-markdown.git
@@ -34,15 +22,9 @@
 [submodule ".vim/bundle/cocoa"]
 	path = .vim/bundle/cocoa
 	url = https://github.com/msanders/cocoa.vim.git
-[submodule ".vim/bundle/align"]
-	path = .vim/bundle/align
-	url = https://github.com/tsaleh/vim-align.git
 [submodule ".vim/bundle/taglist-plus"]
 	path = .vim/bundle/taglist-plus
 	url = https://github.com/vim-scripts/taglist-plus
-[submodule ".vim/bundle/tasklist"]
-	path = .vim/bundle/tasklist
-	url = https://github.com/vim-scripts/TaskList.vim.git
 [submodule ".vim/bundle/vim-addon-mw-utils"]
 	path = .vim/bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
@@ -67,18 +49,9 @@
 [submodule ".vim/bundle/hammer.vim"]
 	path = .vim/bundle/hammer.vim
 	url = https://github.com/vim-scripts/hammer.vim.git
-[submodule ".vim/bundle/bufexplorer"]
-	path = .vim/bundle/bufexplorer
-	url = https://github.com/vim-scripts/bufexplorer.zip.git
-[submodule ".vim/bundle/vim-sparkup"]
-	path = .vim/bundle/vim-sparkup
-	url = http://github.com/bingaman/vim-sparkup.git
 [submodule ".vim/bundle/gundo"]
 	path = .vim/bundle/gundo
 	url = https://github.com/vim-scripts/Gundo.git
-[submodule ".vim/bundle/vim-nerdtree-tabs"]
-	path = .vim/bundle/vim-nerdtree-tabs
-	url = https://github.com/jistr/vim-nerdtree-tabs.git
 [submodule ".vim/bundle/vim-powerline"]
 	path = .vim/bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline
@@ -100,9 +73,6 @@
 [submodule ".vim/bundle/vim-go"]
 	path = .vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
-[submodule ".vim/bundle/vim-speeddating"]
-	path = .vim/bundle/vim-speeddating
-	url = https://github.com/tpope/vim-speeddating.git
 [submodule ".vim/bundle/vim-over"]
 	path = .vim/bundle/vim-over
 	url = https://github.com/osyo-manga/vim-over.git
@@ -148,3 +118,30 @@
 [submodule ".vim/pack/plugins/start/scratch.vim"]
 	path = .vim/pack/plugins/start/scratch.vim
 	url = https://github.com/ethanmuller/scratch.vim
+[submodule ".vim/pack/plugins/start/vim-surround"]
+	path = .vim/pack/plugins/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/pack/plugins/start/vim-repeat"]
+	path = .vim/pack/plugins/start/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
+[submodule ".vim/pack/plugins/start/vim-abolish"]
+	path = .vim/pack/plugins/start/vim-abolish
+	url = https://github.com/tpope/vim-abolish
+[submodule ".vim/pack/plugins/start/bufexplorer"]
+	path = .vim/pack/plugins/start/bufexplorer
+	url = https://github.com/jlanzarotta/bufexplorer
+[submodule ".vim/pack/plugins/start/delimitMate"]
+	path = .vim/pack/plugins/start/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule ".vim/pack/plugins/start/vim-nerdtree-tabs"]
+	path = .vim/pack/plugins/start/vim-nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs
+[submodule ".vim/pack/plugins/start/tasklist.vim"]
+	path = .vim/pack/plugins/start/tasklist.vim
+	url = https://github.com/vim-scripts/TaskList.vim
+[submodule ".vim/pack/plugins/start/sparkup"]
+	path = .vim/pack/plugins/start/sparkup
+	url = https://github.com/rstacruz/sparkup
+[submodule ".vim/pack/plugins/start/vim-speeddating"]
+	path = .vim/pack/plugins/start/vim-speeddating
+	url = https://github.com/tpope/vim-speeddating
