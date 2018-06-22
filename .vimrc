@@ -60,6 +60,7 @@ set autowrite                    " enable buffers to be saved on suspend
 if has("syntax")
     syntax on
 endif
+set synmaxcol=256
 
 set background=dark             " sets the background color (I like it dark)
 colorscheme molokai             " <3 colorscheme ftw.
