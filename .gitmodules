@@ -79,9 +79,6 @@
 [submodule ".vim/bundle/vim-template"]
 	path = .vim/bundle/vim-template
 	url = https://github.com/aperezdc/vim-template.git
-[submodule ".vim/bundle/vim-json"]
-	path = .vim/bundle/vim-json
-	url = https://github.com/elzr/vim-json.git
 [submodule ".vim/pack/plugins/start/nerdtree"]
 	path = .vim/pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
@@ -145,3 +142,6 @@
 [submodule ".vim/pack/plugins/start/vim-powerline"]
 	path = .vim/pack/plugins/start/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline
+[submodule ".vim/pack/plugins/start/vim-json"]
+	path = .vim/pack/plugins/start/vim-json
+	url = https://github.com/elzr/vim-json.git
