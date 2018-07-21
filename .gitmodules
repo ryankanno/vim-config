@@ -52,9 +52,6 @@
 [submodule ".vim/bundle/gundo"]
 	path = .vim/bundle/gundo
 	url = https://github.com/vim-scripts/Gundo.git
-[submodule ".vim/bundle/ultisnips"]
-	path = .vim/bundle/ultisnips
-	url = https://github.com/SirVer/ultisnips.git
 [submodule ".vim/bundle/omnisharp-vim"]
 	path = .vim/bundle/omnisharp-vim
 	url = https://github.com/OmniSharp/omnisharp-vim.git
@@ -148,3 +145,6 @@
 [submodule ".vim/pack/plugins/start/vim-peekaboo"]
 	path = .vim/pack/plugins/start/vim-peekaboo
 	url = https://github.com/junegunn/vim-peekaboo
+[submodule ".vim/pack/plugins/start/ultisnips"]
+	path = .vim/pack/plugins/start/ultisnips
+	url = https://github.com/SirVer/ultisnips
