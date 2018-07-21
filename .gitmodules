@@ -85,9 +85,6 @@
 [submodule ".vim/bundle/vim-json"]
 	path = .vim/bundle/vim-json
 	url = https://github.com/elzr/vim-json.git
-[submodule ".vim/bundle/AutoTag"]
-	path = .vim/bundle/AutoTag
-	url = https://github.com/vim-scripts/AutoTag.git
 [submodule ".vim/pack/plugins/start/nerdtree"]
 	path = .vim/pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
@@ -145,3 +142,6 @@
 [submodule ".vim/pack/plugins/start/vim-speeddating"]
 	path = .vim/pack/plugins/start/vim-speeddating
 	url = https://github.com/tpope/vim-speeddating
+[submodule ".vim/pack/plugins/start/AutoTag"]
+	path = .vim/pack/plugins/start/AutoTag
+	url = https://github.com/vim-scripts/AutoTag.git

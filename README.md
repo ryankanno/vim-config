@@ -184,6 +184,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 
 * [ZoomWin](https://github.com/regedarek/ZoomWin)
 * [ale](https://github.com/w0rp/ale)
+* [autotag](https://github.com/vim-scripts/AutoTag)
 * [bufexplorer](https://github.com/jlanzarotta/bufexplorer)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
@@ -192,6 +193,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [numbers.vim](https://github.com/myusuf3/numbers.vim/)
 * [scratch.vim](https://github.com/ethanmuller/scratch.vim)
 * [sparkup](https://github.com/rstacruz/sparkup)
+* [tasklist](http://github.com/vim-scripts/TaskList)
 * [vim-abolish](https://github.com/tpope/vim-abolish)
 * [vim-easymotion](https://github.com/easymotion/vim-easymotion)
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
@@ -204,7 +206,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 ### Pathogen-style
 
 * [ack](http://github.com/mileszs/ack.vim)
-* [autotag](https://github.com/vim-scripts/AutoTag)
 * [cocoa](http://github.com/msanders/cocoa.vim)
 * [diffchanges](http://github.com/jmcantrell/vim-diffchanges)
 * [fugitive](http://github.com/tpope/vim-fugitive)
@@ -217,7 +218,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [snipmate-snippets](http://github.com/spf13/snipmate-snippets)
 * [supertab](http://github.com/ervandew/supertab)
 * [taglist-plus](http://github.com/vim-scripts/taglist-plus)
-* [tasklist](http://github.com/vim-scripts/TaskList)
 * [ultisnips](http://github.com/SirVer/ultisnips)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
 * [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
