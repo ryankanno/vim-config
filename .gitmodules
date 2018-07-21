@@ -52,9 +52,6 @@
 [submodule ".vim/bundle/gundo"]
 	path = .vim/bundle/gundo
 	url = https://github.com/vim-scripts/Gundo.git
-[submodule ".vim/bundle/vim-powerline"]
-	path = .vim/bundle/vim-powerline
-	url = https://github.com/Lokaltog/vim-powerline
 [submodule ".vim/bundle/ultisnips"]
 	path = .vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
@@ -145,3 +142,6 @@
 [submodule ".vim/pack/plugins/start/AutoTag"]
 	path = .vim/pack/plugins/start/AutoTag
 	url = https://github.com/vim-scripts/AutoTag.git
+[submodule ".vim/pack/plugins/start/vim-powerline"]
+	path = .vim/pack/plugins/start/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline
