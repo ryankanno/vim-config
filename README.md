@@ -199,6 +199,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 * [vim-json](https://github.com/elzr/vim-json.git)
 * [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs)
+* [vim-peekaboo](https://github.com/junegunn/vim-peekaboo)
 * [vim-powerline](https://github.com/Lokaltog/vim-powerline)
 * [vim-repeat](https://github.com/tpope/vim-repeat)
 * [vim-speeddating](https://github.com/tpope/vim-speeddating)
