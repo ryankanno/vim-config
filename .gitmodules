@@ -1,9 +1,6 @@
 [submodule ".vim/bundle/ack"]
 	path = .vim/bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
-[submodule ".vim/bundle/fugitive"]
-	path = .vim/bundle/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule ".vim/bundle/markdown"]
 	path = .vim/bundle/markdown
 	url = https://github.com/tpope/vim-markdown.git
@@ -145,3 +142,6 @@
 [submodule ".vim/pack/plugins/start/vim-move"]
 	path = .vim/pack/plugins/start/vim-move
 	url = https://github.com/matze/vim-move
+[submodule ".vim/pack/plugins/start/vim-fugitive"]
+	path = .vim/pack/plugins/start/vim-fugitive
+	url = http://github.com/tpope/vim-fugitive

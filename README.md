@@ -134,6 +134,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [bufexplorer](https://github.com/jlanzarotta/bufexplorer)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
+* [fugitive](http://github.com/tpope/vim-fugitive)
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
 * [gist-vim](http://github.com/mattn/gist-vim)
 * [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
@@ -166,7 +167,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 
 * [ack](http://github.com/mileszs/ack.vim)
 * [diffchanges](http://github.com/jmcantrell/vim-diffchanges)
-* [fugitive](http://github.com/tpope/vim-fugitive)
 * [gundo](http://github.com/vim-scripts/Gundo)
 * [hammer.vim](http://github.com/vim-scripts/hammer.vim)
 * [markdown](http://github.com/tpope/vim-markdown)
