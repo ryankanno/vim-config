@@ -39,10 +39,6 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>:</td>
         </tr>
         <tr>
-            <td></td>
-            <td>Patch of current buffer</td>
-        </tr>
-        <tr>
             <td>&lt;TAB&gt;</td>
             <td>%</td>
         </tr>
@@ -53,6 +49,10 @@ Just pass "UNINSTALL" to the install.sh script.
         <tr>
             <td>dp</td>
             <td>Patch of current buffer</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;b</td>
+            <td>Toggle BufExplorer</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;f</td>
@@ -75,8 +75,8 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Toggle Numbers.vim (relative/absolute)</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;o (or bv)</td>
-            <td>Toggle BufExplorer</td>
+            <td>&lt;Leader&gt;o</td>
+            <td>Toggle OverCommandLine</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;p</td>

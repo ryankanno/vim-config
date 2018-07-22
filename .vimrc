@@ -232,6 +232,11 @@ noremap <Leader><space> :noh<CR>:call clearmatches()<CR>
 " match braces using a tab
 map <TAB> %
 
+" <Leader>b to open bufExplorer
+let g:bufExplorerDefaultHelp=0
+let g:bufExplorerShowRelativePath=1
+map <Leader>b :BufExplorerVerticalSplit<CR>
+
 " <Leader>cd switches to directory of open buffer
 map <Leader>cd :cd %:p:h<CR>
 
@@ -268,10 +273,8 @@ let NERDTreeShowHidden=1
 " <Leader>num to toggle relative numbers
 map <Leader>num :NumbersToggle<CR>
 
-" <Leader>o to open bufExplorer
-let g:bufExplorerDefaultHelp=0
-let g:bufExplorerShowRelativePath=1
-map <Leader>o :BufExplorerVerticalSplit<CR>
+" <Leader>o for OverCommandLine
+map <Leader>o :OverCommandLine<CR>
 
 " ctrl-p shortcuts
 set wildignore+=*/.svn/*,*/.hg/*,*/.git/*,*/tmp/*,*.swp,*.o,*.obj,*.pyc
