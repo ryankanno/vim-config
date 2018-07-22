@@ -207,6 +207,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-snippets](https://github.com/honza/vim-snippets)
 * [vim-speeddating](https://github.com/tpope/vim-speeddating)
 * [vim-surround](https://github.com/tpope/vim-surround)
+* [vim-template](https://github.com/aperezdc/vim-template)
 * [yankring](https://github.com/vim-scripts/YankRing.vim)
 
 ### Pathogen-style
@@ -229,7 +230,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-over](https://github.com/osyo-manga/vim-over)
 * [vim-pathogen](https://github.com/tpope/vim-pathogen)
 * [vim-rails](https://github.com/tpope/vim-rails)
-* [vim-template](https://github.com/aperezdc/vim-template)
 * [vimerl](https://github.com/jimenezrick/vimerl)
 * [vimproc](https://github.com/Shougo/vimproc.vim)
 * [webapi-vim](http://github.com/mattn/webapi-vim.git)

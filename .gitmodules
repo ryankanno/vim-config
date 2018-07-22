@@ -67,9 +67,6 @@
 [submodule ".vim/bundle/python-mode"]
 	path = .vim/bundle/python-mode
 	url = https://github.com/klen/python-mode.git
-[submodule ".vim/bundle/vim-template"]
-	path = .vim/bundle/vim-template
-	url = https://github.com/aperezdc/vim-template.git
 [submodule ".vim/pack/plugins/start/nerdtree"]
 	path = .vim/pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
@@ -148,3 +145,6 @@
 [submodule ".vim/pack/plugins/start/supertab"]
 	path = .vim/pack/plugins/start/supertab
 	url = http://github.com/ervandew/supertab
+[submodule ".vim/pack/plugins/start/vim-template"]
+	path = .vim/pack/plugins/start/vim-template
+	url = https://github.com/aperezdc/vim-template
