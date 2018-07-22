@@ -143,6 +143,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [scratch.vim](https://github.com/ethanmuller/scratch.vim)
 * [sparkup](https://github.com/rstacruz/sparkup)
 * [supertab](http://github.com/ervandew/supertab)
+* [syntastic](https://github.com/vim-syntastic/syntastic)
 * [tasklist](http://github.com/vim-scripts/TaskList)
 * [ultisnips](http://github.com/SirVer/ultisnips)
 * [undotree](https://github.com/mbbill/undotree)
