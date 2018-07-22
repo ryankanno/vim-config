@@ -218,7 +218,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [markdown](http://github.com/tpope/vim-markdown)
 * [omnisharp-vim](https://github.com/OmniSharp/omnisharp-vim)
 * [python-mode](https://github.com/klen/python-mode)
-* [taglist-plus](http://github.com/vim-scripts/taglist-plus)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
 * [vim-mutiple-cursors](https://github.com/terryma/vim-multiple-cursors)
 * [vim-over](https://github.com/osyo-manga/vim-over)

@@ -10,9 +10,6 @@
 [submodule ".vim/bundle/diffchanges"]
 	path = .vim/bundle/diffchanges
 	url = https://github.com/jmcantrell/vim-diffchanges.git
-[submodule ".vim/bundle/taglist-plus"]
-	path = .vim/bundle/taglist-plus
-	url = https://github.com/vim-scripts/taglist-plus
 [submodule ".vim/bundle/vim-addon-mw-utils"]
 	path = .vim/bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
