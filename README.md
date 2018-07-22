@@ -174,6 +174,5 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-mutiple-cursors](https://github.com/terryma/vim-multiple-cursors)
 * [vim-pathogen](https://github.com/tpope/vim-pathogen)
 * [vim-rails](https://github.com/tpope/vim-rails)
-* [vimerl](https://github.com/jimenezrick/vimerl)
 * [vimproc](https://github.com/Shougo/vimproc.vim)
 * [webapi-vim](http://github.com/mattn/webapi-vim.git)
