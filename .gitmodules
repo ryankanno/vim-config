@@ -136,6 +136,6 @@
 [submodule ".vim/pack/plugins/start/ack.vim"]
 	path = .vim/pack/plugins/start/ack.vim
 	url = http://github.com/mileszs/ack.vim
-[submodule ".vim/pack/plugins/start/gundo.vim"]
-	path = .vim/pack/plugins/start/gundo.vim
-	url = https://github.com/sjl/gundo.vim
+[submodule ".vim/pack/plugins/start/undotree"]
+	path = .vim/pack/plugins/start/undotree
+	url = https://github.com/mbbill/undotree
