@@ -122,6 +122,14 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>&lt;Leader&gt;&lt;Leader&gt;</td>
             <td>Toggle vim-easymotion</td>
         </tr>
+        <tr>
+            <td>&lt;F2&gt;</td>
+            <td>Toggle invisible characters</td>
+        </tr>
+        <tr>
+            <td>&lt;F3&gt;</td>
+            <td>Toggle Autoformat</td>
+        </tr>
     </tbody>
 </table>
 

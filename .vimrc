@@ -323,6 +323,9 @@ let g:EasyMotion_leader_key = '<Leader><Leader>'
 " <F2> to toggle invisible characters
 map <silent> <F2> :set invlist<CR>
 
+" <F3> to toggle Autoformat
+noremap <F3> :Autoformat<CR>
+
 " }}}
 
 " Plugins {{{
