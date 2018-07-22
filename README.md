@@ -6,10 +6,6 @@ environment.  As humans, we're generally terrible about it since we're
 resistant to change.  If that doesn't suit you, you've been warned.  On the flip,
 if this does suit you, it means you'll have an amazing dev editing environment.
 
-People have asked why I don't use [Vundle](http://github.com/gmarik/vundle). I
-totally would if you could map to a particular git commit/hash, but it doesn't look
-like you can. Unfortunately, I enjoy explicit dependency management.
-
 ## Updates
 
 ### 2018-05-31
