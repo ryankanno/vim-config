@@ -127,3 +127,9 @@
 [submodule ".vim/pack/plugins/start/tagbar"]
 	path = .vim/pack/plugins/start/tagbar
 	url = https://github.com/majutsushi/tagbar
+[submodule ".vim/pack/plugins/start/vim-dispatch"]
+	path = .vim/pack/plugins/start/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch
+[submodule ".vim/pack/plugins/start/vimproc.vim"]
+	path = .vim/pack/plugins/start/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim
