@@ -58,9 +58,6 @@
 [submodule ".vim/bundle/vim-multiple-cursors"]
 	path = .vim/bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
-[submodule ".vim/bundle/vim-go"]
-	path = .vim/bundle/vim-go
-	url = https://github.com/fatih/vim-go.git
 [submodule ".vim/bundle/vim-over"]
 	path = .vim/bundle/vim-over
 	url = https://github.com/osyo-manga/vim-over.git
@@ -148,3 +145,6 @@
 [submodule ".vim/pack/plugins/start/vim-template"]
 	path = .vim/pack/plugins/start/vim-template
 	url = https://github.com/aperezdc/vim-template
+[submodule ".vim/pack/plugins/start/vim-go"]
+	path = .vim/pack/plugins/start/vim-go
+	url = https://github.com/fatih/vim-go
