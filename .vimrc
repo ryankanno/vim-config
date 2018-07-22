@@ -3,8 +3,6 @@
 " @ryankanno
 "
 
-call pathogen#infect()
-
 let g:user="Ryan Kanno"
 let g:email="ryankanno@localkinegrinds.com"
 
@@ -458,11 +456,6 @@ function! NyanMe() " {{{
     redraw
 endfunction " }}}
 command! Nyan call NyanMe()
-
-" allow pathogen to update runtime path
-runtime! autoload/pathogen.vim
-silent! call pathogen#helptags()
-" }}}
 
 " Platform Specific {{{
 if has('win32') || has('win64')

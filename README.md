@@ -170,7 +170,3 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [webapi-vim](https://github.com/mattn/webapi-vim) - Used with gist-vim
 * [yankring](https://github.com/vim-scripts/YankRing.vim)
 * [ZoomWin](https://github.com/regedarek/ZoomWin)
-
-### Pathogen-style
-
-* [vim-pathogen](https://github.com/tpope/vim-pathogen)
