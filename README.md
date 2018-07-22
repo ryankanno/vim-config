@@ -139,6 +139,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim/)
+* [omnisharp-vim](https://github.com/OmniSharp/omnisharp-vim)
 * [scratch.vim](https://github.com/ethanmuller/scratch.vim)
 * [sparkup](https://github.com/rstacruz/sparkup)
 * [supertab](http://github.com/ervandew/supertab)
