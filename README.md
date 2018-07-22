@@ -92,7 +92,7 @@ Just pass "UNINSTALL" to the install.sh script.
         </tr>
         <tr>
             <td>&lt;Leader&gt;tl</td>
-            <td>Toggle Taglist</td>
+            <td>Toggle Tagbar</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;u</td>
@@ -146,6 +146,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [sparkup](https://github.com/rstacruz/sparkup)
 * [supertab](http://github.com/ervandew/supertab)
 * [syntastic](https://github.com/vim-syntastic/syntastic)
+* [tagbar](https://github.com/majutsushi/tagbar)
 * [tasklist](http://github.com/vim-scripts/TaskList)
 * [ultisnips](http://github.com/SirVer/ultisnips)
 * [undotree](https://github.com/mbbill/undotree)

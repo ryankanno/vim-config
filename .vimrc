@@ -296,8 +296,8 @@ map <Leader>Sb :Vscratch<CR>
 " CTags
 map <Leader>tag :!ctags --extra=+f -R *<CR><CR>
 
-" <Leader>tl to open Taglist project
-map <Leader>tl :TlistToggle<CR>
+" <Leader>tl to open Tagbar
+map <Leader>tl :TagbarToggle<CR>
 
 " <Leader>u to toggle Undotree
 nnoremap <Leader>u :UndotreeToggle<CR>
