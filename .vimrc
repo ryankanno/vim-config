@@ -330,8 +330,6 @@ map <silent> <F2> :set invlist<CR>
 " vim-template directory
 let g:templates_directory="$HOME/.vim/templates"
 
-" snipmate snippets
-let g:snippets_dir="$HOME/.vim/bundle/snipmate-snippets"
 
 " nerdcomment
 let g:NERDSpaceDelims = 1
@@ -342,6 +340,9 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
+
+" vim-move
+let g:move_key_modifier = 'C'
 
 function! NyanMe() " {{{
     hi NyanFur             guifg=#BBBBBB
