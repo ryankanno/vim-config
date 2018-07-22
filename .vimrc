@@ -299,8 +299,8 @@ map <Leader>tag :!ctags --extra=+f -R *<CR><CR>
 " <Leader>tl to open Taglist project
 map <Leader>tl :TlistToggle<CR>
 
-" <Leader>u to toggle Gundo
-nnoremap <Leader>u :GundoToggle<CR>
+" <Leader>u to toggle Undotree
+nnoremap <Leader>u :UndotreeToggle<CR>
 
 " <Leader>w to ZoomWin
 map <Leader>w :ZoomWin<CR>

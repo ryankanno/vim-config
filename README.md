@@ -96,7 +96,7 @@ Just pass "UNINSTALL" to the install.sh script.
         </tr>
         <tr>
             <td>&lt;Leader&gt;u</td>
-            <td>Toggle gundo</td>
+            <td>Toggle Undotree</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;w</td>
