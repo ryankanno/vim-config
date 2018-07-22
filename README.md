@@ -154,6 +154,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
 * [gist-vim](http://github.com/mattn/gist-vim)
 * [hammer.vim](https://github.com/wikimatze/hammer.vim)
+* [incsearch.vim](https://github.com/haya14busa/incsearch.vim)
 * [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim/)
