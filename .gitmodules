@@ -10,9 +10,6 @@
 [submodule ".vim/bundle/hammer.vim"]
 	path = .vim/bundle/hammer.vim
 	url = https://github.com/vim-scripts/hammer.vim.git
-[submodule ".vim/bundle/vimproc"]
-	path = .vim/bundle/vimproc
-	url = https://github.com/Shougo/vimproc.vim.git
 [submodule ".vim/bundle/python-mode"]
 	path = .vim/bundle/python-mode
 	url = https://github.com/klen/python-mode.git

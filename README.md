@@ -173,5 +173,4 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [hammer.vim](http://github.com/vim-scripts/hammer.vim)
 * [python-mode](https://github.com/klen/python-mode)
 * [vim-pathogen](https://github.com/tpope/vim-pathogen)
-* [vimproc](https://github.com/Shougo/vimproc.vim)
 * [webapi-vim](http://github.com/mattn/webapi-vim.git)
