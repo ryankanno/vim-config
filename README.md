@@ -4,8 +4,8 @@ Here be dragons.  I periodically walk my configuration file and fix
 things that aren't working for me and/or try to better optimize my development
 environment.  As humans, we're generally terrible about it since we're
 resistant to change.  If that doesn't suit you, you've been warned.  On the flip,
-if this does suit you, it means you'll have an amazing dev editing environment.
 
+          if this does suit you, it means you'll have an amazing dev editing environment.
 ## Quick Setup
 
 ### Install
@@ -39,6 +39,10 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>:</td>
         </tr>
         <tr>
+            <td>Ctrl-C(j/k)</td>
+            <td>Move current line up/down</td>
+        </tr>
+        <tr>
             <td>&lt;TAB&gt;</td>
             <td>%</td>
         </tr>
@@ -52,7 +56,7 @@ Just pass "UNINSTALL" to the install.sh script.
         </tr>
         <tr>
             <td>&lt;Leader&gt;f</td>
-            <td>Start an Ack search</td>
+            <td>Start an `rg` search</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;h/l</td>
