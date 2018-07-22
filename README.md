@@ -169,7 +169,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [diffchanges](http://github.com/jmcantrell/vim-diffchanges)
 * [gundo](http://github.com/vim-scripts/Gundo)
 * [hammer.vim](http://github.com/vim-scripts/hammer.vim)
-* [markdown](http://github.com/tpope/vim-markdown)
 * [python-mode](https://github.com/klen/python-mode)
 * [vim-mutiple-cursors](https://github.com/terryma/vim-multiple-cursors)
 * [vim-pathogen](https://github.com/tpope/vim-pathogen)
