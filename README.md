@@ -136,6 +136,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [delimitMate](https://github.com/Raimondi/delimitMate)
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
 * [gist-vim](http://github.com/mattn/gist-vim)
+* [gundo.vim](https://github.com/sjl/gundo.vim)
 * [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim/)
@@ -167,7 +168,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 ### Pathogen-style
 
 * [diffchanges](http://github.com/jmcantrell/vim-diffchanges)
-* [gundo](http://github.com/vim-scripts/Gundo)
 * [hammer.vim](http://github.com/vim-scripts/hammer.vim)
 * [python-mode](https://github.com/klen/python-mode)
 * [vim-mutiple-cursors](https://github.com/terryma/vim-multiple-cursors)
