@@ -152,7 +152,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim/)
-* [omnisharp-vim](https://github.com/OmniSharp/omnisharp-vim)
 * [python-mode](https://github.com/klen/python-mode)
 * [scratch.vim](https://github.com/ethanmuller/scratch.vim)
 * [sparkup](https://github.com/rstacruz/sparkup)
@@ -165,7 +164,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-abolish](https://github.com/tpope/vim-abolish)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
 * [vim-diffchanges](http://github.com/jmcantrell/vim-diffchanges)
-* [vim-dispatch](https://github.com/tpope/vim-dispatch) - used with omnisharp
 * [vim-easymotion](https://github.com/easymotion/vim-easymotion)
 * [vim-fugitive](http://github.com/tpope/vim-fugitive)
 * [vim-go](https://github.com/fatih/vim-go)
@@ -181,7 +179,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-speeddating](https://github.com/tpope/vim-speeddating)
 * [vim-surround](https://github.com/tpope/vim-surround)
 * [vim-template](https://github.com/aperezdc/vim-template)
-* [vimproc.vim](https://github.com/Shougo/vimproc.vim) - used with omnisharp
 * [webapi-vim](https://github.com/mattn/webapi-vim) - used with gist-vim
 * [yankring](https://github.com/vim-scripts/YankRing.vim)
 * [ZoomWin](https://github.com/regedarek/ZoomWin)
