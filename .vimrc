@@ -351,9 +351,11 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:move_key_modifier = 'C'
 
 " omnisharp-vim
+let g:OmniSharp_server_path = "/usr/local/bin/omnisharp"
 let g:OmniSharp_start_server = 0
 let g:OmniSharp_server_use_mono = 1
 let g:OmniSharp_selector_ui = 'fzf'
+let g:syntastic_cs_checkers = ['code_checker']
 
 function! NyanMe() " {{{
     hi NyanFur             guifg=#BBBBBB
