@@ -37,9 +37,6 @@
 [submodule ".vim/bundle/omnisharp-vim"]
 	path = .vim/bundle/omnisharp-vim
 	url = https://github.com/OmniSharp/omnisharp-vim.git
-[submodule ".vim/bundle/vim-autoformat"]
-	path = .vim/bundle/vim-autoformat
-	url = https://github.com/Chiel92/vim-autoformat.git
 [submodule ".vim/bundle/vimproc"]
 	path = .vim/bundle/vimproc
 	url = https://github.com/Shougo/vimproc.vim.git
@@ -139,3 +136,6 @@
 [submodule ".vim/pack/plugins/start/vim-over"]
 	path = .vim/pack/plugins/start/vim-over
 	url = https://github.com/osyo-manga/vim-over
+[submodule ".vim/pack/plugins/start/vim-autoformat"]
+	path = .vim/pack/plugins/start/vim-autoformat
+	url = https://github.com/Chiel92/vim-autoformat
