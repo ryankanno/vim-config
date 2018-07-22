@@ -128,7 +128,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 
 ### Vim8
 
-* [ZoomWin](https://github.com/regedarek/ZoomWin)
+* [ack.vim](http://github.com/mileszs/ack.vim)
 * [ale](https://github.com/w0rp/ale)
 * [autotag](https://github.com/vim-scripts/AutoTag)
 * [bufexplorer](https://github.com/jlanzarotta/bufexplorer)
@@ -162,10 +162,10 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-surround](https://github.com/tpope/vim-surround)
 * [vim-template](https://github.com/aperezdc/vim-template)
 * [yankring](https://github.com/vim-scripts/YankRing.vim)
+* [ZoomWin](https://github.com/regedarek/ZoomWin)
 
 ### Pathogen-style
 
-* [ack](http://github.com/mileszs/ack.vim)
 * [diffchanges](http://github.com/jmcantrell/vim-diffchanges)
 * [gundo](http://github.com/vim-scripts/Gundo)
 * [hammer.vim](http://github.com/vim-scripts/hammer.vim)
