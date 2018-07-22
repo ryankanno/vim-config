@@ -130,3 +130,6 @@
 [submodule ".vim/pack/plugins/start/incsearch.vim"]
 	path = .vim/pack/plugins/start/incsearch.vim
 	url = https://github.com/haya14busa/incsearch.vim
+[submodule ".vim/pack/plugins/start/vim-polyglot"]
+	path = .vim/pack/plugins/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
