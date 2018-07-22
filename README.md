@@ -1,11 +1,13 @@
 # My .vim configuration
 
-Here be dragons.  I periodically walk my configuration file and fix
-things that aren't working for me and/or try to better optimize my development
-environment.  As humans, we're generally terrible about it since we're
-resistant to change.  If that doesn't suit you, you've been warned.  On the flip,
+**Here be dragons.** 
 
-          if this does suit you, it means you'll have an amazing dev editing environment.
+I periodically walk my configuration file and fix things that aren't working 
+for me and/or try to better optimize my development environment.  As humans, 
+we're generally terrible about it since we're resistant to change.  If that 
+doesn't suit you, you've been warned.  On the flip, if this does suit you, 
+it means you'll have an amazing dev editing environment.
+
 ## Quick Setup
 
 ### Install
