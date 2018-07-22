@@ -39,8 +39,8 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>:</td>
         </tr>
         <tr>
-            <td>Ctrl-C(j/k)</td>
-            <td>Move current line up/down</td>
+            <td></td>
+            <td>Patch of current buffer</td>
         </tr>
         <tr>
             <td>&lt;TAB&gt;</td>
@@ -87,7 +87,7 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Load up current buffer into Hammer</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;sb</td>
+            <td>&lt;Leader&gt;(s/S)</td>
             <td>Open scratch buffer in split window</td>
         </tr>
         <tr>

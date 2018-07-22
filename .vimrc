@@ -287,11 +287,11 @@ endif
 " <Leader>pb to preview buffer with hammer.vim
 map <Leader>pb :Hammer<CR>
 
-" <Leader>sb to open scratch in horizontal split window
-map <Leader>sb :Sscratch<CR>
+" <Leader>s to open scratch in horizontal split window
+map <Leader>s :Sscratch<CR>
 
-" <Leader>Sb to open scratch in vertical split window
-map <Leader>Sb :Vscratch<CR>
+" <Leader>S to open scratch in vertical split window
+map <Leader>S :Vscratch<CR>
 
 " CTags
 map <Leader>tag :!ctags --extra=+f -R *<CR><CR>
