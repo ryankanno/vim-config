@@ -125,6 +125,10 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Toggle vim-easymotion</td>
         </tr>
         <tr>
+            <td>&lt;Ctrl-y&gt;,</td>
+            <td>Enable emmet expansion</td>
+        </tr>
+        <tr>
             <td>&lt;F2&gt;</td>
             <td>Toggle invisible characters</td>
         </tr>
@@ -146,6 +150,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [bufexplorer](https://github.com/jlanzarotta/bufexplorer)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
+* [emmet-vim](https://github.com/mattn/emmet-vim)
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
 * [gist-vim](http://github.com/mattn/gist-vim)
 * [hammer.vim](https://github.com/wikimatze/hammer.vim)
