@@ -165,6 +165,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-speeddating](https://github.com/tpope/vim-speeddating)
 * [vim-surround](https://github.com/tpope/vim-surround)
 * [vim-template](https://github.com/aperezdc/vim-template)
+* [webapi-vim](https://github.com/mattn/webapi-vim) - Used with gist-vim
 * [yankring](https://github.com/vim-scripts/YankRing.vim)
 * [ZoomWin](https://github.com/regedarek/ZoomWin)
 
@@ -173,4 +174,3 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [hammer.vim](http://github.com/vim-scripts/hammer.vim)
 * [python-mode](https://github.com/klen/python-mode)
 * [vim-pathogen](https://github.com/tpope/vim-pathogen)
-* [webapi-vim](http://github.com/mattn/webapi-vim.git)
