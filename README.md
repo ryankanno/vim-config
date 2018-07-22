@@ -147,6 +147,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [undotree](https://github.com/mbbill/undotree)
 * [vim-abolish](https://github.com/tpope/vim-abolish)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
+* [vim-diffchanges](http://github.com/jmcantrell/vim-diffchanges)
 * [vim-easymotion](https://github.com/easymotion/vim-easymotion)
 * [vim-fugitive](http://github.com/tpope/vim-fugitive)
 * [vim-go](https://github.com/fatih/vim-go)
@@ -167,7 +168,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 
 ### Pathogen-style
 
-* [diffchanges](http://github.com/jmcantrell/vim-diffchanges)
 * [hammer.vim](http://github.com/vim-scripts/hammer.vim)
 * [python-mode](https://github.com/klen/python-mode)
 * [vim-mutiple-cursors](https://github.com/terryma/vim-multiple-cursors)
