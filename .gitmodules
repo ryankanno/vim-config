@@ -13,9 +13,6 @@
 [submodule ".vim/bundle/diffchanges"]
 	path = .vim/bundle/diffchanges
 	url = https://github.com/jmcantrell/vim-diffchanges.git
-[submodule ".vim/bundle/cocoa"]
-	path = .vim/bundle/cocoa
-	url = https://github.com/msanders/cocoa.vim.git
 [submodule ".vim/bundle/taglist-plus"]
 	path = .vim/bundle/taglist-plus
 	url = https://github.com/vim-scripts/taglist-plus

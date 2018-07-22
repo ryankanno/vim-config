@@ -214,7 +214,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 ### Pathogen-style
 
 * [ack](http://github.com/mileszs/ack.vim)
-* [cocoa](http://github.com/msanders/cocoa.vim)
 * [diffchanges](http://github.com/jmcantrell/vim-diffchanges)
 * [fugitive](http://github.com/tpope/vim-fugitive)
 * [gist](http://github.com/mattn/gist-vim)
