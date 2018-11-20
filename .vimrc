@@ -214,10 +214,10 @@ inoremap jk <ESC>
 inoremap kj <ESC>
 
 " simplify window navigation with ctrl
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-l> <C-W>l
-map <C-h> <C-W>h
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
 
 " make Y act like C/D
 nmap Y y$
@@ -235,7 +235,7 @@ map <TAB> %
 " <Leader>b to open bufExplorer
 let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
-map <Leader>b :BufExplorerVerticalSplit<CR>
+map <Leader>bv :BufExplorerVerticalSplit<CR>
 
 " <Leader>cd switches to directory of open buffer
 map <Leader>cd :cd %:p:h<CR>
