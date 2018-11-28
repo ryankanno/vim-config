@@ -173,6 +173,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-easymotion](https://github.com/easymotion/vim-easymotion)
 * [vim-fugitive](http://github.com/tpope/vim-fugitive)
 * [vim-go](https://github.com/fatih/vim-go)
+* [vim-hashicorp-tools](https://github.com/hashivim/vim-hashicorp-tools)
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 * [vim-json](https://github.com/elzr/vim-json)
 * [vim-move](https://github.com/matze/vim-move)

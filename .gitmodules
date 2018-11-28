@@ -133,3 +133,6 @@
 [submodule ".vim/pack/plugins/start/vim-polyglot"]
 	path = .vim/pack/plugins/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
+[submodule ".vim/pack/plugins/start/vim-hashicorp-tools"]
+	path = .vim/pack/plugins/start/vim-hashicorp-tools
+	url = https://github.com/hashivim/vim-hashicorp-tools.git
