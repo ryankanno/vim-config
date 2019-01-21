@@ -109,9 +109,6 @@
 [submodule ".vim/pack/plugins/start/vim-diffchanges"]
 	path = .vim/pack/plugins/start/vim-diffchanges
 	url = http://github.com/jmcantrell/vim-diffchanges
-[submodule ".vim/pack/plugins/start/syntastic"]
-	path = .vim/pack/plugins/start/syntastic
-	url = https://github.com/vim-syntastic/syntastic
 [submodule ".vim/pack/plugins/start/webapi-vim"]
 	path = .vim/pack/plugins/start/webapi-vim
 	url = https://github.com/mattn/webapi-vim.git
