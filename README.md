@@ -101,10 +101,6 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Toggle Tagbar</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;u</td>
-            <td>Toggle Undotree</td>
-        </tr>
-        <tr>
             <td>&lt;Leader&gt;w</td>
             <td>Toggle the current window</td>
         </tr>
@@ -165,7 +161,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [tagbar](https://github.com/majutsushi/tagbar)
 * [tasklist](http://github.com/vim-scripts/TaskList)
 * [ultisnips](http://github.com/SirVer/ultisnips)
-* [undotree](https://github.com/mbbill/undotree)
 * [vim-abolish](https://github.com/tpope/vim-abolish)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
 * [vim-diffchanges](http://github.com/jmcantrell/vim-diffchanges)
