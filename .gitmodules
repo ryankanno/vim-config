@@ -130,3 +130,6 @@
 [submodule ".vim/pack/plugins/start/vim-hashicorp-tools"]
 	path = .vim/pack/plugins/start/vim-hashicorp-tools
 	url = https://github.com/hashivim/vim-hashicorp-tools.git
+[submodule ".vim/pack/plugins/start/vim-mundo"]
+	path = .vim/pack/plugins/start/vim-mundo
+	url = https://github.com/simnalamburt/vim-mundo.git

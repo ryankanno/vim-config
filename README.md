@@ -101,6 +101,10 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Toggle Tagbar</td>
         </tr>
         <tr>
+            <td>&lt;Leader&gt;u</td>
+            <td>Toggle Mundo</td>
+        </tr>
+        <tr>
             <td>&lt;Leader&gt;w</td>
             <td>Toggle the current window</td>
         </tr>

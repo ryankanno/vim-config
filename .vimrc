@@ -302,8 +302,10 @@ map <Leader>tag :!ctags --extra=+f -R *<CR><CR>
 " <Leader>tl to open Tagbar
 map <Leader>tl :TagbarToggle<CR>
 
-" <Leader>u to toggle Undotree
-nnoremap <Leader>u :UndotreeToggle<CR>
+" <Leader>u to toggle Mundo
+let g:mundo_prefer_python3 = 1
+let g:mundo_right = 1
+nnoremap <Leader>u :MundoToggle<CR>
 
 " <Leader>w to ZoomWin
 map <Leader>w :ZoomWin<CR>
@@ -315,9 +317,9 @@ map <Leader>ws :%s/\s\+$//e<CR>
 map <Leader>x <Plug>TaskList
 
 " <Leader>y to bring up YankRing
-map <Leader>y :YRShow<CR>
 let g:yankring_window_height = 16
 let g:yankring_max_history = 1024
+map <Leader>y :YRShow<CR>
 
 " <Leader><Leader> to load up vim-easymotion
 let g:EasyMotion_smartcase = 1
