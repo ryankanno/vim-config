@@ -146,7 +146,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 
 * [ack.vim](http://github.com/mileszs/ack.vim)
 * [ale](https://github.com/w0rp/ale)
-* [autotag](https://github.com/vim-scripts/AutoTag)
 * [bufexplorer](https://github.com/jlanzarotta/bufexplorer)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
