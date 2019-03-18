@@ -335,9 +335,11 @@ noremap <F3> :Autoformat<CR>
 
 " Plugins {{{
 
+" fzf.vim
+set rtp+=~/.fzf
+
 " vim-template directory
 let g:templates_directory="$HOME/.vim/templates"
-
 
 " nerdcomment
 let g:NERDSpaceDelims = 1
