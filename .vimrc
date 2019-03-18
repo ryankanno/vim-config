@@ -336,6 +336,12 @@ noremap <F3> :Autoformat<CR>
 
 " fzf.vim
 set rtp+=~/.fzf
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+  \   <bang>0 ? fzf#vim#with_preview('up:50%')
+  \           : fzf#vim#with_preview('right:50%', '?'),
+  \   <bang>0)
 
 " vim-template directory
 let g:templates_directory="$HOME/.vim/templates"
