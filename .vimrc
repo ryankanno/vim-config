@@ -299,6 +299,8 @@ map <Leader>S :Vscratch<CR>
 
 " CTags
 map <Leader>tag :!ctags --extra=+f -R *<CR><CR>
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <D-]> :vsplit <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " <Leader>tl to open Tagbar
 map <Leader>tl :TagbarToggle<CR>

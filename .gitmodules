@@ -130,3 +130,6 @@
 [submodule ".vim/pack/plugins/start/vim-mundo"]
 	path = .vim/pack/plugins/start/vim-mundo
 	url = https://github.com/simnalamburt/vim-mundo.git
+[submodule ".vim/pack/plugins/start/vim-gutentags"]
+	path = .vim/pack/plugins/start/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags.git
