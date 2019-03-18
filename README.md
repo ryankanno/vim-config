@@ -58,7 +58,7 @@ Just pass "UNINSTALL" to the install.sh script.
         </tr>
         <tr>
             <td>&lt;Leader&gt;f</td>
-            <td>Start an `rg` search</td>
+            <td>Start an `rg` search using FZF</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;h/l</td>
@@ -140,7 +140,6 @@ Just pass "UNINSTALL" to the install.sh script.
 
 Here are the plugins I use on the daily.  They are pretty amazing. :D
 
-* [ack.vim](http://github.com/mileszs/ack.vim)
 * [ale](https://github.com/w0rp/ale)
 * [bufexplorer](https://github.com/jlanzarotta/bufexplorer)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)

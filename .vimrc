@@ -256,9 +256,8 @@ map <Leader>dc :DiffChangesDiffToggle<CR>
 " <Leader>dp to show patch of current buffer
 map <Leader>dp :DiffChangesPatchToggle<CR>
 
-" <Leader>f to start an Ack search
-let g:ackprg = 'rg --vimgrep --no-heading'
-map <Leader>f :Ack<space>
+" <Leader>f to start an `rg` search using FZF
+map <Leader>f :Rg<space>
 
 " <Leader>h/l to go to previous/next in jumplist
 nnoremap <Leader>h <C-O>

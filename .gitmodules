@@ -94,9 +94,6 @@
 [submodule ".vim/pack/plugins/start/vim-fugitive"]
 	path = .vim/pack/plugins/start/vim-fugitive
 	url = http://github.com/tpope/vim-fugitive
-[submodule ".vim/pack/plugins/start/ack.vim"]
-	path = .vim/pack/plugins/start/ack.vim
-	url = http://github.com/mileszs/ack.vim
 [submodule ".vim/pack/plugins/start/vim-diffchanges"]
 	path = .vim/pack/plugins/start/vim-diffchanges
 	url = http://github.com/jmcantrell/vim-diffchanges
