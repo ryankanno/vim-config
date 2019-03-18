@@ -79,9 +79,6 @@
 [submodule ".vim/pack/plugins/start/vim-go"]
 	path = .vim/pack/plugins/start/vim-go
 	url = https://github.com/fatih/vim-go
-[submodule ".vim/pack/plugins/start/gist-vim"]
-	path = .vim/pack/plugins/start/gist-vim
-	url = http://github.com/mattn/gist-vim
 [submodule ".vim/pack/plugins/start/vim-over"]
 	path = .vim/pack/plugins/start/vim-over
 	url = https://github.com/osyo-manga/vim-over
@@ -103,9 +100,6 @@
 [submodule ".vim/pack/plugins/start/vim-diffchanges"]
 	path = .vim/pack/plugins/start/vim-diffchanges
 	url = http://github.com/jmcantrell/vim-diffchanges
-[submodule ".vim/pack/plugins/start/webapi-vim"]
-	path = .vim/pack/plugins/start/webapi-vim
-	url = https://github.com/mattn/webapi-vim.git
 [submodule ".vim/pack/plugins/start/python-mode"]
 	path = .vim/pack/plugins/start/python-mode
 	url = https://github.com/klen/python-mode

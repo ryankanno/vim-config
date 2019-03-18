@@ -65,10 +65,6 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Next/prev in jumplist</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;G</td>
-            <td>Private gist (assuming you complete the github api install)</td>
-        </tr>
-        <tr>
             <td>&lt;Leader&gt;n</td>
             <td>Toggle NERDTreeTabs</td>
         </tr>
@@ -151,7 +147,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [delimitMate](https://github.com/Raimondi/delimitMate)
 * [emmet-vim](https://github.com/mattn/emmet-vim)
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
-* [gist-vim](http://github.com/mattn/gist-vim)
 * [hammer.vim](https://github.com/wikimatze/hammer.vim)
 * [incsearch.vim](https://github.com/haya14busa/incsearch.vim)
 * [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
@@ -185,6 +180,5 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-speeddating](https://github.com/tpope/vim-speeddating)
 * [vim-surround](https://github.com/tpope/vim-surround)
 * [vim-template](https://github.com/aperezdc/vim-template)
-* [webapi-vim](https://github.com/mattn/webapi-vim) - used with gist-vim
 * [yankring](https://github.com/vim-scripts/YankRing.vim)
 * [ZoomWin](https://github.com/regedarek/ZoomWin)

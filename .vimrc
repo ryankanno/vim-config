@@ -264,9 +264,6 @@ map <Leader>f :Ack<space>
 nnoremap <Leader>h <C-O>
 nnoremap <Leader>l <C-i>
 
-" <Leader>G to create private Gist of entire buffer
-map <Leader>G :Gist -p<CR>
-
 " <Leader>n to toggle NerdTreeTabs
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 let NERDTreeShowHidden=1
