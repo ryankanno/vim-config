@@ -88,12 +88,13 @@ if has("gui_running")
   set lines=999
   set columns=999
 else
-  if exists("+lines")
-    set lines=40
-  endif
-  if exists("+columns")
-    set columns=120
-  endif
+  if !has("nvim")
+    if exists("+lines")
+      set lines=40
+    endif
+    if exists("+columns")
+      set columns=120
+    endif
 endif
 
 " show color column
@@ -258,6 +259,9 @@ map <Leader>dp :DiffChangesPatchToggle<CR>
 
 " <Leader>f to start an `rg` search using FZF
 map <Leader>f :Rg<space>
+
+" <Leader>F to start a `Files` search using FZF
+map <Leader>F :Files<CR>
 
 " <Leader>h/l to go to previous/next in jumplist
 nnoremap <Leader>h <C-O>
