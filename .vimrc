@@ -84,19 +84,6 @@ set tabpagemax=10 				" show 10 tabs
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#AE0000
 match OverLength /\%80v.\+/
 
-if has("gui_running")
-  set lines=999
-  set columns=999
-else
-  if !has("nvim")
-    if exists("+lines")
-      set lines=40
-    endif
-    if exists("+columns")
-      set columns=120
-    endif
-endif
-
 " show color column
 if exists('+colorcolumn')
   set colorcolumn=80
