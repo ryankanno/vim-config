@@ -58,7 +58,11 @@ Just pass "UNINSTALL" to the install.sh script.
         </tr>
         <tr>
             <td>&lt;Leader&gt;f</td>
-            <td>Start an `rg` search using FZF</td>
+            <td>Start a `:Rg` search using FZF</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;F</td>
+            <td>Start a `:Files` search using FZF</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;h/l</td>
