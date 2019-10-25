@@ -124,3 +124,6 @@
 [submodule ".vim/pack/plugins/start/vim-gutentags"]
 	path = .vim/pack/plugins/start/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
+[submodule ".vim/pack/plugins/start/vimade"]
+	path = .vim/pack/plugins/start/vimade
+	url = https://github.com/TaDaa/vimade

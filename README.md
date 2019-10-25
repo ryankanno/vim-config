@@ -183,5 +183,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-speeddating](https://github.com/tpope/vim-speeddating)
 * [vim-surround](https://github.com/tpope/vim-surround)
 * [vim-template](https://github.com/aperezdc/vim-template)
+* [vimade](https://github.com/tadaa/vimade)
 * [yankring](https://github.com/vim-scripts/YankRing.vim)
 * [ZoomWin](https://github.com/regedarek/ZoomWin)
