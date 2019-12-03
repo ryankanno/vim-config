@@ -151,6 +151,7 @@ set foldtext=CustomFoldText('.',80)
 " Filetype {{{
 filetype plugin indent on
 autocmd BufNewFile,BufRead *.json set filetype=json
+autocmd BufNewFile,BufRead *.scss,*.sass set filetype=sass
 autocmd BufNewFile,BufRead *.vue set filetype=javascript
 autocmd FileType css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType html,htmldjango,xhtml,haml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 textwidth=0
@@ -159,6 +160,7 @@ autocmd FileType json setlocal fdm=syntax
 autocmd FileType make setlocal noexpandtab
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType sass setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 " }}}
 
