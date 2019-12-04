@@ -4,9 +4,6 @@
 [submodule ".vim/pack/plugins/start/vim-easymotion"]
 	path = .vim/pack/plugins/start/vim-easymotion
 	url = https://github.com/easymotion/vim-easymotion
-[submodule ".vim/pack/plugins/start/nerdcommenter"]
-	path = .vim/pack/plugins/start/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter
 [submodule ".vim/pack/plugins/start/ctrlp"]
 	path = .vim/pack/plugins/start/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
@@ -136,3 +133,6 @@
 [submodule ".vim/pack/plugins/start/vim-jsx-typescript"]
 	path = .vim/pack/plugins/start/vim-jsx-typescript
 	url = https://github.com/peitalin/vim-jsx-typescript
+[submodule ".vim/pack/plugins/start/vim-commentary"]
+	path = .vim/pack/plugins/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary

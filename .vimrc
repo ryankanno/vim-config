@@ -229,6 +229,9 @@ let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 map <Leader>bv :BufExplorerVerticalSplit<CR>
 
+" <Leader>cc to comment
+nmap <Leader>cc <Plug>CommentaryLine
+
 " <Leader>cd switches to directory of open buffer
 map <Leader>cd :cd %:p:h<CR>
 
@@ -355,13 +358,6 @@ command! -bang -nargs=* Rg
 
 " vim-template directory
 let g:templates_directory="$HOME/.vim/templates"
-
-" nerdcomment
-let g:NERDSpaceDelims = 1
-let g:NERDCompactSexyComs = 1
-let g:NERDDefaultAlign = 'left'
-let g:NERDCommentEmptyLines = 1
-let g:NERDTrimTrailingWhitespace = 1
 
 " vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
