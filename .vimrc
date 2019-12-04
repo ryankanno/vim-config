@@ -152,6 +152,7 @@ set foldtext=CustomFoldText('.',80)
 filetype plugin indent on
 autocmd BufNewFile,BufRead *.json set filetype=json
 autocmd BufNewFile,BufRead *.scss,*.sass set filetype=sass
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 autocmd BufNewFile,BufRead *.vue set filetype=javascript
 autocmd FileType css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType html,htmldjango,xhtml,haml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 textwidth=0
@@ -326,6 +327,22 @@ noremap <F3> :Autoformat<CR>
 " }}}
 
 " Plugins {{{
+
+" ale
+let g:ale_linters = {
+    'javascript': ['eslint'],
+    'typescript': ['tsserver', 'tslint'],
+}
+let g:ale_fixers = {
+    'javascript': ['eslint'],
+    'typescript': ['prettier'],
+    'scss': ['prettier'],
+    'html': ['prettier']
+}
+let g:ale_fix_on_save = 1
+
+" deoplete
+let g:deoplete#enable_at_startup = 1
 
 " fzf.vim
 set rtp+=~/.fzf
