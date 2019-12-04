@@ -330,15 +330,15 @@ noremap <F3> :Autoformat<CR>
 
 " ale
 let g:ale_linters = {
-    'javascript': ['eslint'],
-    'typescript': ['tsserver', 'tslint'],
-}
+  \ 'javascript': ['eslint'],
+  \ 'typescript': ['tsserver', 'tslint'],
+  \ }
 let g:ale_fixers = {
-    'javascript': ['eslint'],
-    'typescript': ['prettier'],
-    'scss': ['prettier'],
-    'html': ['prettier']
-}
+  \ 'javascript': ['eslint'],
+  \ 'typescript': ['prettier'],
+  \ 'scss': ['prettier'],
+  \ 'html': ['prettier'],
+  \ }
 let g:ale_fix_on_save = 1
 
 " deoplete
