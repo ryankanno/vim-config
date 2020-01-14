@@ -176,6 +176,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-json](https://github.com/elzr/vim-json)
 * [vim-jsx-typescript](https://github.com/peitalin/vim-jsx-typescript)
 * [vim-move](https://github.com/matze/vim-move)
+* [vim-mundo](https://github.com/simnalamburt/vim-mundo)
 * [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs)
 * [vim-over](https://github.com/osyo-manga/vim-over)
 * [vim-peekaboo](https://github.com/junegunn/vim-peekaboo)
