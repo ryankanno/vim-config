@@ -24,20 +24,19 @@ set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 
 set laststatus=2                " always show last status
 
-set history=1000                " 1000 lines of history
-set undolevels=1000             " 1000 levels of undo
+set history=10000               " 1000 lines of history
+set undolevels=10000            " 1000 levels of undo
 set clipboard+=unnamed          " share clipboard with win
 set ffs=unix,dos,mac            " set file format to unix, win, then old mac
 set hidden                      " enable hidden files
 set backspace=indent,eol,start  " enable backspace over indent, EOL, START
 
-if has("undodir")
-    set undodir=$HOME/.vim_undo " directory to store backup files
-    set undofile                " save undo history to an undo file"
-    if ! isdirectory(expand(&undodir))
-        call mkdir(&undodir, 'p', 0700 )
-    endif
+" create undo structures
+set undodir=$HOME/.vim_undo
+if ! isdirectory(expand(&undodir))
+    call mkdir(&undodir, 'p', 0700)
 endif
+set undofile
 
 set backupext=.bak               " append .bak to backup files
 
