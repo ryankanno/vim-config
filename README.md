@@ -185,6 +185,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-repeat](https://github.com/tpope/vim-repeat)
 * [vim-snippets](https://github.com/honza/vim-snippets)
 * [vim-speeddating](https://github.com/tpope/vim-speeddating)
+* [vim-startify](https://github.com/mhinz/vim-startify)
 * [vim-surround](https://github.com/tpope/vim-surround)
 * [vim-template](https://github.com/aperezdc/vim-template)
 * [vimade](https://github.com/tadaa/vimade)

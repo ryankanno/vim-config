@@ -136,3 +136,6 @@
 [submodule ".vim/pack/plugins/start/vim-commentary"]
 	path = .vim/pack/plugins/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule ".vim/pack/plugins/start/vim-startify"]
+	path = .vim/pack/plugins/start/vim-startify
+	url = https://github.com/mhinz/vim-startify.git
