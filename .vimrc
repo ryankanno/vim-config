@@ -327,31 +327,6 @@ map <silent> <F2> :set invlist<CR>
 " <F3> to toggle Autoformat
 noremap <F3> :Autoformat<CR>
 
-" Goyo + Limelight integration
-autocmd BufLeave goyo_pad setlocal norelativenumber
-autocmd! User GoyoEnter nested call <SID>goyo_enter()
-autocmd! User GoyoLeave nested call <SID>goyo_leave()
-
-function! s:goyo_enter()
-  if has('gui_running')
-    set fullscreen
-  endif
-  set nu!
-  set rnu!
-  NumbersDisable
-  Limelight
-endfunction
-
-function! s:goyo_leave()
-  if has('gui_running')
-    set nofullscreen
-  endif
-  set nu
-  set rnu
-  NumbersEnable
-  Limelight!
-endfunction
-
 " }}}
 
 " Plugins {{{
@@ -385,6 +360,25 @@ command! -bang -nargs=* Rg
   \           : fzf#vim#with_preview('right:50%', '?'),
   \   <bang>0)
 
+" vim-gutentags
+let g:gutentags_add_default_project_roots = 0
+let g:gutentags_project_root  = ['package.json', '.git']
+let g:gutentags_cache_dir = expand('~/.gutentags_cache')
+let g:gutentags_exclude_filetypes = ['gitcommit', 'gitconfig', 'gitrebase', 'gitsendemail', 'git']
+let g:gutentags_generate_on_new = 1
+let g:gutentags_generate_on_missing = 1
+let g:gutentags_generate_on_write = 1
+let g:gutentags_generate_on_empty_buffer = 0
+let g:gutentags_ctags_extra_args = ['--tag-relative=yes', '--fields=+ailmnS']
+let g:gutentags_ctags_exclude = [
+  \  '*.git', 'cache', 'build', 'dist', 'bin', 'node_modules',
+  \  '*.pyc',
+  \  '.DS_Store',
+  \  '*.bmp', '*.gif', '*.ico', '*.jpg', '*.png', '*.svg',
+  \  '*.rar', '*.zip', '*.tar', '*.tar.gz', '*.tar.xz', '*.tar.bz2',
+  \  '*.pdf', '*.doc', '*.docx', '*.ppt', '*.pptx', '*.xls',
+  \  ]
+
 " vim-template directory
 let g:templates_directory="$HOME/.vim/templates"
 
@@ -402,6 +396,31 @@ map *  <Plug>(incsearch-nohl-*)
 map #  <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
+
+" goyo + limelight
+autocmd BufLeave goyo_pad setlocal norelativenumber
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+function! s:goyo_enter()
+  if has('gui_running')
+    set fullscreen
+  endif
+  set nu!
+  set rnu!
+  NumbersDisable
+  Limelight
+endfunction
+
+function! s:goyo_leave()
+  if has('gui_running')
+    set nofullscreen
+  endif
+  set nu
+  set rnu
+  NumbersEnable
+  Limelight!
+endfunction
 
 function! NyanMe() " {{{
     hi NyanFur             guifg=#BBBBBB
