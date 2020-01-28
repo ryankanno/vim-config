@@ -265,6 +265,7 @@ let NERDTreeShowHidden=1
 
 " <Leader>num to toggle relative numbers
 map <Leader>num :NumbersToggle<CR>
+let g:numbers_exclude = ['goyo_pad', 'gundo', 'minibufexpl', 'nerdtree', 'tagbar']
 
 " <Leader>o for OverCommandLine
 map <Leader>o :OverCommandLine<CR>
@@ -325,6 +326,31 @@ map <silent> <F2> :set invlist<CR>
 
 " <F3> to toggle Autoformat
 noremap <F3> :Autoformat<CR>
+
+" Goyo + Limelight integration
+autocmd BufLeave goyo_pad setlocal norelativenumber
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+function! s:goyo_enter()
+  if has('gui_running')
+    set fullscreen
+  endif
+  set nu!
+  set rnu!
+  NumbersDisable
+  Limelight
+endfunction
+
+function! s:goyo_leave()
+  if has('gui_running')
+    set nofullscreen
+  endif
+  set nu
+  set rnu
+  NumbersEnable
+  Limelight!
+endfunction
 
 " }}}
 

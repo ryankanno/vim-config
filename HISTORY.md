@@ -1,5 +1,10 @@
 # History
 
+## 2020-01-28
+
+* Added goyo (used a fork because of conflicts with numbers.vim)
+* Added limelight
+
 ## 2018-07-22
 
 * Migrated off of Pathogen because of Vim8
