@@ -151,7 +151,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [delimitMate](https://github.com/Raimondi/delimitMate)
 * [emmet-vim](https://github.com/mattn/emmet-vim)
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
-* [goyo.vim](https://github.com/phanimahesh/goyo.vim - feat/add-filetype branch)
+* [goyo.vim](https://github.com/phanimahesh/goyo.vim) - feat/add-filetype branch
 * [hammer.vim](https://github.com/wikimatze/hammer.vim)
 * [incsearch.vim](https://github.com/haya14busa/incsearch.vim)
 * [limelight.vim](https://github.com/junegunn/limelight.vim)
