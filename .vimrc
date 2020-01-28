@@ -295,8 +295,8 @@ map <Leader>tag :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <D-]> :vsplit <CR>:exec("tag ".expand("<cword>"))<CR>
 
-" <Leader>tl to open Tagbar
-map <Leader>tl :TagbarToggle<CR>
+" <Leader>tb to open Tagbar
+map <Leader>tb :TagbarToggle<CR>
 
 " <Leader>u to toggle Mundo
 let g:mundo_prefer_python3 = 1

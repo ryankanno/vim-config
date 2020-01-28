@@ -97,7 +97,7 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Generate ctags</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;tl</td>
+            <td>&lt;Leader&gt;tb</td>
             <td>Toggle Tagbar</td>
         </tr>
         <tr>
@@ -106,7 +106,7 @@ Just pass "UNINSTALL" to the install.sh script.
         </tr>
         <tr>
             <td>&lt;Leader&gt;w</td>
-            <td>Toggle the current window</td>
+            <td>Toggle ZoomWin on the current window</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;ws</td>
