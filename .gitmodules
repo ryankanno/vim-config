@@ -146,3 +146,6 @@
 	path = .vim/pack/plugins/start/goyo.vim
 	url = https://github.com/phanimahesh/goyo.vim
 	branch = feat/add-filetype
+[submodule ".vim/pack/plugins/start/vim-devicons"]
+	path = .vim/pack/plugins/start/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons

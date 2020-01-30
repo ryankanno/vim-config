@@ -168,6 +168,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-abolish](https://github.com/tpope/vim-abolish)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
 * [vim-commentary](https://github.com/tpope/vim-commentary)
+* [vim-devicons](https://github.com/ryanoasis/vim-devicons)
 * [vim-diffchanges](http://github.com/jmcantrell/vim-diffchanges)
 * [vim-easymotion](https://github.com/easymotion/vim-easymotion)
 * [vim-fugitive](http://github.com/tpope/vim-fugitive)
