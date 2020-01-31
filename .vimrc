@@ -422,6 +422,10 @@ function! s:goyo_leave()
   Limelight!
 endfunction
 
+" vim-which-key
+nnoremap <silent> <leader> :<C-U>WhichKey ','<CR>
+vnoremap <silent> <leader> :<C-U>WhichKeyVisual ','<CR>
+
 function! NyanMe() " {{{
     hi NyanFur             guifg=#BBBBBB
     hi NyanPoptartEdge     guifg=#ffd0ac
