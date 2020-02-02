@@ -149,6 +149,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [deoplete](https://github.com/Shougo/deoplete.nvim)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
+* [devdocs.vim](https://github.com/rhysd/devdocs.vim)
 * [emmet-vim](https://github.com/mattn/emmet-vim)
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
 * [goyo.vim](https://github.com/phanimahesh/goyo.vim) - feat/add-filetype branch

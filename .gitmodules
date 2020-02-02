@@ -152,3 +152,6 @@
 [submodule ".vim/pack/plugins/start/vim-which-key"]
 	path = .vim/pack/plugins/start/vim-which-key
 	url = https://github.com/liuchengxu/vim-which-key
+[submodule ".vim/pack/plugins/start/devdocs.vim"]
+	path = .vim/pack/plugins/start/devdocs.vim
+	url = https://github.com/rhysd/devdocs.vim

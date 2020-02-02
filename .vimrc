@@ -259,6 +259,20 @@ map <Leader>F :Files<CR>
 nnoremap <Leader>h <C-O>
 nnoremap <Leader>l <C-i>
 
+" Remape K to call devdocs
+let g:devdocs_filetype_map = {
+  \ 'ruby': 'rails',
+  \ 'javascript.jsx': 'react',
+  \ 'typescript.ts': 'react',
+  \ 'typescript.tsx': 'react',
+  \ 'javascript.test': 'jest',
+  \ 'java': 'java',
+  \ 'javacc': 'java',
+  \ 'haskell': 'haskell',
+  \ 'rust': 'rust',
+  \ }
+nmap K <Plug>(devdocs-under-cursor)
+
 " <Leader>n to toggle NerdTreeTabs
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 let NERDTreeShowHidden=1
