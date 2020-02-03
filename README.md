@@ -154,6 +154,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
 * [goyo.vim](https://github.com/phanimahesh/goyo.vim) - feat/add-filetype branch
 * [hammer.vim](https://github.com/wikimatze/hammer.vim)
+* [is.vim](https://github.com/haya14busa/is.vim)
 * [limelight.vim](https://github.com/junegunn/limelight.vim)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim/)

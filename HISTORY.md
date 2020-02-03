@@ -1,5 +1,9 @@
 # History
 
+## 2020-02-03
+
+* Replaced incsearch.vim with is.vim
+
 ## 2020-01-31
 
 * Added vim-which-key (need to configure it to display all my mappings)

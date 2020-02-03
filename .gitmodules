@@ -152,3 +152,6 @@
 [submodule ".vim/pack/plugins/start/devdocs.vim"]
 	path = .vim/pack/plugins/start/devdocs.vim
 	url = https://github.com/rhysd/devdocs.vim
+[submodule ".vim/pack/plugins/start/is.vim"]
+	path = .vim/pack/plugins/start/is.vim
+	url = https://github.com/haya14busa/is.vim
