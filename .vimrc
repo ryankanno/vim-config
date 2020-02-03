@@ -402,15 +402,6 @@ let g:indent_guides_enable_on_vim_startup = 1
 " vim-move
 let g:move_key_modifier = 'C'
 
-" incsearch
-let g:incsearch#auto_nohlsearch = 1
-map n  <Plug>(incsearch-nohl-n)
-map N  <Plug>(incsearch-nohl-N)
-map *  <Plug>(incsearch-nohl-*)
-map #  <Plug>(incsearch-nohl-#)
-map g* <Plug>(incsearch-nohl-g*)
-map g# <Plug>(incsearch-nohl-g#)
-
 " goyo + limelight
 autocmd BufLeave goyo_pad setlocal norelativenumber
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
