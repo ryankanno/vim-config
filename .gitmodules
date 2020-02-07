@@ -155,3 +155,6 @@
 [submodule ".vim/pack/plugins/start/is.vim"]
 	path = .vim/pack/plugins/start/is.vim
 	url = https://github.com/haya14busa/is.vim
+[submodule ".vim/pack/plugins/start/startuptime.vim"]
+	path = .vim/pack/plugins/start/startuptime.vim
+	url = https://github.com/tweekmonster/startuptime.vim

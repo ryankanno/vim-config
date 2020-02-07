@@ -161,6 +161,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [python-mode](https://github.com/klen/python-mode)
 * [scratch.vim](https://github.com/ethanmuller/scratch.vim)
 * [sparkup](https://github.com/rstacruz/sparkup)
+* [startuptime.vim](https://github.com/tweekmonster/startuptime.vim)
 * [supertab](http://github.com/ervandew/supertab)
 * [tagbar](https://github.com/majutsushi/tagbar)
 * [tasklist](http://github.com/vim-scripts/TaskList)
