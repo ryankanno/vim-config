@@ -161,3 +161,6 @@
 [submodule ".vim/pack/plugins/start/vim-matchup"]
 	path = .vim/pack/plugins/start/vim-matchup
 	url = https://github.com/andymass/vim-matchup
+[submodule ".vim/pack/plugins/start/vim-disapprove-deep-indentation"]
+	path = .vim/pack/plugins/start/vim-disapprove-deep-indentation
+	url = https://github.com/dodie/vim-disapprove-deep-indentation

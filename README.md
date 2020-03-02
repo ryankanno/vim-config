@@ -172,6 +172,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-commentary](https://github.com/tpope/vim-commentary)
 * [vim-devicons](https://github.com/ryanoasis/vim-devicons)
 * [vim-diffchanges](http://github.com/jmcantrell/vim-diffchanges)
+* [vim-disapprove-deep-indentation](https://github.com/dodie/vim-disapprove-deep-indentation)
 * [vim-easymotion](https://github.com/easymotion/vim-easymotion)
 * [vim-fugitive](http://github.com/tpope/vim-fugitive)
 * [vim-go](https://github.com/fatih/vim-go)
