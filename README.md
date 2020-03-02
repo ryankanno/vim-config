@@ -193,6 +193,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-snippets](https://github.com/honza/vim-snippets)
 * [vim-speeddating](https://github.com/tpope/vim-speeddating)
 * [vim-startify](https://github.com/mhinz/vim-startify)
+* [vim-sunaku](https://github.com/sunaku/vim-shortcut)
 * [vim-surround](https://github.com/tpope/vim-surround)
 * [vim-template](https://github.com/aperezdc/vim-template)
 * [vim-which-key](https://github.com/liuchengxu/vim-which-key)

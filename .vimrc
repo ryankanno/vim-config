@@ -11,6 +11,9 @@ iab me@ Ryan Kanno <ryankanno@localkinegrinds.com>
 iab date@ <C-R>=strftime("%A, %B %e %Y %I:%M:%S %p %Z")<CR>
 " }}}
 
+" Hack until I refactor some of this, but need to call this early.
+packadd vim-shortcut
+
 " General {{{
 let mapleader=","               " set mapleader
 set nocompatible                " disable older vi compatibility
@@ -218,6 +221,9 @@ nmap Y y$
 nnoremap ; :
 vnoremap ; :
 
+" set partial entry to run the shortcuts menu
+noremap <silent> <Leader> :Shortcuts<Return>
+
 " clear search matching across all buffers
 noremap <Leader><space> :noh<CR>:call clearmatches()<CR>
 
@@ -230,7 +236,8 @@ let g:bufExplorerShowRelativePath=1
 map <Leader>bv :BufExplorerVerticalSplit<CR>
 
 " <Leader>cc to comment
-nmap <Leader>cc <Plug>CommentaryLine
+Shortcut comment out line
+    \ nmap <Leader>cc <Plug>CommentaryLine
 
 " <Leader>cd switches to directory of open buffer
 map <Leader>cd :cd %:p:h<CR>
@@ -251,14 +258,18 @@ map <Leader>dc :DiffChangesDiffToggle<CR>
 map <Leader>dp :DiffChangesPatchToggle<CR>
 
 " <Leader>f to start an `rg` search using FZF
-map <Leader>f :Rg<space>
+Shortcut start a FZF rg search 
+    \ map <Leader>f :Rg<space>
 
 " <Leader>F to start a `Files` search using FZF
-map <Leader>F :Files<CR>
+Shortcut start a FZF files search
+    \ map <Leader>F :Files<CR>
 
 " <Leader>h/l to go to previous/next in jumplist
-nnoremap <Leader>h <C-O>
-nnoremap <Leader>l <C-i>
+Shortcut previous jumplist position
+    \ nnoremap <Leader>h <C-O>
+Shortcut next jumplist position
+    \ nnoremap <Leader>l <C-i>
 
 " Remape K to call devdocs
 let g:devdocs_filetype_map = {
@@ -427,10 +438,6 @@ function! s:goyo_leave()
   NumbersEnable
   Limelight!
 endfunction
-
-" vim-which-key
-nnoremap <silent> <leader> :<C-U>WhichKey ','<CR>
-vnoremap <silent> <leader> :<C-U>WhichKeyVisual ','<CR>
 
 function! NyanMe() " {{{
     hi NyanFur             guifg=#BBBBBB

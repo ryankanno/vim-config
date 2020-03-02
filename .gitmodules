@@ -164,3 +164,6 @@
 [submodule ".vim/pack/plugins/start/vim-disapprove-deep-indentation"]
 	path = .vim/pack/plugins/start/vim-disapprove-deep-indentation
 	url = https://github.com/dodie/vim-disapprove-deep-indentation
+[submodule ".vim/pack/plugins/start/vim-shortcut"]
+	path = .vim/pack/plugins/start/vim-shortcut
+	url = https://github.com/sunaku/vim-shortcut
