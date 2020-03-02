@@ -196,7 +196,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-sunaku](https://github.com/sunaku/vim-shortcut)
 * [vim-surround](https://github.com/tpope/vim-surround)
 * [vim-template](https://github.com/aperezdc/vim-template)
-* [vim-which-key](https://github.com/liuchengxu/vim-which-key)
 * [vimade](https://github.com/tadaa/vimade)
 * [yankring](https://github.com/vim-scripts/YankRing.vim)
 * [ZoomWin](https://github.com/regedarek/ZoomWin)

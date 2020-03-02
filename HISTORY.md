@@ -1,5 +1,9 @@
 # History
 
+## 2020-03-01
+
+* Replaced vim-which-key with shortcut.vim
+
 ## 2020-02-07
 
 * Added startuptime.vim to help debug
