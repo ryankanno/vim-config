@@ -59,6 +59,7 @@ if has("syntax")
 endif
 set synmaxcol=256
 
+set termguicolors               " sets colors
 set background=dark             " sets the background color (I like it dark)
 colorscheme molokai             " <3 colorscheme ftw.
 " }}}
