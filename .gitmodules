@@ -164,3 +164,6 @@
 [submodule ".vim/pack/plugins/start/vim-shortcut"]
 	path = .vim/pack/plugins/start/vim-shortcut
 	url = https://github.com/sunaku/vim-shortcut
+[submodule ".vim/pack/plugins/start/vim-cursorword"]
+	path = .vim/pack/plugins/start/vim-cursorword
+	url = https://github.com/itchyny/vim-cursorword

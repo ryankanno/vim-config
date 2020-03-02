@@ -170,6 +170,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-abolish](https://github.com/tpope/vim-abolish)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
 * [vim-commentary](https://github.com/tpope/vim-commentary)
+* [vim-cursorword](https://github.com/itchyny/vim-cursorword)
 * [vim-devicons](https://github.com/ryanoasis/vim-devicons)
 * [vim-diffchanges](http://github.com/jmcantrell/vim-diffchanges)
 * [vim-disapprove-deep-indentation](https://github.com/dodie/vim-disapprove-deep-indentation)
