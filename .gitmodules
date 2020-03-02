@@ -158,3 +158,6 @@
 [submodule ".vim/pack/plugins/start/startuptime.vim"]
 	path = .vim/pack/plugins/start/startuptime.vim
 	url = https://github.com/tweekmonster/startuptime.vim
+[submodule ".vim/pack/plugins/start/vim-matchup"]
+	path = .vim/pack/plugins/start/vim-matchup
+	url = https://github.com/andymass/vim-matchup

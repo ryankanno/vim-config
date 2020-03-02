@@ -180,6 +180,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 * [vim-json](https://github.com/elzr/vim-json)
 * [vim-jsx-typescript](https://github.com/peitalin/vim-jsx-typescript)
+* [vim-matchup](https://github.com/andymass/vim-matchup)
 * [vim-move](https://github.com/matze/vim-move)
 * [vim-mundo](https://github.com/simnalamburt/vim-mundo)
 * [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs)
