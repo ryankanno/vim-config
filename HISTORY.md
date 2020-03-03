@@ -1,5 +1,9 @@
 # History
 
+## 2020-03-03
+
+* Added vim-anyfold, vim-fold-cyle
+
 ## 2020-03-01
 
 * Replaced vim-which-key with shortcut.vim
