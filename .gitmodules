@@ -173,3 +173,6 @@
 [submodule ".vim/pack/plugins/start/notational-fzf-vim"]
 	path = .vim/pack/plugins/start/notational-fzf-vim
 	url = https://github.com/alok/notational-fzf-vim
+[submodule ".vim/pack/plugins/start/python-mode"]
+	path = .vim/pack/plugins/start/python-mode
+	url = https://github.com/python-mode/python-mode
