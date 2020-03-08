@@ -94,9 +94,6 @@
 [submodule ".vim/pack/plugins/start/vim-diffchanges"]
 	path = .vim/pack/plugins/start/vim-diffchanges
 	url = http://github.com/jmcantrell/vim-diffchanges
-[submodule ".vim/pack/plugins/start/python-mode"]
-	path = .vim/pack/plugins/start/python-mode
-	url = https://github.com/klen/python-mode
 [submodule ".vim/pack/plugins/start/hammer.vim"]
 	path = .vim/pack/plugins/start/hammer.vim
 	url = https://github.com/wikimatze/hammer.vim
