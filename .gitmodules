@@ -173,3 +173,6 @@
 [submodule ".vim/pack/plugins/start/vim-fold-cycle"]
 	path = .vim/pack/plugins/start/vim-fold-cycle
 	url = https://github.com/arecarn/vim-fold-cycle
+[submodule ".vim/pack/plugins/start/notational-fzf-vim"]
+	path = .vim/pack/plugins/start/notational-fzf-vim
+	url = https://github.com/alok/notational-fzf-vim

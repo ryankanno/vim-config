@@ -386,6 +386,9 @@ command! -bang -nargs=* Rg
   \           : fzf#vim#with_preview('right:50%', '?'),
   \   <bang>0)
 
+" notational-fzf-vim
+let g:nv_search_paths = ['~/.notes/']
+
 " vim-gutentags
 let g:gutentags_add_default_project_roots = 0
 let g:gutentags_project_root  = ['package.json', '.git']

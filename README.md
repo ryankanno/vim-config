@@ -157,6 +157,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [is.vim](https://github.com/haya14busa/is.vim)
 * [limelight.vim](https://github.com/junegunn/limelight.vim)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
+* [notational-fzf-vim](https://github.com/alok/notational-fzf-vim)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim/)
 * [python-mode](https://github.com/klen/python-mode)
 * [scratch.vim](https://github.com/ethanmuller/scratch.vim)
