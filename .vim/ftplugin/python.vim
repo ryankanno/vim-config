@@ -1,2 +1,2 @@
-" Check Python files with flake8 and pylint.
-let b:ale_linters = ['flake8']
+" Check Python files with flake8, mypy, pylint.
+let b:ale_linters = ['flake8', 'mypy', 'pylint']
