@@ -22,6 +22,9 @@ set encoding=utf-8              " use utf-8 encoding
 
 set number                      " set line numbers
 
+set lazyredraw                  " lazy
+set ttyfast
+
 set ruler                       " show ruler
 set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 
@@ -166,6 +169,7 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType sass setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd filetype crontab setlocal nobackup nowritebackup
 " }}}
 
 " Command Line {{{
@@ -360,6 +364,7 @@ noremap <F3> :Autoformat<CR>
 " ale
 let g:ale_linters = {
   \ 'javascript': ['eslint'],
+  \ 'python': [],
   \ 'typescript': ['eslint', 'tsserver'],
   \ }
 let g:ale_fixers = {
@@ -558,12 +563,9 @@ command! Nyan call NyanMe()
 
 " Platform Specific {{{
 if has('win32') || has('win64')
-  " Windows
-elseif has('gui_macvim')
-    " No gui for you!
-    if has("gui_running")
-        set guioptions=egmrt
-    endif
+    " Windows
+elseif has('mac')
+    " Mac
 endif
 " }}}
 
