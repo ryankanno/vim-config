@@ -327,6 +327,22 @@ map <D-]> :vsplit <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " <Leader>tb to open Tagbar
 map <Leader>tb :TagbarToggle<CR>
+let g:tagbar_type_javascript = {
+      \ 'ctagstype': 'javascript',
+      \ 'kinds': [
+      \ 'A:arrays',
+      \ 'P:properties',
+      \ 'T:tags',
+      \ 'O:objects',
+      \ 'G:generator functions',
+      \ 'F:functions',
+      \ 'C:constructors/classes',
+      \ 'M:methods',
+      \ 'V:variables',
+      \ 'I:imports',
+      \ 'E:exports',
+      \ 'S:styled components'
+      \ ]}
 
 " <Leader>u to toggle Mundo
 let g:mundo_prefer_python3 = 1
