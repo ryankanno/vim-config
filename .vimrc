@@ -322,8 +322,8 @@ map <Leader>S :Vscratch<CR>
 
 " CTags
 set tags+=./tags;/
-autocmd BufWritePost,FileWritePost *.py :silent! !ctags -R --languages=python 2>/dev/null
-map <Leader>tag :!ctags --extra=+f -R *<CR><CR>
+autocmd BufWritePost,FileWritePost *.py :silent! !uctags -R --languages=python 2>/dev/null
+map <Leader>tag :!uctags --extra=+f -R *<CR><CR>
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <D-]> :vsplit <CR>:exec("tag ".expand("<cword>"))<CR>
 

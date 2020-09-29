@@ -94,7 +94,7 @@ Just pass "UNINSTALL" to the install.sh script.
         </tr>
         <tr>
             <td>&lt;Leader&gt;tag</td>
-            <td>Generate ctags</td>
+            <td>Generate tags</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;tb</td>
