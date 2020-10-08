@@ -96,6 +96,12 @@ if exists('+colorcolumn')
 endif
 " }}}
 
+" Neovim {{{
+if has('nvim')
+  let g:loaded_python_provider=0
+endif
+" }}}
+"
 " Search {{{
 set ignorecase                  " case insensitive search
 set smartcase
@@ -322,7 +328,6 @@ map <Leader>S :Vscratch<CR>
 
 " CTags
 set tags+=./tags;/
-autocmd BufWritePost,FileWritePost *.py :silent! !uctags -R --languages=python 2>/dev/null
 map <Leader>tag :!uctags --extra=+f -R *<CR><CR>
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <D-]> :vsplit <CR>:exec("tag ".expand("<cword>"))<CR>
@@ -413,6 +418,7 @@ command! -bang -nargs=* Rg
 let g:nv_search_paths = ['~/.notes/']
 
 " vim-gutentags
+let g:gutentags_ctags_executable = '/opt/local/bin/uctags'
 let g:gutentags_add_default_project_roots = 0
 let g:gutentags_project_root  = ['package.json', '.git']
 let g:gutentags_cache_dir = expand('~/.gutentags_cache')
