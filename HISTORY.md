@@ -1,5 +1,9 @@
 # History
 
+## 2020-10-09
+
+* Added updated yankring.vim (source), vim-cutlass
+
 ## 2020-03-03
 
 * Added vim-anyfold, vim-fold-cyle
