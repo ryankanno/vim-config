@@ -179,3 +179,6 @@
 [submodule ".vim/pack/plugins/start/vim-cutlass"]
 	path = .vim/pack/plugins/start/vim-cutlass
 	url = https://github.com/svermeulen/vim-cutlass
+[submodule ".vim/pack/plugins/start/vim-jsx-pretty"]
+	path = .vim/pack/plugins/start/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty
