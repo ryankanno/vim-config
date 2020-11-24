@@ -31,9 +31,6 @@
 [submodule ".vim/pack/plugins/start/vim-abolish"]
 	path = .vim/pack/plugins/start/vim-abolish
 	url = https://github.com/tpope/vim-abolish
-[submodule ".vim/pack/plugins/start/bufexplorer"]
-	path = .vim/pack/plugins/start/bufexplorer
-	url = https://github.com/jlanzarotta/bufexplorer
 [submodule ".vim/pack/plugins/start/delimitMate"]
 	path = .vim/pack/plugins/start/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git

@@ -164,7 +164,8 @@ set foldtext=CustomFoldText('.',80)
 filetype plugin indent on
 autocmd BufNewFile,BufRead *.json set filetype=json
 autocmd BufNewFile,BufRead *.scss,*.sass set filetype=sass
-autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
+autocmd BufNewFile,BufRead *.tsx set filetype=typescriptreact
+autocmd BufNewFile,BufRead *.jsx set filetype=javascriptreact
 autocmd BufNewFile,BufRead *.vue set filetype=javascript
 autocmd FileType css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType html,htmldjango,xhtml,haml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 textwidth=0
@@ -240,10 +241,8 @@ noremap <Leader><space> :noh<CR>:call clearmatches()<CR>
 " match braces using a tab
 map <TAB> %
 
-" <Leader>b to open bufExplorer
-let g:bufExplorerDefaultHelp=0
-let g:bufExplorerShowRelativePath=1
-map <Leader>bv :BufExplorerVerticalSplit<CR>
+" <Leader>b to open :Buffers
+map <Leader>b :Buffers<CR>
 
 " <Leader>cc to comment
 Shortcut comment out line
@@ -268,7 +267,7 @@ map <Leader>dc :DiffChangesDiffToggle<CR>
 map <Leader>dp :DiffChangesPatchToggle<CR>
 
 " <Leader>f to start an `rg` search using FZF
-Shortcut start a FZF rg search 
+Shortcut start a FZF rg search
     \ map <Leader>f :Rg<space>
 
 " <Leader>F to start a `Files` search using FZF
@@ -284,9 +283,8 @@ Shortcut next jumplist position
 " Remape K to call devdocs
 let g:devdocs_filetype_map = {
   \ 'ruby': 'rails',
-  \ 'javascript.jsx': 'react',
-  \ 'typescript.ts': 'react',
-  \ 'typescript.tsx': 'react',
+  \ 'typescriptreact': 'react',
+  \ 'javascriptreact': 'react',
   \ 'javascript.test': 'jest',
   \ 'java': 'java',
   \ 'javacc': 'java',
@@ -385,19 +383,28 @@ noremap <F3> :Autoformat<CR>
 " Plugins {{{
 
 " ale
+noremap <Leader>af :ALEFix<CR>
+
 let g:ale_linters = {
   \ 'javascript': ['eslint'],
   \ 'python': [],
   \ 'typescript': ['eslint', 'tsserver'],
+  \ 'typescriptreact': ['eslint', 'tsserver'],
   \ }
 let g:ale_fixers = {
   \ 'javascript': ['eslint'],
+  \ 'javascriptreact': ['eslint'],
   \ 'typescript': ['eslint'],
+  \ 'typescriptreact': ['eslint'],
   \ 'scss': ['prettier'],
   \ 'html': ['prettier'],
   \ }
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_linters_explicit = 1
+let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 
 let g:ale_javascript_eslint_executable='npx eslint'

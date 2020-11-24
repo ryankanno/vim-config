@@ -54,7 +54,7 @@ Just pass "UNINSTALL" to the install.sh script.
         </tr>
         <tr>
             <td>&lt;Leader&gt;b</td>
-            <td>Toggle BufExplorer</td>
+            <td>Start a `:Buffers` search using FZF</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;f</td>
@@ -145,7 +145,6 @@ Just pass "UNINSTALL" to the install.sh script.
 Here are the plugins I use on the daily.  They are pretty amazing. :D
 
 * [ale](https://github.com/w0rp/ale)
-* [bufexplorer](https://github.com/jlanzarotta/bufexplorer)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [deoplete](https://github.com/Shougo/deoplete.nvim)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
