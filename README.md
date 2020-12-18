@@ -69,8 +69,8 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Next/prev in jumplist</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;n</td>
-            <td>Toggle NERDTreeTabs</td>
+            <td>&lt;Leader&gt;nt</td>
+            <td>Toggle NERDTree</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;num</td>

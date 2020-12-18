@@ -294,7 +294,7 @@ let g:devdocs_filetype_map = {
 nmap K <Plug>(devdocs-under-cursor)
 
 " <Leader>n to toggle NerdTreeTabs
-map <Leader>n <plug>NERDTreeTabsToggle<CR>
+map <Leader>nt <plug>NERDTreeTabsToggle<CR>
 let NERDTreeShowHidden=1
 
 " <Leader>num to toggle relative numbers
