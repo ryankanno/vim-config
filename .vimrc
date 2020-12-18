@@ -382,6 +382,13 @@ noremap <F3> :Autoformat<CR>
 
 " Plugins {{{
 
+" vim-cutlass
+nnoremap x d
+xnoremap x d
+
+nnoremap xx dd
+nnoremap X D
+
 " ale
 noremap <Leader>af :ALEFix<CR>
 
