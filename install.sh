@@ -34,7 +34,7 @@ else
         git pull "$VIMINSTALL"
         git submodule update --init
     else                          # clone if not
-        git clone git://github.com/ryankanno/vim-config.git "$VIMINSTALL"
+        git clone git@github.com:ryankanno/vim-config.git "$VIMINSTALL"
         cd "$VIMINSTALL"
         git submodule update --init
         cd "$VIMINSTALL/.vim/bundle/command-t/ruby/command-t/" 
