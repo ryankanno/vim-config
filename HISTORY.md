@@ -1,5 +1,9 @@
 # History
 
+## 2022-11-07
+
+* Updated plugins
+
 ## 2022-11-06
 
 * Removed python-mode, jedi-vim, deoplete
