@@ -183,7 +183,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
 * [vim-hashicorp-tools](https://github.com/hashivim/vim-hashicorp-tools)
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
-* [vim-json](https://github.com/elzr/vim-json)
 * [vim-jsx-typescript](https://github.com/peitalin/vim-jsx-typescript)
 * [vim-matchup](https://github.com/andymass/vim-matchup)
 * [vim-move](https://github.com/matze/vim-move)

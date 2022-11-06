@@ -49,9 +49,6 @@
 [submodule ".vim/pack/plugins/start/vim-powerline"]
 	path = .vim/pack/plugins/start/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline
-[submodule ".vim/pack/plugins/start/vim-json"]
-	path = .vim/pack/plugins/start/vim-json
-	url = https://github.com/elzr/vim-json.git
 [submodule ".vim/pack/plugins/start/vim-peekaboo"]
 	path = .vim/pack/plugins/start/vim-peekaboo
 	url = https://github.com/junegunn/vim-peekaboo
