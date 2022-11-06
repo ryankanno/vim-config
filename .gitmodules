@@ -106,9 +106,6 @@
 [submodule ".vim/pack/plugins/start/vimade"]
 	path = .vim/pack/plugins/start/vimade
 	url = https://github.com/TaDaa/vimade
-[submodule ".vim/pack/plugins/start/typescript-vim"]
-	path = .vim/pack/plugins/start/typescript-vim
-	url = https://github.com/leafgarland/typescript-vim.git
 [submodule ".vim/pack/plugins/start/vim-commentary"]
 	path = .vim/pack/plugins/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary

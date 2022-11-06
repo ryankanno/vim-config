@@ -165,7 +165,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [supertab](http://github.com/ervandew/supertab)
 * [tagbar](https://github.com/majutsushi/tagbar)
 * [tasklist](http://github.com/vim-scripts/TaskList)
-* [typescript-vim](https://github.com/leafgarland/typescript-vim)
 * [ultisnips](http://github.com/SirVer/ultisnips)
 * [vim-abolish](https://github.com/tpope/vim-abolish)
 * [vim-anyfold](https://github.com/pseewald/vim-anyfold)
