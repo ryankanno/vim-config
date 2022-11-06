@@ -12,7 +12,7 @@ it means you'll have an amazing dev editing environment.
 
 ### Install
 
-curl -o - https://raw.github.com/ryankanno/vim-config/master/install.sh | bash
+curl -L -o - https://raw.github.com/ryankanno/vim-config/main/install.sh | bash
 
 **Note** If you already have this installed, the installation script will
 instead just pull instead of update.
@@ -195,10 +195,10 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 * [vim-powerline](https://github.com/Lokaltog/vim-powerline)
 * [vim-repeat](https://github.com/tpope/vim-repeat)
+* [vim-shortcut](https://github.com/sunaku/vim-shortcut)
 * [vim-snippets](https://github.com/honza/vim-snippets)
 * [vim-speeddating](https://github.com/tpope/vim-speeddating)
 * [vim-startify](https://github.com/mhinz/vim-startify)
-* [vim-sunaku](https://github.com/sunaku/vim-shortcut)
 * [vim-surround](https://github.com/tpope/vim-surround)
 * [vim-template](https://github.com/aperezdc/vim-template)
 * [vimade](https://github.com/tadaa/vimade)
