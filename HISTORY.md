@@ -6,6 +6,7 @@
 * Added coc.nvim + coc-pyright
 * Removed vim-jsx-pretty, vim-json, vim-go, vim-jsx-typescript, typescript-vim
 * Replaced easymotion w/ hop.nvim
+* Removed sparkup
 
 ## 2020-10-09
 
