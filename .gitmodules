@@ -64,9 +64,6 @@
 [submodule ".vim/pack/plugins/start/vim-template"]
 	path = .vim/pack/plugins/start/vim-template
 	url = https://github.com/aperezdc/vim-template
-[submodule ".vim/pack/plugins/start/vim-go"]
-	path = .vim/pack/plugins/start/vim-go
-	url = https://github.com/fatih/vim-go
 [submodule ".vim/pack/plugins/start/vim-over"]
 	path = .vim/pack/plugins/start/vim-over
 	url = https://github.com/osyo-manga/vim-over
