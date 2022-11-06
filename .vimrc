@@ -431,9 +431,6 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" deoplete
-let g:deoplete#enable_at_startup = 1
-
 " fzf.vim
 set rtp+=~/.fzf
 command! -bang -nargs=* Rg
