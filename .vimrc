@@ -288,18 +288,18 @@ Shortcut previous jumplist position
 Shortcut next jumplist position
     \ nnoremap <Leader>l <C-i>
 
-" Remape K to call devdocs
+" Remap K to call devdocs in specific filetypes
 let g:devdocs_filetype_map = {
   \ 'ruby': 'rails',
   \ 'typescriptreact': 'react',
   \ 'javascriptreact': 'react',
   \ 'javascript.test': 'jest',
-  \ 'java': 'java',
-  \ 'javacc': 'java',
-  \ 'haskell': 'haskell',
-  \ 'rust': 'rust',
   \ }
-nmap K <Plug>(devdocs-under-cursor)
+
+augroup plugin-devdocs
+  autocmd!
+  autocmd FileType bash,c,cpp,go,rust,python nmap <buffer>K <Plug>(devdocs-under-cursor)
+augroup END
 
 " <Leader>n to toggle NerdTreeTabs
 map <Leader>nt <plug>NERDTreeTabsToggle<CR>

@@ -53,6 +53,10 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Patch of current buffer</td>
         </tr>
         <tr>
+            <td>K</td>
+            <td>Open https://devdocs.io using word under cursor</td>
+        </tr>
+        <tr>
             <td>&lt;Leader&gt;b</td>
             <td>Start a `:Buffers` search using FZF</td>
         </tr>
