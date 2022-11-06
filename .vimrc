@@ -418,6 +418,19 @@ let g:ale_fix_on_save = 1
 
 let g:ale_javascript_eslint_executable='npx eslint'
 
+" coc.nvim
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
 " deoplete
 let g:deoplete#enable_at_startup = 1
 
