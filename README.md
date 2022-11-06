@@ -148,7 +148,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [coc.nvim](https://github.com/neoclide/coc.nvim)
 * [coc-pyright](https://github.com/fannheyward/coc-pyright)
-* [deoplete](https://github.com/Shougo/deoplete.nvim)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
 * [devdocs.vim](https://github.com/rhysd/devdocs.vim)
 * [emmet-vim](https://github.com/mattn/emmet-vim)

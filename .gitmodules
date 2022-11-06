@@ -112,9 +112,6 @@
 [submodule ".vim/pack/plugins/start/vimade"]
 	path = .vim/pack/plugins/start/vimade
 	url = https://github.com/TaDaa/vimade
-[submodule ".vim/pack/plugins/start/deoplete.nvim"]
-	path = .vim/pack/plugins/start/deoplete.nvim
-	url = https://github.com/Shougo/deoplete.nvim
 [submodule ".vim/pack/plugins/start/typescript-vim"]
 	path = .vim/pack/plugins/start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
