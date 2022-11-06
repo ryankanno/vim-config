@@ -137,9 +137,6 @@
 [submodule ".vim/pack/plugins/start/vim-cursorword"]
 	path = .vim/pack/plugins/start/vim-cursorword
 	url = https://github.com/itchyny/vim-cursorword
-[submodule ".vim/pack/plugins/start/vim-anyfold"]
-	path = .vim/pack/plugins/start/vim-anyfold
-	url = https://github.com/pseewald/vim-anyfold
 [submodule ".vim/pack/plugins/start/vim-fold-cycle"]
 	path = .vim/pack/plugins/start/vim-fold-cycle
 	url = https://github.com/arecarn/vim-fold-cycle

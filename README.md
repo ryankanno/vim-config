@@ -175,7 +175,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [tasklist](http://github.com/vim-scripts/TaskList)
 * [ultisnips](http://github.com/SirVer/ultisnips)
 * [vim-abolish](https://github.com/tpope/vim-abolish)
-* [vim-anyfold](https://github.com/pseewald/vim-anyfold)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
 * [vim-commentary](https://github.com/tpope/vim-commentary)
 * [vim-cursorword](https://github.com/itchyny/vim-cursorword)
