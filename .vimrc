@@ -243,6 +243,12 @@ noremap <Leader><space> :noh<CR>:call clearmatches()<CR>
 " match braces using a tab
 map <TAB> %
 
+" <Leader><Leader> to HopWord
+map <Leader><Leader> :HopWord<CR>
+
+" <Leader>_ to HopLineStart
+map <Leader>_ :HopLineStart<CR>
+
 " <Leader>b to open :Buffers
 map <Leader>b :Buffers<CR>
 
@@ -369,10 +375,6 @@ map <Leader>x <Plug>TaskList
 let g:yankring_window_height = 16
 let g:yankring_max_history = 1024
 map <Leader>y :YRShow<CR>
-
-" <Leader><Leader> to load up vim-easymotion
-let g:EasyMotion_smartcase = 1
-let g:EasyMotion_leader_key = '<Leader><Leader>'
 
 " <F2> to toggle invisible characters
 map <silent> <F2> :set invlist<CR>

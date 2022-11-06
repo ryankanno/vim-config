@@ -122,7 +122,11 @@ Just pass "UNINSTALL" to the install.sh script.
         </tr>
         <tr>
             <td>&lt;Leader&gt;&lt;Leader&gt;</td>
-            <td>Toggle vim-easymotion</td>
+            <td>Toggle HopWord</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;_</td>
+            <td>Toggle HopLineStart</td>
         </tr>
         <tr>
             <td>&lt;Ctrl-y&gt;,</td>
@@ -154,6 +158,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
 * [goyo.vim](https://github.com/phanimahesh/goyo.vim)
 * [hammer.vim](https://github.com/wikimatze/hammer.vim)
+* [hop.nvim](https://github.com/phaazon/hop.nvim)
 * [is.vim](https://github.com/haya14busa/is.vim)
 * [limelight.vim](https://github.com/junegunn/limelight.vim)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
@@ -175,7 +180,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-devicons](https://github.com/ryanoasis/vim-devicons)
 * [vim-diffchanges](http://github.com/jmcantrell/vim-diffchanges)
 * [vim-disapprove-deep-indentation](https://github.com/dodie/vim-disapprove-deep-indentation)
-* [vim-easymotion](https://github.com/easymotion/vim-easymotion)
 * [vim-fold-cycle](https://github.com/arecarn/vim-fold-cycle)
 * [vim-fugitive](http://github.com/tpope/vim-fugitive)
 * [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
