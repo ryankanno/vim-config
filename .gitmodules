@@ -167,12 +167,6 @@
 [submodule ".vim/pack/plugins/start/notational-fzf-vim"]
 	path = .vim/pack/plugins/start/notational-fzf-vim
 	url = https://github.com/alok/notational-fzf-vim
-[submodule ".vim/pack/plugins/start/python-mode"]
-	path = .vim/pack/plugins/start/python-mode
-	url = https://github.com/python-mode/python-mode
-[submodule ".vim/pack/plugins/start/jedi-vim"]
-	path = .vim/pack/plugins/start/jedi-vim
-	url = https://github.com/davidhalter/jedi-vim.git
 [submodule ".vim/pack/plugins/start/vim-cutlass"]
 	path = .vim/pack/plugins/start/vim-cutlass
 	url = https://github.com/svermeulen/vim-cutlass

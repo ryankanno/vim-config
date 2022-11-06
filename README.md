@@ -154,12 +154,10 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [goyo.vim](https://github.com/phanimahesh/goyo.vim) - feat/add-filetype branch
 * [hammer.vim](https://github.com/wikimatze/hammer.vim)
 * [is.vim](https://github.com/haya14busa/is.vim)
-* [jedi-vim](https://github.com/davidhalter/jedi-vim)
 * [limelight.vim](https://github.com/junegunn/limelight.vim)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [notational-fzf-vim](https://github.com/alok/notational-fzf-vim)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim/)
-* [python-mode](https://github.com/klen/python-mode)
 * [scratch.vim](https://github.com/ethanmuller/scratch.vim)
 * [sparkup](https://github.com/rstacruz/sparkup)
 * [startuptime.vim](https://github.com/tweekmonster/startuptime.vim)
