@@ -4,6 +4,8 @@
 
 * Removed python-mode, jedi-vim, deoplete
 * Added coc.nvim + coc-pyright
+* Removed vim-jsx-pretty, vim-json, vim-go, vim-jsx-typescript, typescript-vim
+* Replaced easymotion w/ hop.nvim
 
 ## 2020-10-09
 
