@@ -1,5 +1,10 @@
 # History
 
+## 2022-11-06
+
+* Removed python-mode, jedi-vim, deoplete
+* Added coc.nvim + coc-pyright
+
 ## 2020-10-09
 
 * Added updated yankring.vim (source), vim-cutlass
