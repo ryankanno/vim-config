@@ -49,9 +49,6 @@
 [submodule ".vim/pack/plugins/start/vim-powerline"]
 	path = .vim/pack/plugins/start/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline
-[submodule ".vim/pack/plugins/start/vim-json"]
-	path = .vim/pack/plugins/start/vim-json
-	url = https://github.com/elzr/vim-json.git
 [submodule ".vim/pack/plugins/start/vim-peekaboo"]
 	path = .vim/pack/plugins/start/vim-peekaboo
 	url = https://github.com/junegunn/vim-peekaboo
@@ -67,9 +64,6 @@
 [submodule ".vim/pack/plugins/start/vim-template"]
 	path = .vim/pack/plugins/start/vim-template
 	url = https://github.com/aperezdc/vim-template
-[submodule ".vim/pack/plugins/start/vim-go"]
-	path = .vim/pack/plugins/start/vim-go
-	url = https://github.com/fatih/vim-go
 [submodule ".vim/pack/plugins/start/vim-over"]
 	path = .vim/pack/plugins/start/vim-over
 	url = https://github.com/osyo-manga/vim-over
@@ -112,12 +106,6 @@
 [submodule ".vim/pack/plugins/start/vimade"]
 	path = .vim/pack/plugins/start/vimade
 	url = https://github.com/TaDaa/vimade
-[submodule ".vim/pack/plugins/start/typescript-vim"]
-	path = .vim/pack/plugins/start/typescript-vim
-	url = https://github.com/leafgarland/typescript-vim.git
-[submodule ".vim/pack/plugins/start/vim-jsx-typescript"]
-	path = .vim/pack/plugins/start/vim-jsx-typescript
-	url = https://github.com/peitalin/vim-jsx-typescript
 [submodule ".vim/pack/plugins/start/vim-commentary"]
 	path = .vim/pack/plugins/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary
@@ -167,9 +155,6 @@
 [submodule ".vim/pack/plugins/start/vim-cutlass"]
 	path = .vim/pack/plugins/start/vim-cutlass
 	url = https://github.com/svermeulen/vim-cutlass
-[submodule ".vim/pack/plugins/start/vim-jsx-pretty"]
-	path = .vim/pack/plugins/start/vim-jsx-pretty
-	url = https://github.com/MaxMEllon/vim-jsx-pretty
 [submodule ".vim/pack/plugins/start/coc.nvim"]
 	path = .vim/pack/plugins/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
