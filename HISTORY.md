@@ -3,6 +3,7 @@
 ## 2022-11-07
 
 * Updated plugins
+* Removed vim-anyfold (will wait for treesitter)
 
 ## 2022-11-06
 
