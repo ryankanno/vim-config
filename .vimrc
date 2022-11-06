@@ -6,6 +6,8 @@
 let g:user="Ryan Kanno"
 let g:email="ryankanno@localkinegrinds.com"
 
+let s:uname = substitute(system("uname -s"), '\n', '', '')
+
 " Abbreviations {{{
 iab me@ Ryan Kanno <ryankanno@localkinegrinds.com>
 iab date@ <C-R>=strftime("%A, %B %e %Y %I:%M:%S %p %Z")<CR>
@@ -432,11 +434,16 @@ command! -bang -nargs=* Rg
 let g:nv_search_paths = ['~/.notes/']
 
 " vim-gutentags
-let g:gutentags_ctags_executable = '/opt/local/bin/uctags'
+if s:uname == "Darwin"
+    let g:gutentags_ctags_executable = '/opt/local/bin/uctags'
+elseif s:uname == "Linux"
+    let g:gutentags_ctags_executable = '/snap/bin/ctags'
+endif
 let g:gutentags_add_default_project_roots = 0
 let g:gutentags_project_root  = ['package.json', '.git']
 let g:gutentags_cache_dir = expand('~/.gutentags_cache')
 let g:gutentags_exclude_filetypes = ['gitcommit', 'gitconfig', 'gitrebase', 'gitsendemail', 'git']
+let g:gutentags_trace = 1
 let g:gutentags_generate_on_new = 1
 let g:gutentags_generate_on_missing = 1
 let g:gutentags_generate_on_write = 1
@@ -444,7 +451,7 @@ let g:gutentags_generate_on_empty_buffer = 0
 let g:gutentags_ctags_extra_args = ['--tag-relative=yes', '--fields=+ailmnS']
 let g:gutentags_ctags_exclude = [
   \  '*.git', 'cache', 'build', 'dist', 'bin', 'node_modules',
-  \  '*.pyc',
+  \  '*.pyc', '.tox',
   \  '.DS_Store',
   \  '*.bmp', '*.gif', '*.ico', '*.jpg', '*.png', '*.svg',
   \  '*.rar', '*.zip', '*.tar', '*.tar.gz', '*.tar.xz', '*.tar.bz2',
@@ -598,14 +605,6 @@ function! NyanMe() " {{{
     redraw
 endfunction " }}}
 command! Nyan call NyanMe()
-
-" Platform Specific {{{
-if has('win32') || has('win64')
-    " Windows
-elseif has('mac')
-    " Mac
-endif
-" }}}
 
 " Code {{{
 " improve commit messages
