@@ -31,9 +31,6 @@
 [submodule ".vim/pack/plugins/start/delimitMate"]
 	path = .vim/pack/plugins/start/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
-[submodule ".vim/pack/plugins/start/vim-nerdtree-tabs"]
-	path = .vim/pack/plugins/start/vim-nerdtree-tabs
-	url = https://github.com/jistr/vim-nerdtree-tabs
 [submodule ".vim/pack/plugins/start/tasklist.vim"]
 	path = .vim/pack/plugins/start/tasklist.vim
 	url = https://github.com/vim-scripts/TaskList.vim

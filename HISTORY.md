@@ -4,6 +4,7 @@
 
 * Updated plugins
 * Removed vim-anyfold (will wait for treesitter)
+* Removed vim-nerdtree-tabs (unmaintained)
 
 ## 2022-11-06
 
