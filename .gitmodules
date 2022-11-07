@@ -28,9 +28,6 @@
 [submodule ".vim/pack/plugins/start/vim-abolish"]
 	path = .vim/pack/plugins/start/vim-abolish
 	url = https://github.com/tpope/vim-abolish
-[submodule ".vim/pack/plugins/start/delimitMate"]
-	path = .vim/pack/plugins/start/delimitMate
-	url = https://github.com/Raimondi/delimitMate.git
 [submodule ".vim/pack/plugins/start/tasklist.vim"]
 	path = .vim/pack/plugins/start/tasklist.vim
 	url = https://github.com/vim-scripts/TaskList.vim
@@ -149,3 +146,6 @@
 [submodule ".vim/pack/plugins/start/hop.nvim"]
 	path = .vim/pack/plugins/start/hop.nvim
 	url = https://github.com/phaazon/hop.nvim/
+[submodule ".vim/pack/plugins/start/lexima.vim"]
+	path = .vim/pack/plugins/start/lexima.vim
+	url = https://github.com/cohama/lexima.vim

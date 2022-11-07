@@ -5,6 +5,7 @@
 * Updated plugins
 * Removed vim-anyfold (will wait for treesitter)
 * Removed vim-nerdtree-tabs (unmaintained)
+* Removed delimitMate and replaced with lexima.vim
 
 ## 2022-11-06
 
