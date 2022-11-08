@@ -94,13 +94,13 @@ match OverLength /\%80v.\+/
 
 " show color column
 if exists('+colorcolumn')
-  set colorcolumn=80
+    set colorcolumn=80
 endif
 " }}}
 
 " Neovim {{{
 if has('nvim')
-  let g:loaded_python_provider=0
+    let g:loaded_python_provider=0
 endif
 " }}}
 "
@@ -254,7 +254,7 @@ map <Leader>b :Buffers<CR>
 
 " <Leader>cc to comment
 Shortcut comment out line
-    \ nmap <Leader>cc <Plug>CommentaryLine
+            \ nmap <Leader>cc <Plug>CommentaryLine
 
 " <Leader>cd switches to directory of open buffer
 map <Leader>cd :cd %:p:h<CR>
@@ -276,43 +276,43 @@ map <Leader>dp :DiffChangesPatchToggle<CR>
 
 " <Leader>f to start an `rg` search using FZF
 Shortcut start a FZF rg search
-    \ map <Leader>f :Rg<space>
+            \ map <Leader>f :Rg<space>
 
 " <Leader>F to start a `Files` search using FZF
 Shortcut start a FZF files search
-    \ map <Leader>F :Files<CR>
+            \ map <Leader>F :Files<CR>
 
 " <Leader>h/l to go to previous/next in jumplist
 Shortcut previous jumplist position
-    \ nnoremap <Leader>h <C-O>
+            \ nnoremap <Leader>h <C-O>
 Shortcut next jumplist position
-    \ nnoremap <Leader>l <C-i>
+            \ nnoremap <Leader>l <C-i>
 
 " Remap K to call devdocs in specific filetypes
 let g:devdocs_filetype_map = {
-  \ 'ruby': 'rails',
-  \ 'typescriptreact': 'react',
-  \ 'javascriptreact': 'react',
-  \ 'javascript.test': 'jest',
-  \ }
+            \ 'ruby': 'rails',
+            \ 'typescriptreact': 'react',
+            \ 'javascriptreact': 'react',
+            \ 'javascript.test': 'jest',
+            \ }
 
 augroup plugin-devdocs
-  autocmd!
-  autocmd FileType bash,c,cpp,go,rust,python nmap <buffer>K <Plug>(devdocs-under-cursor)
+    autocmd!
+    autocmd FileType bash,c,cpp,go,rust,python nmap <buffer>K <Plug>(devdocs-under-cursor)
 augroup END
 
-" <Leader>n to focus NerdTree
-map <Leader>n :NERDTreeMirror<CR>:NERDTreeFocus<CR>
+" <Leader>n to focus NvimTree
+map <Leader>n :NvimTreeFocus<CR>
 
-" <Leader>nt to toggle NerdTree
-map <Leader>nt :NERDTreeToggle<CR>
+" <Leader>nt to toggle NvimTreeToggle
+map <Leader>nt :NvimTreeToggle<CR>
 
-" <Leader>ntf to find and reveal file in active buffer
-map <Leader>ntf :NERDTreeFind<CR>
+" <Leader>ntf to reveal file in active buffer in NvimTree
+map <Leader>ntf :NvimTreeFindFile<CR>
 
 " <Leader>num to toggle relative numbers
 map <Leader>num :NumbersToggle<CR>
-let g:numbers_exclude = ['goyo_pad', 'gundo', 'minibufexpl', 'nerdtree', 'tagbar']
+let g:numbers_exclude = ['goyo_pad', 'gundo', 'minibufexpl', 'nvim-tree', 'tagbar']
 
 " <Leader>o for OverCommandLine
 map <Leader>o :OverCommandLine<CR>
@@ -323,9 +323,9 @@ let g:ctrlp_map = '<Leader>p'
 let g:ctrlp_cmd = 'CtrlPMixed'
 
 if executable('rg')
-  set grepprg=rg\ --color=never
-  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
-  let g:ctrlp_use_caching = 0
+    set grepprg=rg\ --color=never
+    let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+    let g:ctrlp_use_caching = 0
 endif
 
 " <Leader>pb to preview buffer with hammer.vim
@@ -346,21 +346,21 @@ map <D-]> :vsplit <CR>:exec("tag ".expand("<cword>"))<CR>
 " <Leader>tb to open Tagbar
 map <Leader>tb :TagbarToggle<CR>
 let g:tagbar_type_javascript = {
-      \ 'ctagstype': 'javascript',
-      \ 'kinds': [
-      \ 'A:arrays',
-      \ 'P:properties',
-      \ 'T:tags',
-      \ 'O:objects',
-      \ 'G:generator functions',
-      \ 'F:functions',
-      \ 'C:constructors/classes',
-      \ 'M:methods',
-      \ 'V:variables',
-      \ 'I:imports',
-      \ 'E:exports',
-      \ 'S:styled components'
-      \ ]}
+            \ 'ctagstype': 'javascript',
+            \ 'kinds': [
+                \ 'A:arrays',
+                \ 'P:properties',
+                \ 'T:tags',
+                \ 'O:objects',
+                \ 'G:generator functions',
+                \ 'F:functions',
+                \ 'C:constructors/classes',
+                \ 'M:methods',
+                \ 'V:variables',
+                \ 'I:imports',
+                \ 'E:exports',
+                \ 'S:styled components'
+                \ ]}
 
 " <Leader>u to toggle Mundo
 let g:mundo_prefer_python3 = 1
@@ -402,19 +402,19 @@ nnoremap X D
 noremap <Leader>af :ALEFix<CR>
 
 let g:ale_linters = {
-  \ 'javascript': ['eslint'],
-  \ 'python': [],
-  \ 'typescript': ['eslint', 'tsserver'],
-  \ 'typescriptreact': ['eslint', 'tsserver'],
-  \ }
+            \ 'javascript': ['eslint'],
+            \ 'python': [],
+            \ 'typescript': ['eslint', 'tsserver'],
+            \ 'typescriptreact': ['eslint', 'tsserver'],
+            \ }
 let g:ale_fixers = {
-  \ 'javascript': ['eslint'],
-  \ 'javascriptreact': ['eslint'],
-  \ 'typescript': ['eslint'],
-  \ 'typescriptreact': ['eslint'],
-  \ 'scss': ['prettier'],
-  \ 'html': ['prettier'],
-  \ }
+            \ 'javascript': ['eslint'],
+            \ 'javascriptreact': ['eslint'],
+            \ 'typescript': ['eslint'],
+            \ 'typescriptreact': ['eslint'],
+            \ 'scss': ['prettier'],
+            \ 'html': ['prettier'],
+            \ }
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 let g:ale_lint_on_enter = 0
@@ -427,9 +427,9 @@ let g:ale_javascript_eslint_executable='npx eslint'
 
 " coc.nvim
 if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
+    inoremap <silent><expr> <c-space> coc#refresh()
 else
-  inoremap <silent><expr> <c-@> coc#refresh()
+    inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
 " GoTo code navigation.
@@ -441,27 +441,33 @@ nmap <silent> gr <Plug>(coc-references)
 " fzf.vim
 set rtp+=~/.fzf
 command! -bang -nargs=* Rg
-  \ call fzf#vim#grep(
-  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
-  \   <bang>0 ? fzf#vim#with_preview('up:50%')
-  \           : fzf#vim#with_preview('right:50%', '?'),
-  \   <bang>0)
+            \ call fzf#vim#grep(
+            \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+            \   <bang>0 ? fzf#vim#with_preview('up:50%')
+            \           : fzf#vim#with_preview('right:50%', '?'),
+            \   <bang>0)
 
-" nerdtree
+" nvim-tree.lua
+lua << EOF
+    require'nvim-tree'.setup{
+        auto_reload_on_write = true,
+        update_focused_file = {
+            enable = true
+        },
+        diagnostics = {
+            enable = false,
+        },
+        actions = {
+            open_file = {
+                quit_on_open = true,
+            }
+        }
+    }
+EOF
 
-" Start NERDTree, unless a file or session is specified, eg. vim -S session_file.vim.
+" Start nvim-tree, unless a file or session is specified, eg. vim -S session_file.vim.
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') && v:this_session == '' | NERDTree | endif
-
-" Exit Vim if NERDTree is the only window remaining in the only tab.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-
-" Close the tab if NERDTree is the only window remaining in it.
-autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-
-" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
-autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
-    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') && v:this_session == '' | NvimTree | endif
 
 " notational-fzf-vim
 let g:nv_search_paths = ['~/.notes/']
@@ -483,13 +489,13 @@ let g:gutentags_generate_on_write = 1
 let g:gutentags_generate_on_empty_buffer = 0
 let g:gutentags_ctags_extra_args = ['--tag-relative=yes', '--fields=+ailmnS']
 let g:gutentags_ctags_exclude = [
-  \  '*.git', 'cache', 'build', 'dist', 'bin', 'node_modules',
-  \  '*.pyc', '.tox',
-  \  '.DS_Store',
-  \  '*.bmp', '*.gif', '*.ico', '*.jpg', '*.png', '*.svg',
-  \  '*.rar', '*.zip', '*.tar', '*.tar.gz', '*.tar.xz', '*.tar.bz2',
-  \  '*.pdf', '*.doc', '*.docx', '*.ppt', '*.pptx', '*.xls',
-  \  ]
+            \  '*.git', 'cache', 'build', 'dist', 'bin', 'node_modules',
+            \  '*.pyc', '.tox',
+            \  '.DS_Store',
+            \  '*.bmp', '*.gif', '*.ico', '*.jpg', '*.png', '*.svg',
+            \  '*.rar', '*.zip', '*.tar', '*.tar.gz', '*.tar.xz', '*.tar.bz2',
+            \  '*.pdf', '*.doc', '*.docx', '*.ppt', '*.pptx', '*.xls',
+            \  ]
 
 " vim-template directory
 let g:templates_directory="$HOME/.vim/templates"
@@ -506,26 +512,26 @@ autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 function! s:goyo_enter()
-  if has('gui_running')
-    set fullscreen
-  endif
-  set nu!
-  set rnu!
-  NumbersDisable
-  Limelight
+    if has('gui_running')
+        set fullscreen
+    endif
+    set nu!
+    set rnu!
+    NumbersDisable
+    Limelight
 endfunction
 
 function! s:goyo_leave()
-  if has('gui_running')
-    set nofullscreen
-  endif
-  set nu
-  set rnu
-  NumbersEnable
-  Limelight!
+    if has('gui_running')
+        set nofullscreen
+    endif
+    set nu
+    set rnu
+    NumbersEnable
+    Limelight!
 endfunction
 
-function! NyanMe() " {{{
+function! NyanMe()
     hi NyanFur             guifg=#BBBBBB
     hi NyanPoptartEdge     guifg=#ffd0ac
     hi NyanPoptartFrosting guifg=#fd3699 guibg=#fe98ff
@@ -636,8 +642,9 @@ function! NyanMe() " {{{
     echo " "
     echo "Noms?"
     redraw
-endfunction " }}}
+endfunction
 command! Nyan call NyanMe()
+" }}}
 
 " Code {{{
 " improve commit messages

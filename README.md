@@ -74,15 +74,15 @@ Just pass "UNINSTALL" to the install.sh script.
         </tr>
         <tr>
             <td>&lt;Leader&gt;n</td>
-            <td>Focus NERDTree</td>
+            <td>Focus NvimTree</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;nt</td>
-            <td>Toggle NERDTree</td>
+            <td>Toggle NvimTree</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;ntf</td>
-            <td>Reveal buffer in NERDTree</td>
+            <td>Reveal buffer in NvimTree</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;num</td>
@@ -172,9 +172,9 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [hop.nvim](https://github.com/phaazon/hop.nvim)
 * [is.vim](https://github.com/haya14busa/is.vim)
 * [limelight.vim](https://github.com/junegunn/limelight.vim)
-* [nerdtree](https://github.com/scrooloose/nerdtree)
 * [notational-fzf-vim](https://github.com/alok/notational-fzf-vim)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim/)
+* [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
 * [scratch.vim](https://github.com/ethanmuller/scratch.vim)
 * [startuptime.vim](https://github.com/tweekmonster/startuptime.vim)
 * [supertab](http://github.com/ervandew/supertab)
