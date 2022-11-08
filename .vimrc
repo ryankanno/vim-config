@@ -447,6 +447,13 @@ command! -bang -nargs=* Rg
             \           : fzf#vim#with_preview('right:50%', '?'),
             \   <bang>0)
 
+" hop.nvim
+lua << EOF
+    require'hop'.setup{
+        quit_key = '<SPC>',
+    }
+EOF
+
 " nvim-tree.lua
 lua << EOF
     require'nvim-tree'.setup{
