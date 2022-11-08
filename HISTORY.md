@@ -1,5 +1,9 @@
 # History
 
+## 2022-11-09
+
+* Removed nerdtree and replaced with nvim-tree.lua
+
 ## 2022-11-07
 
 * Updated plugins
