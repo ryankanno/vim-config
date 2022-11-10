@@ -1,5 +1,9 @@
 # History
 
+## 2022-11-10
+
+* Added copilot.vim
+
 ## 2022-11-09
 
 * Removed nerdtree and replaced with nvim-tree.lua
