@@ -149,3 +149,6 @@
 [submodule ".vim/pack/plugins/start/nvim-tree.lua"]
 	path = .vim/pack/plugins/start/nvim-tree.lua
 	url = https://github.com/nvim-tree/nvim-tree.lua
+[submodule ".vim/pack/plugins/start/copilot.vim"]
+	path = .vim/pack/plugins/start/copilot.vim
+	url = https://github.com/github/copilot.vim
