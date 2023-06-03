@@ -69,7 +69,7 @@ set synmaxcol=256
 
 set termguicolors               " sets colors
 set background=dark             " sets the background color (I like it dark)
-colorscheme molokai             " <3 colorscheme ftw.
+colorscheme molokai            " <3 colorscheme ftw.
 " }}}
 
 " Visual {{{
@@ -171,7 +171,7 @@ autocmd BufNewFile,BufRead *.jsx set filetype=javascriptreact
 autocmd BufNewFile,BufRead *.vue set filetype=javascript
 autocmd FileType css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType html,htmldjango,xhtml,haml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 textwidth=0
-autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType javascript,javascriptreact,typescriptreact setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType json setlocal fdm=syntax
 autocmd FileType make setlocal noexpandtab
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
@@ -493,9 +493,20 @@ let g:gutentags_generate_on_missing = 1
 let g:gutentags_generate_on_write = 1
 let g:gutentags_generate_on_empty_buffer = 0
 let g:gutentags_ctags_extra_args = ['--tag-relative=yes', '--fields=+ailmnS']
+
+if executable('rg')
+    let g:gutentags_file_list_command = 'rg --files'
+else
+    let g:gutentags_file_list_command = {
+                \ 'markers': {
+                \ '.git': 'bash -c "git ls-files; git ls-files --others --exclude-standard"',
+                \ },
+                \ }
+endif
+
 let g:gutentags_ctags_exclude = [
             \  '*.git', 'cache', 'build', 'dist', 'bin', 'node_modules',
-            \  '*.pyc', '.tox',
+            \  '*.pyc', '.tox', '.mypy_cache',
             \  '.DS_Store',
             \  '*.bmp', '*.gif', '*.ico', '*.jpg', '*.png', '*.svg',
             \  '*.rar', '*.zip', '*.tar', '*.tar.gz', '*.tar.xz', '*.tar.bz2',
