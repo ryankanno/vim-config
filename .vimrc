@@ -339,9 +339,6 @@ if executable('rg')
     let g:ctrlp_use_caching = 0
 endif
 
-" <Leader>pb to preview buffer with hammer.vim
-map <Leader>pb :Hammer<CR>
-
 " <Leader>s to open scratch in horizontal split window
 map <Leader>s :Sscratch<CR>
 
