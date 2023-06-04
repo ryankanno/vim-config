@@ -157,16 +157,17 @@ Just pass "UNINSTALL" to the install.sh script.
 Here are the plugins I use on the daily.  They are pretty amazing. :D
 
 * [ale](https://github.com/w0rp/ale)
-* [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [coc.nvim](https://github.com/neoclide/coc.nvim)
 * [coc-pyright](https://github.com/fannheyward/coc-pyright)
 * [copilot.vim](https://github.com/github/copilot.vim)
+* [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [devdocs.vim](https://github.com/rhysd/devdocs.vim)
 * [emmet-vim](https://github.com/mattn/emmet-vim)
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
 * [goyo.vim](https://github.com/phanimahesh/goyo.vim)
 * [hop.nvim](https://github.com/phaazon/hop.nvim)
 * [is.vim](https://github.com/haya14busa/is.vim)
+* [lexima.vim](https://github.com/cohama/lexima.vim)
 * [limelight.vim](https://github.com/junegunn/limelight.vim)
 * [notational-fzf-vim](https://github.com/alok/notational-fzf-vim)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim/)
