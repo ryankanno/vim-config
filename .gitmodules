@@ -88,13 +88,6 @@
 [submodule ".vim/pack/plugins/start/vim-startify"]
 	path = .vim/pack/plugins/start/vim-startify
 	url = https://github.com/mhinz/vim-startify.git
-[submodule ".vim/pack/plugins/start/limelight.vim"]
-	path = .vim/pack/plugins/start/limelight.vim
-	url = https://github.com/junegunn/limelight.vim
-[submodule ".vim/pack/plugins/start/goyo.vim"]
-	path = .vim/pack/plugins/start/goyo.vim
-	url = https://github.com/phanimahesh/goyo.vim
-	branch = feat/add-filetype
 [submodule ".vim/pack/plugins/start/vim-devicons"]
 	path = .vim/pack/plugins/start/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons

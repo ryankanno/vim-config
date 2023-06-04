@@ -21,6 +21,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'alok/notational-fzf-vim'
 
+Plug 'phanimahesh/goyo.vim'
+Plug 'junegunn/limelight.vim'
+
 call plug#end()
 " }}}
 
