@@ -194,6 +194,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-mundo](https://github.com/simnalamburt/vim-mundo)
 * [vim-over](https://github.com/osyo-manga/vim-over)
 * [vim-peekaboo](https://github.com/junegunn/vim-peekaboo)
+* [vim-plug](https://github.com/junegunn/vim-plug)
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 * [vim-powerline](https://github.com/Lokaltog/vim-powerline)
 * [vim-repeat](https://github.com/tpope/vim-repeat)
