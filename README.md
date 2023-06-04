@@ -97,10 +97,6 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Ctrl-P</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;pb</td>
-            <td>Load up current buffer into Hammer</td>
-        </tr>
-        <tr>
             <td>&lt;Leader&gt;(s/S)</td>
             <td>Open scratch buffer in split window</td>
         </tr>
@@ -169,7 +165,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [emmet-vim](https://github.com/mattn/emmet-vim)
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
 * [goyo.vim](https://github.com/phanimahesh/goyo.vim)
-* [hammer.vim](https://github.com/wikimatze/hammer.vim)
 * [hop.nvim](https://github.com/phaazon/hop.nvim)
 * [is.vim](https://github.com/haya14busa/is.vim)
 * [limelight.vim](https://github.com/junegunn/limelight.vim)
@@ -193,7 +188,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-fold-cycle](https://github.com/arecarn/vim-fold-cycle)
 * [vim-fugitive](http://github.com/tpope/vim-fugitive)
 * [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
-* [vim-hashicorp-tools](https://github.com/hashivim/vim-hashicorp-tools)
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 * [vim-matchup](https://github.com/andymass/vim-matchup)
 * [vim-move](https://github.com/matze/vim-move)
