@@ -1,5 +1,10 @@
 # History
 
+## 2023-06-04
+
+* [refactor] - Removed hammer.vim & vim-hashicorp-tools
+* [feat] - Migrated to use vim-plug and away from submodules
+
 ## 2022-11-10
 
 * Added copilot.vim

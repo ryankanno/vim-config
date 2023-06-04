@@ -3,10 +3,76 @@
 " @ryankanno
 "
 
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 let g:user="Ryan Kanno"
 let g:email="ryankanno@localkinegrinds.com"
 
 let s:uname = substitute(system("uname -s"), '\n', '', '')
+
+" Plugins {{{
+call plug#begin()
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'alok/notational-fzf-vim'
+
+Plug 'dense-analysis/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'github/copilot.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'rhysd/devdocs.vim'
+Plug 'mattn/emmet-vim'
+Plug 'phanimahesh/goyo.vim'
+Plug 'phaazon/hop.nvim'
+Plug 'haya14busa/is.vim'
+Plug 'cohama/lexima.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'myusuf3/numbers.vim'
+Plug 'nvim-tree/nvim-tree.lua'
+Plug 'ethanmuller/scratch.vim'
+Plug 'tweekmonster/startuptime.vim'
+Plug 'ervandew/supertab'
+Plug 'majutsushi/tagbar'
+Plug 'vim-scripts/TaskList.vim'
+Plug 'SirVer/ultisnips'
+Plug 'tpope/vim-abolish'
+Plug 'Chiel92/vim-autoformat'
+Plug 'tpope/vim-commentary'
+Plug 'itchyny/vim-cursorword'
+Plug 'svermeulen/vim-cutlass'
+Plug 'ryanoasis/vim-devicons'
+Plug 'jmcantrell/vim-diffchanges'
+Plug 'dodie/vim-disapprove-deep-indentation'
+Plug 'arecarn/vim-fold-cycle'
+Plug 'tpope/vim-fugitive'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'andymass/vim-matchup'
+Plug 'matze/vim-move'
+Plug 'simnalamburt/vim-mundo'
+Plug 'osyo-manga/vim-over'
+Plug 'junegunn/vim-peekaboo'
+Plug 'junegunn/vim-plug'
+Plug 'sheerun/vim-polyglot'
+Plug 'Lokaltog/vim-powerline'
+Plug 'tpope/vim-repeat'
+Plug 'sunaku/vim-shortcut'
+Plug 'honza/vim-snippets'
+Plug 'tpope/vim-speeddating'
+Plug 'mhinz/vim-startify'
+Plug 'tpope/vim-surround'
+Plug 'aperezdc/vim-template'
+Plug 'tadaa/vimade'
+Plug 'vim-scripts/YankRing.vim'
+Plug 'regedarek/ZoomWin'
+
+call plug#end()
+" }}}
 
 " Abbreviations {{{
 iab me@ Ryan Kanno <ryankanno@localkinegrinds.com>
@@ -14,7 +80,7 @@ iab date@ <C-R>=strftime("%A, %B %e %Y %I:%M:%S %p %Z")<CR>
 " }}}
 
 " Hack until I refactor some of this, but need to call this early.
-packadd vim-shortcut
+runtime plugin/shortcut.vim
 
 " General {{{
 let mapleader=","               " set mapleader
@@ -454,7 +520,6 @@ EOF
 " nvim-tree.lua
 lua << EOF
     require'nvim-tree'.setup{
-        open_on_setup_file = true,
         open_on_tab = true,
         auto_reload_on_write = true,
         update_focused_file = {

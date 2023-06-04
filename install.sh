@@ -11,7 +11,7 @@ function update_symlink() {
 
     if [ -L "${TARGET}" ]; then
         PREV_SYMLINK="${TARGET}_$EPOCH"
-        cp -RP "${TARGET}" $PREV_SYMLINK
+        cp -rL "${TARGET}" $PREV_SYMLINK
         rm -rf "${TARGET}"
         echo "Found existing ${TARGET} symlink, copying to $PREV_SYMLINK, removing original."
     elif [ -f "${TARGET}" ]; then
@@ -32,13 +32,8 @@ else
     if [[ -d "${VIMINSTALL}" && ! -L "${VIMINSTALL}" ]]; then # pull if installed
         cd "$VIMINSTALL"
         git pull "$VIMINSTALL"
-        git submodule update --init
     else                          # clone if not
         git clone git@github.com:ryankanno/vim-config.git "$VIMINSTALL"
-        cd "$VIMINSTALL"
-        git submodule update --init
-        cd "$VIMINSTALL/.vim/bundle/command-t/ruby/command-t/" 
-        ruby extconf.rb && make
     fi
 
     update_symlink "$VIMINSTALL/.vim" "$HOME/.vim"
