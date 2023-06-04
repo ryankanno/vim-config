@@ -16,6 +16,11 @@ let s:uname = substitute(system("uname -s"), '\n', '', '')
 
 " Plugins {{{
 call plug#begin()
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'alok/notational-fzf-vim'
+
 call plug#end()
 " }}}
 
