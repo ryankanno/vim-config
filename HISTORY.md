@@ -2,6 +2,10 @@
 
 ## 2023-06-04
 
+* [feat] - Added vim-bbye
+
+## 2023-06-04
+
 * [refactor] - Removed hammer.vim & vim-hashicorp-tools
 * [feat] - Migrated to use vim-plug and away from submodules
 
