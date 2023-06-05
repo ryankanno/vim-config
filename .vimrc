@@ -42,6 +42,7 @@ Plug 'vim-scripts/TaskList.vim'
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-abolish'
 Plug 'Chiel92/vim-autoformat'
+Plug 'moll/vim-bbye'
 Plug 'tpope/vim-commentary'
 Plug 'itchyny/vim-cursorword'
 Plug 'svermeulen/vim-cutlass'
@@ -601,6 +602,9 @@ let g:indent_guides_enable_on_vim_startup = 1
 
 " vim-move
 let g:move_key_modifier = 'C'
+
+" vim-bbye
+nnoremap <Leader>q :Bdelete<CR>
 
 " goyo + limelight
 autocmd BufLeave goyo_pad setlocal norelativenumber
