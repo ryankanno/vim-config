@@ -42,6 +42,7 @@ if !exists('g:vscode')
     Plug 'majutsushi/tagbar'
     Plug 'wellle/targets.vim'
     Plug 'vim-scripts/TaskList.vim'
+    Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.10.0'}
     Plug 'SirVer/ultisnips'
     Plug 'tpope/vim-abolish'
     Plug 'Chiel92/vim-autoformat'
@@ -610,6 +611,15 @@ let g:move_key_modifier = 'C'
 
 " vim-bbye
 nnoremap <Leader>q :Bdelete<CR>
+
+" toggleterm.nvim
+lua << EOF
+    require("toggleterm").setup({
+        open_mapping = [[<A-l>]],
+        size = 50,
+        direction = "vertical",
+    })
+EOF
 
 " goyo + limelight
 autocmd BufLeave goyo_pad setlocal norelativenumber

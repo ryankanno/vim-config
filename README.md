@@ -178,6 +178,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [tagbar](https://github.com/majutsushi/tagbar)
 * [targets.vim](https://github.com/wellle/targets.vim)
 * [tasklist](http://github.com/vim-scripts/TaskList)
+* [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 * [ultisnips](http://github.com/SirVer/ultisnips)
 * [vim-abolish](https://github.com/tpope/vim-abolish)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
