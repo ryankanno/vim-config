@@ -171,6 +171,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [limelight.vim](https://github.com/junegunn/limelight.vim)
 * [notational-fzf-vim](https://github.com/alok/notational-fzf-vim)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim/)
+* [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 * [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
 * [scratch.vim](https://github.com/ethanmuller/scratch.vim)
 * [startuptime.vim](https://github.com/tweekmonster/startuptime.vim)

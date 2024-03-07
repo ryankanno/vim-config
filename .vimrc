@@ -43,6 +43,7 @@ if !exists('g:vscode')
     Plug 'wellle/targets.vim'
     Plug 'vim-scripts/TaskList.vim'
     Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.10.0'}
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'SirVer/ultisnips'
     Plug 'tpope/vim-abolish'
     Plug 'Chiel92/vim-autoformat'
@@ -618,6 +619,19 @@ lua << EOF
         open_mapping = [[<A-l>]],
         size = 50,
         direction = "vertical",
+    })
+EOF
+
+" treesitter
+lua << EOF
+    require("nvim-treesitter.configs").setup({
+        ensure_installed = "all",
+        sync_install = false,
+        auto_install = true,
+        highlight = {
+            enable = true,
+            additional_vim_regex_highlighting = false
+        }
     })
 EOF
 
