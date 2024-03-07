@@ -176,6 +176,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [startuptime.vim](https://github.com/tweekmonster/startuptime.vim)
 * [supertab](http://github.com/ervandew/supertab)
 * [tagbar](https://github.com/majutsushi/tagbar)
+* [targets.vim](https://github.com/wellle/targets.vim)
 * [tasklist](http://github.com/vim-scripts/TaskList)
 * [ultisnips](http://github.com/SirVer/ultisnips)
 * [vim-abolish](https://github.com/tpope/vim-abolish)
