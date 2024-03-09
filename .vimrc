@@ -616,11 +616,18 @@ nnoremap <Leader>q :Bdelete<CR>
 " toggleterm.nvim
 lua << EOF
     require("toggleterm").setup({
-        open_mapping = [[<A-l>]],
-        size = 50,
-        direction = "vertical",
+        open_mapping = [[<leader>t]],
+        size = function(term)
+            if term.direction == "horizontal" then return 15
+            elseif term.direction == "vertical" then return vim.o.columns * 0.4
+            end
+        end,
+        close_on_exit = false,
+        direction = 'horizontal',
     })
 EOF
+nnoremap <leader>t :ToggleTerm <CR>
+nnoremap <leader>T :ToggleTermToggleAll <CR>
 
 " treesitter
 lua << EOF
