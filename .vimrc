@@ -22,28 +22,22 @@ if !exists('g:vscode')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'alok/notational-fzf-vim'
-
     Plug 'dense-analysis/ale'
-    Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
     Plug 'github/copilot.vim'
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'rhysd/devdocs.vim'
     Plug 'mattn/emmet-vim'
     Plug 'phanimahesh/goyo.vim'
-    Plug 'phaazon/hop.nvim'
     Plug 'haya14busa/is.vim'
     Plug 'cohama/lexima.vim'
     Plug 'junegunn/limelight.vim'
     Plug 'myusuf3/numbers.vim'
-    Plug 'nvim-tree/nvim-tree.lua'
     Plug 'ethanmuller/scratch.vim'
     Plug 'tweekmonster/startuptime.vim'
     Plug 'ervandew/supertab'
     Plug 'majutsushi/tagbar'
     Plug 'wellle/targets.vim'
     Plug 'vim-scripts/TaskList.vim'
-    Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.10.0'}
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'SirVer/ultisnips'
     Plug 'tpope/vim-abolish'
     Plug 'Chiel92/vim-autoformat'
@@ -76,6 +70,13 @@ if !exists('g:vscode')
     Plug 'tadaa/vimade'
     Plug 'vim-scripts/YankRing.vim'
     Plug 'regedarek/ZoomWin'
+    if has('nvim')
+        Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+        Plug 'phaazon/hop.nvim'
+        Plug 'nvim-tree/nvim-tree.lua'
+        Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.10.0'}
+        Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    endif
 endif
 
 call plug#end()
@@ -519,13 +520,16 @@ command! -bang -nargs=* Rg
             \   <bang>0)
 
 " hop.nvim
+if has('nvim')
 lua << EOF
     require'hop'.setup{
         quit_key = '<SPC>',
     }
 EOF
+endif
 
 " nvim-tree.lua
+if has('nvim')
 lua << EOF
     local function open_nvim_tree(data)
       -- buffer is a real file on the disk
@@ -561,6 +565,7 @@ lua << EOF
         }
     }
 EOF
+endif
 
 " notational-fzf-vim
 let g:nv_search_paths = ['~/.notes/']
@@ -614,6 +619,7 @@ let g:move_key_modifier = 'C'
 nnoremap <Leader>q :Bdelete<CR>
 
 " toggleterm.nvim
+if has('nvim')
 lua << EOF
     require("toggleterm").setup({
         open_mapping = [[<leader>t]],
@@ -628,8 +634,10 @@ lua << EOF
 EOF
 nnoremap <leader>t :ToggleTerm <CR>
 nnoremap <leader>T :ToggleTermToggleAll <CR>
+endif
 
 " treesitter
+if has('nvim')
 lua << EOF
     require("nvim-treesitter.configs").setup({
         ensure_installed = "all",
@@ -641,6 +649,7 @@ lua << EOF
         }
     })
 EOF
+endif
 
 " goyo + limelight
 autocmd BufLeave goyo_pad setlocal norelativenumber
