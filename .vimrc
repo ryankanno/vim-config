@@ -387,7 +387,7 @@ map <Leader>ntf :NvimTreeFindFile<CR>
 
 " <Leader>num to toggle relative numbers
 map <Leader>num :NumbersToggle<CR>
-let g:numbers_exclude = ['goyo_pad', 'gundo', 'minibufexpl', 'nvim-tree', 'tagbar']
+let g:numbers_exclude = ['goyo_pad', 'minibufexpl', 'nvim-tree', 'tagbar']
 
 " <Leader>o for OverCommandLine
 map <Leader>o :OverCommandLine<CR>
