@@ -115,9 +115,16 @@ set hidden                      " enable hidden files
 set backspace=indent,eol,start  " enable backspace over indent, EOL, START
 
 " create undo structures
-set undodir=$HOME/.vim_undo
-if ! isdirectory(expand(&undodir))
-    call mkdir(&undodir, 'p', 0700)
+if has('nvim')
+    set undodir=$HOME/.nvim_undo
+    if ! isdirectory(expand(&undodir))
+        call mkdir(&undodir, 'p', 0700)
+    endif
+else
+    set undodir=$HOME/.vim_undo
+    if ! isdirectory(expand(&undodir))
+        call mkdir(&undodir, 'p', 0700)
+    endif
 endif
 set undofile
 
