@@ -635,6 +635,12 @@ lua << EOF
 EOF
 nnoremap <leader>t :ToggleTerm <CR>
 nnoremap <leader>T :ToggleTermToggleAll <CR>
+
+tmap <C-h> <C-\><C-N><C-h>
+tmap <C-l> <C-\><C-N><C-l>
+tmap <C-j> <C-\><C-N><C-j>
+tmap <C-k> <C-\><C-N><C-k>
+
 endif
 
 " treesitter
