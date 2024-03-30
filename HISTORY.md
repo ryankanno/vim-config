@@ -1,5 +1,15 @@
 # History
 
+## 2024-03-30
+
+* [feat] - Added vim-test
+
+## 2024-03-06
+
+* [feat] - Added nvim-treesitter
+* [feat] - Added toggleterm.nvim
+* [feat] - Added targets.vim
+
 ## 2023-06-04
 
 * [feat] - Added vim-bbye
