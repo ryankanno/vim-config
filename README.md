@@ -101,12 +101,44 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Open scratch buffer in split window</td>
         </tr>
         <tr>
+            <td>&lt;Leader&gt;t</td>
+            <td>Toggle terminal (nvim)</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;T</td>
+            <td>Toggle terminal all (nvim)</td>
+        </tr>
+        <tr>
             <td>&lt;Leader&gt;tag</td>
             <td>Generate tags</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;tb</td>
             <td>Toggle Tagbar</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;tn</td>
+            <td>Test nearest (vim-test)</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;tc</td>
+            <td>Test class (vim-test)</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;tf</td>
+            <td>Test file (vim-test)</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;ta</td>
+            <td>Test suite (vim-test)</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;tl</td>
+            <td>Test last (vim-test)</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;tlv</td>
+            <td>Test visit (vim-test)</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;u</td>
@@ -209,6 +241,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-startify](https://github.com/mhinz/vim-startify)
 * [vim-surround](https://github.com/tpope/vim-surround)
 * [vim-template](https://github.com/aperezdc/vim-template)
+* [vim-test](https://github.com/vim-test/vim-test)
 * [vimade](https://github.com/tadaa/vimade)
 * [yankring](https://www.vim.org/scripts/script.php?script_id=1234)
 * [ZoomWin](https://github.com/regedarek/ZoomWin)

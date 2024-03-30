@@ -67,6 +67,7 @@ if !exists('g:vscode')
     Plug 'mhinz/vim-startify'
     Plug 'tpope/vim-surround'
     Plug 'aperezdc/vim-template'
+    Plug 'vim-test/vim-test'
     Plug 'tadaa/vimade'
     Plug 'vim-scripts/YankRing.vim'
     Plug 'regedarek/ZoomWin'
@@ -613,7 +614,7 @@ let g:templates_directory="$HOME/.vim/templates"
 let g:indent_guides_enable_on_vim_startup = 1
 
 " vim-move
-let g:move_key_modifier = 'C'
+let g:move_key_modifier = 'A'
 
 " vim-bbye
 nnoremap <Leader>q :Bdelete<CR>
@@ -650,6 +651,15 @@ lua << EOF
     })
 EOF
 endif
+
+" vim-test
+let test#strategy = "toggleterm"
+nmap <silent> <leader>tn :TestNearest<CR>
+nmap <silent> <leader>tc :TestClass<CR>
+nmap <silent> <leader>tf :TestFile<CR>
+nmap <silent> <leader>ta :TestSuite<CR>
+nmap <silent> <leader>tl :TestLast<CR>
+nmap <silent> <leader>tlv :TestVisit<CR>
 
 " goyo + limelight
 autocmd BufLeave goyo_pad setlocal norelativenumber
