@@ -224,6 +224,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-disapprove-deep-indentation](https://github.com/dodie/vim-disapprove-deep-indentation)
 * [vim-fold-cycle](https://github.com/arecarn/vim-fold-cycle)
 * [vim-fugitive](http://github.com/tpope/vim-fugitive)
+* [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 * [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 * [vim-matchup](https://github.com/andymass/vim-matchup)
