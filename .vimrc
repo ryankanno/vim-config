@@ -34,7 +34,7 @@ if !exists('g:vscode')
     Plug 'junegunn/limelight.vim'
     Plug 'myusuf3/numbers.vim'
     Plug 'ethanmuller/scratch.vim'
-    Plug 'tweekmonster/startuptime.vim'
+    Plug 'dstein64/vim-startuptime'
     Plug 'ervandew/supertab'
     Plug 'majutsushi/tagbar'
     Plug 'wellle/targets.vim'
