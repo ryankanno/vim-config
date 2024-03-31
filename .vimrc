@@ -27,6 +27,7 @@ if !exists('g:vscode')
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'rhysd/devdocs.vim'
     Plug 'mattn/emmet-vim'
+    Plug 'airblade/vim-gitgutter'
     Plug 'phanimahesh/goyo.vim'
     Plug 'haya14busa/is.vim'
     Plug 'cohama/lexima.vim'
