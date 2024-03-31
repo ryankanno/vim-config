@@ -204,7 +204,6 @@ set gdefault					" the /g flag on :s substitutions by default
 " }}}
 
 " Folding {{{
-
 set foldenable                  " enable folding
 set foldmethod=marker
 set foldlevel=0
@@ -261,7 +260,7 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType sass setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType yaml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-autocmd filetype crontab setlocal nobackup nowritebackup
+autocmd Filetype crontab setlocal nobackup nowritebackup
 " }}}
 
 " Command Line {{{
@@ -333,7 +332,8 @@ map <Leader><Leader> :HopWord<CR>
 map <Leader>_ :HopLineStart<CR>
 
 " <Leader>b to open :Buffers
-map <Leader>b :Buffers<CR>
+Shortcut open buffers
+            \ map <Leader>b :Buffers<CR>
 
 " <Leader>cc to comment
 Shortcut comment out line
@@ -388,13 +388,15 @@ augroup END
 map <Leader>n :NvimTreeFocus<CR>
 
 " <Leader>nt to toggle NvimTreeToggle
-map <Leader>nt :NvimTreeToggle<CR>
+Shortcut toggle NvimTree
+            \ map <Leader>nt :NvimTreeToggle<CR>
 
 " <Leader>ntf to reveal file in active buffer in NvimTree
 map <Leader>ntf :NvimTreeFindFile<CR>
 
 " <Leader>num to toggle relative numbers
-map <Leader>num :NumbersToggle<CR>
+Shortcut toggle relative line numbers
+            \ map <Leader>num :NumbersToggle<CR>
 let g:numbers_exclude = ['goyo_pad', 'minibufexpl', 'nvim-tree', 'tagbar']
 
 " <Leader>o for OverCommandLine
@@ -412,10 +414,12 @@ if executable('rg')
 endif
 
 " <Leader>s to open scratch in horizontal split window
-map <Leader>s :Sscratch<CR>
+Shortcut open horizontal Scratch
+            \ map <Leader>s :Sscratch<CR>
 
 " <Leader>S to open scratch in vertical split window
-map <Leader>S :Vscratch<CR>
+Shortcut open vertical Scratch
+            \ map <Leader>S :Vscratch<CR>
 
 " CTags
 set tags+=./tags;/
@@ -445,7 +449,8 @@ let g:tagbar_type_javascript = {
 " <Leader>u to toggle Mundo
 let g:mundo_prefer_python3 = 1
 let g:mundo_right = 1
-nnoremap <Leader>u :MundoToggle<CR>
+Shortcut toggle Mundo
+            \ nnoremap <Leader>u :MundoToggle<CR>
 
 " <Leader>w to ZoomWin
 map <Leader>w :ZoomWin<CR>
@@ -459,7 +464,8 @@ map <Leader>x <Plug>TaskList
 " <Leader>y to bring up YankRing
 let g:yankring_window_height = 16
 let g:yankring_max_history = 1024
-map <Leader>y :YRShow<CR>
+Shortcut show YankRing
+            \ map <Leader>y :YRShow<CR>
 
 " <F2> to toggle invisible characters
 map <silent> <F2> :set invlist<CR>
@@ -479,7 +485,8 @@ nnoremap xx dd
 nnoremap X D
 
 " ale
-noremap <Leader>af :ALEFix<CR>
+Shortcut run ALEFix
+            \ noremap <Leader>af :ALEFix<CR>
 
 let g:ale_linters = {
             \ 'javascript': ['eslint'],
