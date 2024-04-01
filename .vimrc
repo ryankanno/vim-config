@@ -22,7 +22,6 @@ if !exists('g:vscode')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'alok/notational-fzf-vim'
-    Plug 'github/copilot.vim'
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'rhysd/devdocs.vim'
     Plug 'mattn/emmet-vim'
@@ -86,6 +85,11 @@ if !exists('g:vscode')
         Plug 'nvim-tree/nvim-tree.lua'
         Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.10.0'}
         Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+        Plug 'zbirenbaum/copilot.lua'
+        Plug 'zbirenbaum/copilot-cmp'
+    else
+        Plug 'github/copilot.vim'
     endif
 endif
 
@@ -613,8 +617,9 @@ lua << EOF
         end, { 'i', 's' }),
       }),
       sources = cmp.config.sources({
-        { name = 'nvim_lsp' },
-        { name = 'luasnip' },
+        { name = 'copilot', group_index = 2 },
+        { name = 'nvim_lsp', group_index = 2 },
+        { name = 'luasnip', group_index = 2 },
       }),
     }
 EOF
@@ -783,6 +788,27 @@ nmap <silent> <leader>tf :TestFile<CR>
 nmap <silent> <leader>ta :TestSuite<CR>
 nmap <silent> <leader>tl :TestLast<CR>
 nmap <silent> <leader>tlv :TestVisit<CR>
+
+" copilot.lua
+if has('nvim')
+lua << EOF
+    require('copilot').setup({
+      panel = {
+        enabled = false,
+        auto_refresh = true,
+      },
+      suggestion = {
+        enabled = false,
+        auto_trigger = true,
+        debounce = 75,
+      },
+      copilot_node_command = 'node', -- Node.js version must be > 16.x
+      server_opts_overrides = {},
+    })
+
+    require('copilot_cmp').setup {}
+EOF
+endif
 
 " goyo + limelight
 autocmd BufLeave goyo_pad setlocal norelativenumber
