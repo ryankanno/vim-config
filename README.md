@@ -1,6 +1,6 @@
 # My .vim configuration
 
-**Here be dragons.** 
+**Here be dragons.**
 
 I periodically walk my configuration file and fix things that aren't working 
 for me and/or try to better optimize my development environment.  As humans, 
@@ -188,9 +188,6 @@ Just pass "UNINSTALL" to the install.sh script.
 
 Here are the plugins I use on the daily.  They are pretty amazing. :D
 
-* [ale](https://github.com/w0rp/ale)
-* [coc.nvim](https://github.com/neoclide/coc.nvim)
-* [coc-pyright](https://github.com/fannheyward/coc-pyright)
 * [copilot.vim](https://github.com/github/copilot.vim)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [devdocs.vim](https://github.com/rhysd/devdocs.vim)
@@ -201,8 +198,12 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [is.vim](https://github.com/haya14busa/is.vim)
 * [lexima.vim](https://github.com/cohama/lexima.vim)
 * [limelight.vim](https://github.com/junegunn/limelight.vim)
+* [luasnip](https://github.com/L3MON4D3/LuaSnip)
+* [luasnip-snippets](https://github.com/mireq/luasnip-snippets)
 * [notational-fzf-vim](https://github.com/alok/notational-fzf-vim)
-* [numbers.vim](https://github.com/myusuf3/numbers.vim/)
+* [numbers.vim](https://github.com/myusuf3/numbers.vim)
+* [nvim-cmp](https://github.com/hrsh7th/nvim-cmp/) w/ [cmp-buffer](https://github.com/hrsh7th/cmp-buffer), [cmp-path](https://github.com/hrsh7th/cmp-path), [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
+* [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 * [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 * [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
 * [scratch.vim](https://github.com/ethanmuller/scratch.vim)
@@ -211,7 +212,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [targets.vim](https://github.com/wellle/targets.vim)
 * [tasklist](http://github.com/vim-scripts/TaskList)
 * [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
-* [ultisnips](http://github.com/SirVer/ultisnips)
 * [vim-abolish](https://github.com/tpope/vim-abolish)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
 * [vim-bbye](https://github.com/moll/vim-bbye)
@@ -236,7 +236,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-powerline](https://github.com/Lokaltog/vim-powerline)
 * [vim-repeat](https://github.com/tpope/vim-repeat)
 * [vim-shortcut](https://github.com/sunaku/vim-shortcut)
-* [vim-snippets](https://github.com/honza/vim-snippets)
 * [vim-speeddating](https://github.com/tpope/vim-speeddating)
 * [vim-startify](https://github.com/mhinz/vim-startify)
 * [vim-startuptime](https://github.com/dstein64/vim-startuptime)

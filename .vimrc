@@ -22,7 +22,6 @@ if !exists('g:vscode')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'alok/notational-fzf-vim'
-    Plug 'dense-analysis/ale'
     Plug 'github/copilot.vim'
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'rhysd/devdocs.vim'
@@ -39,7 +38,6 @@ if !exists('g:vscode')
     Plug 'majutsushi/tagbar'
     Plug 'wellle/targets.vim'
     Plug 'vim-scripts/TaskList.vim'
-    Plug 'SirVer/ultisnips'
     Plug 'tpope/vim-abolish'
     Plug 'Chiel92/vim-autoformat'
     Plug 'moll/vim-bbye'
@@ -63,7 +61,6 @@ if !exists('g:vscode')
     Plug 'Lokaltog/vim-powerline'
     Plug 'tpope/vim-repeat'
     Plug 'sunaku/vim-shortcut'
-    Plug 'honza/vim-snippets'
     Plug 'tpope/vim-speeddating'
     Plug 'mhinz/vim-startify'
     Plug 'tpope/vim-surround'
@@ -73,7 +70,18 @@ if !exists('g:vscode')
     Plug 'vim-scripts/YankRing.vim'
     Plug 'regedarek/ZoomWin'
     if has('nvim')
-        Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+        Plug 'neovim/nvim-lspconfig'
+        Plug 'hrsh7th/cmp-nvim-lsp'
+        Plug 'hrsh7th/cmp-buffer'
+        Plug 'hrsh7th/cmp-path'
+        Plug 'hrsh7th/cmp-cmdline'
+        Plug 'hrsh7th/nvim-cmp'
+
+        " For luasnip users.
+        Plug 'L3MON4D3/LuaSnip', {'tag': 'v2.*', 'do': 'make install_jsregexp'}
+        Plug 'saadparwaiz1/cmp_luasnip'
+        Plug 'mireq/luasnip-snippets'
+
         Plug 'phaazon/hop.nvim'
         Plug 'nvim-tree/nvim-tree.lua'
         Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.10.0'}
@@ -485,46 +493,125 @@ xnoremap x d
 nnoremap xx dd
 nnoremap X D
 
-" ale
-Shortcut run ALEFix
-            \ noremap <Leader>af :ALEFix<CR>
-
-let g:ale_linters = {
-            \ 'javascript': ['eslint'],
-            \ 'python': [],
-            \ 'typescript': ['eslint', 'tsserver'],
-            \ 'typescriptreact': ['eslint', 'tsserver'],
-            \ }
-let g:ale_fixers = {
-            \ 'javascript': ['eslint'],
-            \ 'javascriptreact': ['eslint'],
-            \ 'typescript': ['eslint'],
-            \ 'typescriptreact': ['eslint'],
-            \ 'scss': ['prettier'],
-            \ 'html': ['prettier'],
-            \ }
-let g:ale_sign_error = '❌'
-let g:ale_sign_warning = '⚠️'
-let g:ale_lint_on_enter = 0
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_linters_explicit = 1
-let g:ale_lint_on_save = 1
-let g:ale_fix_on_save = 1
-
-let g:ale_javascript_eslint_executable='npx eslint'
-
-" coc.nvim
+" nvim-lsp
 if has('nvim')
-    inoremap <silent><expr> <c-space> coc#refresh()
-else
-    inoremap <silent><expr> <c-@> coc#refresh()
+lua << EOF
+    require'lspconfig'.pyright.setup{}
+
+    vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
+    vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
+    vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
+    vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
+
+    vim.api.nvim_create_autocmd('LspAttach', {
+      group = vim.api.nvim_create_augroup('UserLspConfig', {}),
+      callback = function(ev)
+        -- Enable completion triggered by <c-x><c-o>
+        vim.bo[ev.buf].omnifunc = 'v:lua.vim.lsp.omnifunc'
+
+        local opts = { buffer = ev.buf }
+        vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
+        vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+        vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
+        vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
+        vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
+        vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, opts)
+        vim.keymap.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, opts)
+        vim.keymap.set('n', '<space>wl', function()
+          print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
+        end, opts)
+        vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, opts)
+        vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, opts)
+        vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, opts)
+        vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+        vim.keymap.set('n', '<space>f', function()
+          vim.lsp.buf.format { async = true }
+        end, opts)
+      end,
+    })
+EOF
 endif
 
-" GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+" luasnip
+if has('nvim')
+lua << EOF
+    local capabilities = require('cmp_nvim_lsp').default_capabilities()
+    local lspconfig = require('lspconfig')
+    local servers = { 'clangd', 'rust_analyzer', 'pyright', 'tsserver' }
+    for _, lsp in ipairs(servers) do
+      lspconfig[lsp].setup {
+        capabilities = capabilities,
+      }
+    end
+
+    local has_words_before = function()
+      unpack = unpack or table.unpack
+      local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+      return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+    end
+
+    require('luasnip_snippets.common.snip_utils').setup()
+
+    local luasnip = require 'luasnip'
+    luasnip.setup({
+      load_ft_func = require('luasnip_snippets.common.snip_utils').load_ft_func,
+      ft_func = require('luasnip_snippets.common.snip_utils').ft_func,
+      enable_autosnippets = true,
+      -- Uncomment to enable visual snippets triggered using <c-x>
+      -- store_selection_keys = '<c-x>',
+    })
+
+    local cmp = require 'cmp'
+    cmp.setup {
+      snippet = {
+        expand = function(args)
+          luasnip.lsp_expand(args.body)
+        end,
+      },
+      mapping = cmp.mapping.preset.insert({
+        ['<C-d>'] = cmp.mapping.scroll_docs(-4),
+        ['<C-f>'] = cmp.mapping.scroll_docs(4),
+        ['<C-Space>'] = cmp.mapping.complete(),
+        ['<CR>'] = cmp.mapping.confirm {
+          behavior = cmp.ConfirmBehavior.Replace,
+          select = true,
+        },
+        ['<Tab>'] = cmp.mapping(function(fallback)
+          if cmp.visible() then
+            cmp.select_next_item()
+          elseif luasnip.expand_or_jumpable() then
+            luasnip.expand_or_jump()
+          elseif has_words_before() then
+            cmp.complete()
+          else
+            fallback()
+          end
+        end, { 'i', 's' }),
+        ['<S-Tab>'] = cmp.mapping(function(fallback)
+          if cmp.visible() then
+            cmp.select_prev_item()
+          elseif luasnip.jumpable(-1) then
+            luasnip.jump(-1)
+          else
+            fallback()
+          end
+        end, { 'i', 's' }),
+      }),
+      sources = cmp.config.sources({
+        { name = 'nvim_lsp' },
+        { name = 'luasnip' },
+      }),
+    }
+EOF
+endif
+
+" luasnip
+imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>' 
+inoremap <silent> <S-Tab> <cmd>lua require'luasnip'.jump(-1)<Cr>
+snoremap <silent> <Tab> <cmd>lua require('luasnip').jump(1)<Cr>
+snoremap <silent> <S-Tab> <cmd>lua require('luasnip').jump(-1)<Cr>
+imap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-E>'
+smap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-E>'
 
 " fzf.vim
 set rtp+=~/.fzf
