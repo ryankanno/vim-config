@@ -60,12 +60,12 @@ if !exists('g:vscode')
     Plug 'sheerun/vim-polyglot'
     Plug 'Lokaltog/vim-powerline'
     Plug 'tpope/vim-repeat'
-    Plug 'sunaku/vim-shortcut'
     Plug 'tpope/vim-speeddating'
     Plug 'mhinz/vim-startify'
     Plug 'tpope/vim-surround'
     Plug 'aperezdc/vim-template'
     Plug 'vim-test/vim-test'
+    Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
     Plug 'tadaa/vimade'
     Plug 'vim-scripts/YankRing.vim'
     Plug 'regedarek/ZoomWin'
@@ -96,9 +96,6 @@ call plug#end()
 iab me@ Ryan Kanno <ryankanno@localkinegrinds.com>
 iab date@ <C-R>=strftime("%A, %B %e %Y %I:%M:%S %p %Z")<CR>
 " }}}
-
-" Hack until I refactor some of this, but need to call this early.
-runtime plugin/shortcut.vim
 
 " General {{{
 let mapleader=","               " set mapleader
@@ -325,8 +322,17 @@ nmap Y y$
 nnoremap ; :
 vnoremap ; :
 
-" set partial entry to run the shortcuts menu
-noremap <silent> <Leader> :Shortcuts<Return>
+" set which_key menu
+autocmd! User vim-which-key call which_key#register(',', 'g:which_key_map')
+
+nnoremap <silent> <leader>      :<c-u>WhichKey ','<CR>
+vnoremap <silent> <leader>      :<c-u>WhichKeyVisual ','<CR>
+
+let g:which_key_map =  {}
+let g:which_key_use_floating_win = 0
+let g:which_key_sep = '→'
+let g:which_key_sort_horizontal = 1
+set timeoutlen=400
 
 " clear search matching across all buffers
 noremap <Leader><space> :noh<CR>:call clearmatches()<CR>
@@ -341,12 +347,15 @@ map <Leader><Leader> :HopWord<CR>
 map <Leader>_ :HopLineStart<CR>
 
 " <Leader>b to open :Buffers
-Shortcut open buffers
-            \ map <Leader>b :Buffers<CR>
+map <Leader>b :Buffers<CR>
+let g:which_key_map['b'] = [':Buffers', 'fzf buffer search']
 
 " <Leader>cc to comment
-Shortcut comment out line
-            \ nmap <Leader>cc <Plug>CommentaryLine
+nmap <Leader>cc <Plug>CommentaryLine
+let g:which_key_map.c = {
+            \ 'name'  : '+comments',
+            \ 'c'     : ['<Plug>CommentaryLine', 'comment line'],
+            \ }
 
 " <Leader>cd switches to directory of open buffer
 map <Leader>cd :cd %:p:h<CR>
@@ -354,10 +363,10 @@ map <Leader>cd :cd %:p:h<CR>
 " <Leader>cf copies relative path to clipboard
 nnoremap <Leader>cf :let @+=expand("%")<CR>
 
-" <Leader>cf copies absolute path to clipboard
+" <Leader>cF copies absolute path to clipboard
 nnoremap <Leader>cF :let @+=expand("%:p")<CR>
 
-" <Leader>D to make you smile
+" <Leader>d to make you smile
 map <Leader>d :Nyan<CR>
 
 " <Leader>dc to show diff of current buffer
@@ -367,18 +376,19 @@ map <Leader>dc :DiffChangesDiffToggle<CR>
 map <Leader>dp :DiffChangesPatchToggle<CR>
 
 " <Leader>f to start an `rg` search using FZF
-Shortcut start a FZF rg search
-            \ map <Leader>f :Rg<space>
+map <Leader>f :Rg<space>
+let g:which_key_map['f'] = [':Rg', 'fzf ripgrep search']
 
 " <Leader>F to start a `Files` search using FZF
-Shortcut start a FZF files search
-            \ map <Leader>F :Files<CR>
+map <Leader>F :Files<CR>
+let g:which_key_map['F'] = [':Files', 'fzf files search']
 
 " <Leader>h/l to go to previous/next in jumplist
-Shortcut previous jumplist position
-            \ nnoremap <Leader>h <C-O>
-Shortcut next jumplist position
-            \ nnoremap <Leader>l <C-i>
+nnoremap <Leader>h <C-O>
+let g:which_key_map['h'] = ['<C-O>', 'previous jumplist position']
+
+nnoremap <Leader>l <C-i>
+let g:which_key_map['l'] = ['<C-i>', 'next jumplist position']
 
 " Remap K to call devdocs in specific filetypes
 let g:devdocs_filetype_map = {
@@ -393,20 +403,22 @@ augroup plugin-devdocs
     autocmd FileType bash,c,cpp,go,rust,python nmap <buffer>K <Plug>(devdocs-under-cursor)
 augroup END
 
-" <Leader>n to focus NvimTree
-map <Leader>n :NvimTreeFocus<CR>
-
 " <Leader>nt to toggle NvimTreeToggle
-Shortcut toggle NvimTree
-            \ map <Leader>nt :NvimTreeToggle<CR>
+map <Leader>nt :NvimTreeToggle<CR>
 
-" <Leader>ntf to reveal file in active buffer in NvimTree
-map <Leader>ntf :NvimTreeFindFile<CR>
+" <Leader>nf to reveal file in active buffer in NvimTree
+map <Leader>nf :NvimTreeFindFile<CR>
+
+let g:which_key_map.n = {
+            \ 'name'  : '+nvimtree',
+            \ 't'     : [':NvimTreeToggle', 'toggle NvimTree'],
+            \ 'f'     : [':NvimTreeFindFile', 'reveal file in NvimTree'],
+            \ }
 
 " <Leader>num to toggle relative numbers
-Shortcut toggle relative line numbers
-            \ map <Leader>num :NumbersToggle<CR>
+map <Leader>num :NumbersToggle<CR>
 let g:numbers_exclude = ['goyo_pad', 'minibufexpl', 'nvim-tree', 'tagbar']
+let g:which_key_map['num'] = [":NumbersToggle", "toggle relative line numbers"]
 
 " <Leader>o for OverCommandLine
 map <Leader>o :OverCommandLine<CR>
@@ -423,12 +435,12 @@ if executable('rg')
 endif
 
 " <Leader>s to open scratch in horizontal split window
-Shortcut open horizontal Scratch
-            \ map <Leader>s :Sscratch<CR>
+map <Leader>s :Sscratch<CR>
+let g:which_key_map['s'] = [':Sscratch', 'open horizontal scratch']
 
 " <Leader>S to open scratch in vertical split window
-Shortcut open vertical Scratch
-            \ map <Leader>S :Vscratch<CR>
+map <Leader>S :Vscratch<CR>
+let g:which_key_map['S'] = [':Vscratch', 'open vertical scratch']
 
 " CTags
 set tags+=./tags;/
@@ -456,10 +468,10 @@ let g:tagbar_type_javascript = {
                 \ ]}
 
 " <Leader>u to toggle Mundo
+nnoremap <Leader>u :MundoToggle<CR>
 let g:mundo_prefer_python3 = 1
 let g:mundo_right = 1
-Shortcut toggle Mundo
-            \ nnoremap <Leader>u :MundoToggle<CR>
+let g:which_key_map['u'] = [':MundoToggle', 'toggle Mundo']
 
 " <Leader>w to ZoomWin
 map <Leader>w :ZoomWin<CR>
@@ -471,10 +483,10 @@ map <Leader>ws :%s/\s\+$//e<CR>
 map <Leader>x <Plug>TaskList
 
 " <Leader>y to bring up YankRing
+map <Leader>y :YRShow<CR>
 let g:yankring_window_height = 16
 let g:yankring_max_history = 1024
-Shortcut show YankRing
-            \ map <Leader>y :YRShow<CR>
+let g:which_key_map['y'] = [':YRShow', 'toggle YankRing']
 
 " <F2> to toggle invisible characters
 map <silent> <F2> :set invlist<CR>

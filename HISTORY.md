@@ -1,5 +1,9 @@
 # History
 
+## 2024-03-31
+
+* [feat] - Migrated from vim-shortcut to vim-which-key
+
 ## 2024-03-30
 
 * [feat] - Added vim-test

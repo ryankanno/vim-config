@@ -73,16 +73,12 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Next/prev in jumplist</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;n</td>
-            <td>Focus NvimTree</td>
-        </tr>
-        <tr>
             <td>&lt;Leader&gt;nt</td>
             <td>Toggle NvimTree</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;ntf</td>
-            <td>Reveal buffer in NvimTree</td>
+            <td>&lt;Leader&gt;nf</td>
+            <td>Reveal active buffer in NvimTree</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;num</td>
@@ -235,13 +231,13 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 * [vim-powerline](https://github.com/Lokaltog/vim-powerline)
 * [vim-repeat](https://github.com/tpope/vim-repeat)
-* [vim-shortcut](https://github.com/sunaku/vim-shortcut)
 * [vim-speeddating](https://github.com/tpope/vim-speeddating)
 * [vim-startify](https://github.com/mhinz/vim-startify)
 * [vim-startuptime](https://github.com/dstein64/vim-startuptime)
 * [vim-surround](https://github.com/tpope/vim-surround)
 * [vim-template](https://github.com/aperezdc/vim-template)
 * [vim-test](https://github.com/vim-test/vim-test)
+* [vim-which-key](https://github.com/liuchengxu/vim-which-key)
 * [vimade](https://github.com/tadaa/vimade)
 * [yankring](https://www.vim.org/scripts/script.php?script_id=1234)
 * [ZoomWin](https://github.com/regedarek/ZoomWin)
