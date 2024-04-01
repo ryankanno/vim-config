@@ -332,7 +332,10 @@ let g:which_key_map =  {}
 let g:which_key_use_floating_win = 0
 let g:which_key_sep = '→'
 let g:which_key_sort_horizontal = 1
-set timeoutlen=400
+
+" <Leader>? to show which_key menu
+nnoremap <leader>? :WhichKey ','<CR>
+let g:which_key_map['?'] = 'show help'
 
 " clear search matching across all buffers
 noremap <Leader><space> :noh<CR>:call clearmatches()<CR>
