@@ -81,6 +81,8 @@ if !exists('g:vscode')
         Plug 'saadparwaiz1/cmp_luasnip'
         Plug 'mireq/luasnip-snippets'
 
+        Plug 'onsails/lspkind.nvim'
+
         Plug 'phaazon/hop.nvim'
         Plug 'nvim-tree/nvim-tree.lua'
         Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.10.0'}
@@ -551,7 +553,7 @@ lua << EOF
 EOF
 endif
 
-" luasnip
+" luasnip / cmp
 if has('nvim')
 lua << EOF
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -580,8 +582,22 @@ lua << EOF
       -- store_selection_keys = '<c-x>',
     })
 
-    local cmp = require 'cmp'
+    local lspkind = require('lspkind')
+    local cmp = require('cmp')
     cmp.setup {
+      formatting = {
+        format = lspkind.cmp_format({
+          mode = "symbol_text",
+          menu = ({
+            copilot = "[Copilot]",
+            buffer = "[Buffer]",
+            nvim_lsp = "[LSP]",
+            luasnip = "[LuaSnip]",
+            path = "[Path]",
+            cmdline = "[Cmdline]",
+          })
+        }),
+      },
       snippet = {
         expand = function(args)
           luasnip.lsp_expand(args.body)
@@ -635,6 +651,19 @@ snoremap <silent> <Tab> <cmd>lua require('luasnip').jump(1)<Cr>
 snoremap <silent> <S-Tab> <cmd>lua require('luasnip').jump(-1)<Cr>
 imap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-E>'
 smap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-E>'
+
+" cmp - https://github.com/hrsh7th/nvim-cmp/wiki/Menu-Appearance#how-to-add-visual-studio-code-dark-theme-colors-to-the-menu
+highlight! CmpItemAbbrDeprecated guibg=NONE gui=strikethrough guifg=#808080
+highlight! CmpItemAbbrMatch guibg=NONE guifg=#569CD6
+highlight! link CmpItemAbbrMatchFuzzy CmpItemAbbrMatch
+highlight! CmpItemKindVariable guibg=NONE guifg=#9CDCFE
+highlight! link CmpItemKindInterface CmpItemKindVariable
+highlight! link CmpItemKindText CmpItemKindVariable
+highlight! CmpItemKindFunction guibg=NONE guifg=#C586C0
+highlight! link CmpItemKindMethod CmpItemKindFunction
+highlight! CmpItemKindKeyword guibg=NONE guifg=#D4D4D4
+highlight! link CmpItemKindProperty CmpItemKindKeyword
+highlight! link CmpItemKindUnit CmpItemKindKeyword
 
 " fzf.vim
 set rtp+=~/.fzf
