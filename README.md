@@ -231,6 +231,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-plug](https://github.com/junegunn/vim-plug)
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 * [vim-powerline](https://github.com/Lokaltog/vim-powerline)
+* [vim-projectionist](https://github.com/tpope/vim-projectionist)
 * [vim-repeat](https://github.com/tpope/vim-repeat)
 * [vim-speeddating](https://github.com/tpope/vim-speeddating)
 * [vim-startify](https://github.com/mhinz/vim-startify)

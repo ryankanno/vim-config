@@ -1,5 +1,9 @@
 # History
 
+## 2024-04-02
+
+* [feat] - Added vim-projectionist
+
 ## 2024-03-31
 
 * [feat] - Migrated from vim-shortcut to vim-which-key

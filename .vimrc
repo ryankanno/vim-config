@@ -58,6 +58,7 @@ if !exists('g:vscode')
     Plug 'junegunn/vim-plug'
     Plug 'sheerun/vim-polyglot'
     Plug 'Lokaltog/vim-powerline'
+    Plug 'tpope/vim-projectionist'
     Plug 'tpope/vim-repeat'
     Plug 'tpope/vim-speeddating'
     Plug 'mhinz/vim-startify'
@@ -594,7 +595,6 @@ lua << EOF
             nvim_lsp = "[LSP]",
             luasnip = "[LuaSnip]",
             path = "[Path]",
-            cmdline = "[Cmdline]",
           })
         }),
       },
@@ -638,9 +638,24 @@ lua << EOF
         { name = 'luasnip', group_index = 2 },
         { name = 'buffer', group_index = 2 },
         { name = 'path', group_index = 2 },
-        { name = 'cmdline', group_index = 2 },
       }),
     }
+
+    cmp.setup.cmdline(':', {
+      mapping = cmp.mapping.preset.cmdline(),
+      sources = cmp.config.sources(
+      {
+        { name = 'path' }
+      },
+      {
+        {
+          name = 'cmdline',
+          option = {
+            ignore_cmds = { 'Man', '!' }
+          }
+        }
+      })
+    })
 EOF
 endif
 
