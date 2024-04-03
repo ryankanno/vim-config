@@ -25,14 +25,12 @@ if !exists('g:vscode')
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'rhysd/devdocs.vim'
     Plug 'mattn/emmet-vim'
-    Plug 'airblade/vim-gitgutter'
     Plug 'phanimahesh/goyo.vim'
     Plug 'haya14busa/is.vim'
     Plug 'cohama/lexima.vim'
     Plug 'junegunn/limelight.vim'
     Plug 'myusuf3/numbers.vim'
     Plug 'ethanmuller/scratch.vim'
-    Plug 'dstein64/vim-startuptime'
     Plug 'ervandew/supertab'
     Plug 'majutsushi/tagbar'
     Plug 'wellle/targets.vim'
@@ -50,6 +48,7 @@ if !exists('g:vscode')
     Plug 'dodie/vim-disapprove-deep-indentation'
     Plug 'arecarn/vim-fold-cycle'
     Plug 'tpope/vim-fugitive'
+    Plug 'airblade/vim-gitgutter'
     Plug 'ludovicchabant/vim-gutentags'
     Plug 'nathanaelkane/vim-indent-guides'
     Plug 'andymass/vim-matchup'
@@ -63,6 +62,7 @@ if !exists('g:vscode')
     Plug 'tpope/vim-repeat'
     Plug 'tpope/vim-speeddating'
     Plug 'mhinz/vim-startify'
+    Plug 'dstein64/vim-startuptime'
     Plug 'tpope/vim-surround'
     Plug 'aperezdc/vim-template'
     Plug 'vim-test/vim-test'
@@ -70,6 +70,7 @@ if !exists('g:vscode')
     Plug 'tadaa/vimade'
     Plug 'vim-scripts/YankRing.vim'
     Plug 'regedarek/ZoomWin'
+
     if has('nvim')
         Plug 'neovim/nvim-lspconfig'
         Plug 'hrsh7th/cmp-nvim-lsp'
@@ -78,7 +79,6 @@ if !exists('g:vscode')
         Plug 'hrsh7th/cmp-cmdline'
         Plug 'hrsh7th/nvim-cmp'
 
-        " For luasnip users.
         Plug 'L3MON4D3/LuaSnip', {'tag': 'v2.*', 'do': 'make install_jsregexp'}
         Plug 'saadparwaiz1/cmp_luasnip'
         Plug 'mireq/luasnip-snippets'
