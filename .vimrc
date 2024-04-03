@@ -76,9 +76,10 @@ if !exists('g:vscode')
         Plug 'neovim/nvim-lspconfig'
         Plug 'hrsh7th/cmp-nvim-lsp'
         Plug 'hrsh7th/cmp-buffer'
+        Plug 'hrsh7th/cmp-cmdline'
         Plug 'hrsh7th/cmp-emoji'
         Plug 'hrsh7th/cmp-path'
-        Plug 'hrsh7th/cmp-cmdline'
+        Plug 'lukas-reineke/cmp-rg'
         Plug 'hrsh7th/nvim-cmp'
 
         Plug 'L3MON4D3/LuaSnip', {'tag': 'v2.*', 'do': 'make install_jsregexp'}
@@ -599,6 +600,7 @@ lua << EOF
             luasnip = "[LuaSnip]",
             path = "[Path]",
             emoji = "[Emoji]",
+            rg = "[RipGrep]",
           })
         }),
       },
@@ -643,6 +645,7 @@ lua << EOF
         { name = 'buffer', group_index = 2 },
         { name = 'path', group_index = 2 },
         { name = 'emoji', group_index = 2 },
+        { name = 'rg', group_index = 2 },
       }),
     }
 
