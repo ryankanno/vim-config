@@ -745,7 +745,7 @@ let g:nv_search_paths = ['~/.notes/']
 if s:uname == "Darwin"
     let g:gutentags_ctags_executable = '/opt/local/bin/uctags'
 elseif s:uname == "Linux"
-    let g:gutentags_ctags_executable = '/snap/bin/ctags'
+    let g:gutentags_ctags_executable = '/usr/bin/ctags'
 endif
 let g:gutentags_add_default_project_roots = 0
 let g:gutentags_project_root  = ['package.json', '.git']
