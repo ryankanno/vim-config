@@ -38,6 +38,8 @@ if !exists('g:vscode')
     Plug 'wellle/targets.vim'
     Plug 'vim-scripts/TaskList.vim'
     Plug 'tpope/vim-abolish'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
     Plug 'Chiel92/vim-autoformat'
     Plug 'moll/vim-bbye'
     Plug 'tpope/vim-commentary'
@@ -57,7 +59,6 @@ if !exists('g:vscode')
     Plug 'junegunn/vim-peekaboo'
     Plug 'junegunn/vim-plug'
     Plug 'sheerun/vim-polyglot'
-    Plug 'Lokaltog/vim-powerline'
     Plug 'tpope/vim-projectionist'
     Plug 'tpope/vim-repeat'
     Plug 'tpope/vim-speeddating'
@@ -856,6 +857,9 @@ lua << EOF
     require('copilot_cmp').setup {}
 EOF
 endif
+
+" vim-airline
+let g:airline_theme='base16_monokai'
 
 " goyo + limelight
 autocmd BufLeave goyo_pad setlocal norelativenumber
