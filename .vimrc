@@ -76,6 +76,7 @@ if !exists('g:vscode')
         Plug 'neovim/nvim-lspconfig'
         Plug 'hrsh7th/cmp-nvim-lsp'
         Plug 'hrsh7th/cmp-buffer'
+        Plug 'hrsh7th/cmp-emoji'
         Plug 'hrsh7th/cmp-path'
         Plug 'hrsh7th/cmp-cmdline'
         Plug 'hrsh7th/nvim-cmp'
@@ -597,6 +598,7 @@ lua << EOF
             nvim_lsp = "[LSP]",
             luasnip = "[LuaSnip]",
             path = "[Path]",
+            emoji = "[Emoji]",
           })
         }),
       },
@@ -640,6 +642,7 @@ lua << EOF
         { name = 'luasnip', group_index = 2 },
         { name = 'buffer', group_index = 2 },
         { name = 'path', group_index = 2 },
+        { name = 'emoji', group_index = 2 },
       }),
     }
 
