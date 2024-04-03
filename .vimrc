@@ -29,6 +29,7 @@ if !exists('g:vscode')
     Plug 'haya14busa/is.vim'
     Plug 'cohama/lexima.vim'
     Plug 'junegunn/limelight.vim'
+    Plug 'ray-x/lsp_signature.nvim'
     Plug 'myusuf3/numbers.vim'
     Plug 'ethanmuller/scratch.vim'
     Plug 'ervandew/supertab'
@@ -860,6 +861,13 @@ endif
 
 " vim-airline
 let g:airline_theme='base16_monokai'
+
+" lsp_signature
+if has('nvim')
+lua << EOF
+    require'lsp_signature'.setup({})
+EOF
+endif
 
 " goyo + limelight
 autocmd BufLeave goyo_pad setlocal norelativenumber
