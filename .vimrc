@@ -220,6 +220,33 @@ set expandtab
 set gdefault					" the /g flag on :s substitutions by default
 " }}}
 
+" Wildmenu {{{
+if has('wildmenu')
+    if ! has('nvim')
+        set wildmode = list:longest
+    endif
+    set wildignorecase
+    set wildignore+=.git,.hg,.svn,.bzr
+    set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest,*.class,*.out,*.pyc,*.so,*.com,
+    set wildignore+=*.swp,*.swo,*.swn,*.swm,*.tmp,*/tmp/*,.lock,*.DS_Store,._*
+    set wildignore+=*.ai,*.bmp,*.gif,*.ico,*.jpg,*.jpeg,*.png,*.psd,*.webp
+    set wildignore+=*.avi,*.divx,*.mp4,*.webm,*.mov,*.m2ts,*.mkv,*.vob,*.mpg,*.mpeg
+    set wildignore+=*.mp3,*.mp4,*.oga,*.ogg,*.wav,*.flac
+    set wildignore+=*.eot,*.otf,*.ttf,*.woff
+    set wildignore+=*.doc,*.pdf,*.cbr,*.cbz
+    set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+    set wildignore+=*.jpg,*.png,*.jpeg,*.bmp,*.gif,*.tiff,*.svg,*.ico
+    set wildignore+=*/node_modules/*
+    set wildignore+=*.sqlite*
+    set wildignore+=__pycache__,*.egg-info,.pytest_cache,.mypy_cache,.ruff_cache
+    set wildignore+=*_rsa,*_rsa.*,*_dsa,*_dsa.*,*_keys,*.pem,*.key,*.gpg
+    set wildignore+=*/.backup,*/.vim-backup,*/.nvim-backup
+    set wildignore+=*/.swap,*/.vim-swap,*/.nvim-swap
+    set wildignore+=*/.undo,*/.vim-undo,*/.nvim-undo
+    set wildignore+=tags,.tags
+endif
+" }}}
+
 " Folding {{{
 set foldenable                  " enable folding
 set foldmethod=marker
@@ -438,7 +465,6 @@ let g:which_key_map['num'] = [":NumbersToggle", "toggle relative line numbers"]
 map <Leader>o :OverCommandLine<CR>
 
 " ctrl-p shortcuts
-set wildignore+=*/.svn/*,*/.hg/*,*/.git/*,*/tmp/*,*.swp,*.o,*.obj,*.pyc
 let g:ctrlp_map = '<Leader>p'
 let g:ctrlp_cmd = 'CtrlPMixed'
 
