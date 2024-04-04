@@ -876,6 +876,14 @@ lua << EOF
 EOF
 endif
 
+" vim-gitgutter
+command! -nargs=0 OpenGitGutterQuickFix GitGutterQuickFix | exe "norm mQ" | copen
+
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
+nnoremap <silent> <leader>hf :GitGutterFold<CR>
+nnoremap <silent> <leader>hq :OpenGitGutterQuickFix<CR>
+
 " goyo + limelight
 autocmd BufLeave goyo_pad setlocal norelativenumber
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
