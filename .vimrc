@@ -71,7 +71,6 @@ if !exists('g:vscode')
     Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
     Plug 'tadaa/vimade'
     Plug 'vim-scripts/YankRing.vim'
-    Plug 'regedarek/ZoomWin'
 
     if has('nvim')
         Plug 'neovim/nvim-lspconfig'
@@ -487,9 +486,6 @@ nnoremap <Leader>u :MundoToggle<CR>
 let g:mundo_prefer_python3 = 1
 let g:mundo_right = 1
 let g:which_key_map['u'] = [':MundoToggle', 'toggle Mundo']
-
-" <Leader>w to ZoomWin
-map <Leader>w :ZoomWin<CR>
 
 " <Leader>ws to clean trailing white space
 map <Leader>ws :%s/\s\+$//e<CR>
@@ -1061,6 +1057,21 @@ endfunction
 
 command! -bang TabCloseRight call TabCloseRight('<bang>')
 command! -bang TabCloseLeft call TabCloseLeft('<bang>')
+
+function! s:ZoomToggle() abort
+    if exists('t:zoomed') && t:zoomed
+        execute t:zoom_winrestcmd
+        let t:zoomed = 0
+    else
+        let t:zoom_winrestcmd = winrestcmd()
+        resize
+        vertical resize
+        let t:zoomed = 1
+    endif
+endfunction
+command! ZoomToggle call s:ZoomToggle()
+nnoremap <silent> <leader>z :ZoomToggle<CR>
+
 " }}}
 
 " auto reload .vimrc {{{

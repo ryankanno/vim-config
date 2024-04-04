@@ -141,10 +141,6 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Toggle Mundo</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;w</td>
-            <td>Toggle ZoomWin on the current window</td>
-        </tr>
-        <tr>
             <td>&lt;Leader&gt;ws</td>
             <td>Clean whitespace</td>
         </tr>
@@ -155,6 +151,10 @@ Just pass "UNINSTALL" to the install.sh script.
         <tr>
             <td>&lt;Leader&gt;Y</td>
             <td>Bring up the YankRing</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;z</td>
+            <td>Toggle zoom of current window</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;&lt;Leader&gt;</td>
@@ -242,4 +242,3 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-which-key](https://github.com/liuchengxu/vim-which-key)
 * [vimade](https://github.com/tadaa/vimade)
 * [yankring](https://www.vim.org/scripts/script.php?script_id=1234)
-* [ZoomWin](https://github.com/regedarek/ZoomWin)
