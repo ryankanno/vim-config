@@ -19,17 +19,16 @@ let s:uname = substitute(system("uname -s"), '\n', '', '')
 call plug#begin()
 
 if !exists('g:vscode')
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-    Plug 'alok/notational-fzf-vim'
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'rhysd/devdocs.vim'
     Plug 'mattn/emmet-vim'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    Plug 'alok/notational-fzf-vim'
     Plug 'phanimahesh/goyo.vim'
     Plug 'haya14busa/is.vim'
     Plug 'cohama/lexima.vim'
     Plug 'junegunn/limelight.vim'
-    Plug 'ray-x/lsp_signature.nvim'
     Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap'}
     Plug 'myusuf3/numbers.vim'
     Plug 'ethanmuller/scratch.vim'
@@ -73,6 +72,8 @@ if !exists('g:vscode')
     Plug 'vim-scripts/YankRing.vim'
 
     if has('nvim')
+        Plug 'ray-x/lsp_signature.nvim'
+
         Plug 'neovim/nvim-lspconfig'
         Plug 'hrsh7th/cmp-nvim-lsp'
         Plug 'hrsh7th/cmp-buffer'
@@ -95,6 +96,9 @@ if !exists('g:vscode')
 
         Plug 'zbirenbaum/copilot.lua'
         Plug 'zbirenbaum/copilot-cmp'
+
+        Plug 'SmiteshP/nvim-navic'
+        Plug 'utilyre/barbecue.nvim'
     else
         Plug 'github/copilot.vim'
     endif
@@ -921,6 +925,29 @@ nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 nnoremap <silent> <leader>hf :GitGutterFold<CR>
 nnoremap <silent> <leader>hq :OpenGitGutterQuickFix<CR>
+
+" barbecue.nvim
+if has('nvim')
+lua << EOF
+    vim.opt.updatetime = 200
+    require("barbecue").setup({
+      create_autocmd = false,
+    })
+
+    vim.api.nvim_create_autocmd({
+      "WinResized",
+      "BufWinEnter",
+      "CursorHold",
+      "InsertLeave",
+      "BufModifiedSet",
+    }, {
+      group = vim.api.nvim_create_augroup("barbecue.updater", {}),
+      callback = function()
+        require("barbecue.ui").update()
+      end,
+    })
+EOF
+endif
 
 " goyo + limelight
 autocmd BufLeave goyo_pad setlocal norelativenumber

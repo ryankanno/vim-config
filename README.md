@@ -185,6 +185,7 @@ Just pass "UNINSTALL" to the install.sh script.
 
 Here are the plugins I use on the daily.  They are pretty amazing. :D
 
+* [barbecue.nvim](https://github.com/utilyre/barbecue.nvim)
 * [copilot.lua](https://github.com/zbirenbaum/copilot.lua) w/ [copilot-cmp](https://github.com/zbirenbaum/copilot-cmp/)
 * [copilot.vim](https://github.com/github/copilot.vim)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
