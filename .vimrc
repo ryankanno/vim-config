@@ -223,7 +223,7 @@ set gdefault					" the /g flag on :s substitutions by default
 " Wildmenu {{{
 if has('wildmenu')
     if ! has('nvim')
-        set wildmode = list:longest
+        set wildmode=list:longest
     endif
     set wildignorecase
     set wildignore+=.git,.hg,.svn,.bzr
