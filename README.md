@@ -57,7 +57,7 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Open https://devdocs.io using word under cursor</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;b</td>
+            <td>&lt;Leader&gt;B</td>
             <td>Start a `:Buffers` search using FZF</td>
         </tr>
         <tr>
@@ -139,6 +139,10 @@ Just pass "UNINSTALL" to the install.sh script.
         <tr>
             <td>&lt;Leader&gt;u</td>
             <td>Toggle Mundo</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;W</td>
+            <td>Start a `:Windows` search using FZF</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;ws</td>

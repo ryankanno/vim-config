@@ -360,9 +360,9 @@ map <Leader><Leader> :HopWord<CR>
 " <Leader>_ to HopLineStart
 map <Leader>_ :HopLineStart<CR>
 
-" <Leader>b to open :Buffers
-map <Leader>b :Buffers<CR>
-let g:which_key_map['b'] = [':Buffers', 'fzf buffer search']
+" <Leader>B to open :Buffers
+map <Leader>B :<C-u>Buffers<CR>
+let g:which_key_map['B'] = [':Buffers', 'fzf buffer search']
 
 " <Leader>cc to comment
 nmap <Leader>cc <Plug>CommentaryLine
@@ -394,7 +394,7 @@ map <Leader>f :Rg<space>
 let g:which_key_map['f'] = [':Rg', 'fzf ripgrep search']
 
 " <Leader>F to start a `Files` search using FZF
-map <Leader>F :Files<CR>
+map <Leader>F :<C-u>Files<CR>
 let g:which_key_map['F'] = [':Files', 'fzf files search']
 
 " <Leader>h/l to go to previous/next in jumplist
@@ -486,6 +486,10 @@ nnoremap <Leader>u :MundoToggle<CR>
 let g:mundo_prefer_python3 = 1
 let g:mundo_right = 1
 let g:which_key_map['u'] = [':MundoToggle', 'toggle Mundo']
+
+" <Leader>W to open :Windows
+map <Leader>W :<C-u>Windows<CR>
+let g:which_key_map['W'] = [':Windows', 'fzf windows search']
 
 " <Leader>ws to clean trailing white space
 map <Leader>ws :%s/\s\+$//e<CR>
