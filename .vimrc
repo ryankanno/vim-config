@@ -370,6 +370,7 @@ let g:which_key_map =  {}
 let g:which_key_use_floating_win = 0
 let g:which_key_sep = '→'
 let g:which_key_sort_horizontal = 1
+" let g:which_key_ignore_outside_mappings = 1
 
 " <Leader>? to show which_key menu
 nnoremap <leader>? :WhichKey ','<CR>
@@ -490,6 +491,7 @@ map <D-]> :vsplit <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " <Leader>tb to open Tagbar
 map <Leader>tb :TagbarToggle<CR>
+let g:which_key_map['tb'] = [":TagbarToggle", "toggle Tagbar"]
 let g:tagbar_type_javascript = {
             \ 'ctagstype': 'javascript',
             \ 'kinds': [
@@ -827,7 +829,7 @@ nnoremap <Leader>q :Bdelete<CR>
 if has('nvim')
 lua << EOF
     require("toggleterm").setup({
-        open_mapping = [[<leader>t]],
+        open_mapping = [[<leader>T]],
         size = function(term)
             if term.direction == "horizontal" then return 15
             elseif term.direction == "vertical" then return vim.o.columns * 0.4
@@ -837,8 +839,8 @@ lua << EOF
         direction = 'horizontal',
     })
 EOF
-nnoremap <leader>t :ToggleTerm <CR>
-nnoremap <leader>T :ToggleTermToggleAll <CR>
+
+let g:which_key_map['T'] = [':ToggleTerm', 'toggle terminal']
 
 tmap <C-h> <C-\><C-N><C-h>
 tmap <C-l> <C-\><C-N><C-l>
@@ -870,6 +872,16 @@ nmap <silent> <leader>tf :TestFile<CR>
 nmap <silent> <leader>ta :TestSuite<CR>
 nmap <silent> <leader>tl :TestLast<CR>
 nmap <silent> <leader>tlv :TestVisit<CR>
+
+let g:which_key_map.t = {
+            \ 'name'  : '+tests',
+            \ 'a'     : [':TestSuite', 'runs whole test suite'],
+            \ 'c'     : [':TestClass', 'runs nearest test class'],
+            \ 'f'     : [':TestFile', 'runs all tests in file'],
+            \ 'l'     : [':TestLast', 'runs last test'],
+            \ 'lv'    : [':TestVisit', 'visits last test file'],
+            \ 'n'     : [':TestNearest', 'runs test nearest to cursor'],
+            \ }
 
 " copilot.lua
 if has('nvim')

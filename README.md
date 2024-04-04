@@ -97,13 +97,10 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Open scratch buffer in split window</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;t</td>
+            <td>&lt;Leader&gt;T</td>
             <td>Toggle terminal (nvim)</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;T</td>
-            <td>Toggle terminal all (nvim)</td>
-        </tr>
         <tr>
             <td>&lt;Leader&gt;tag</td>
             <td>Generate tags</td>
