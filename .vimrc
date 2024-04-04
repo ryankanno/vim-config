@@ -1061,13 +1061,6 @@ endfunction
 
 command! -bang TabCloseRight call TabCloseRight('<bang>')
 command! -bang TabCloseLeft call TabCloseLeft('<bang>')
-
-function! OnlyNerdTree()
-    let curr_win_id = win_getid()
-    windo if win_getid() != curr_win_id && &filetype != 'nerdtree' | close | endif
-endfunction
-
-command! -bang CloseAll call OnlyNerdTree()
 " }}}
 
 " auto reload .vimrc {{{
