@@ -30,6 +30,7 @@ if !exists('g:vscode')
     Plug 'cohama/lexima.vim'
     Plug 'junegunn/limelight.vim'
     Plug 'ray-x/lsp_signature.nvim'
+    Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap'}
     Plug 'myusuf3/numbers.vim'
     Plug 'ethanmuller/scratch.vim'
     Plug 'ervandew/supertab'
