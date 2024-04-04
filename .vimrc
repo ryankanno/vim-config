@@ -310,7 +310,7 @@ autocmd Filetype crontab setlocal nobackup nowritebackup
 " Command Line {{{
 
 " change working directory to that of file
-cmap <Leader>cd lcd %:p:h
+cmap <Leader>cd lcd %:p:h<CR>:pwd<CR>
 
 " bash like commands in command mode
 cnoremap <C-a> <Home>
@@ -399,7 +399,7 @@ let g:which_key_map.c = {
             \ }
 
 " <Leader>cd switches to directory of open buffer
-map <Leader>cd :cd %:p:h<CR>
+nnoremap <Leader>cd :cd %:p:h<CR>:pwd<CR>
 
 " <Leader>cf copies relative path to clipboard
 nnoremap <Leader>cf :let @+=expand("%")<CR>
