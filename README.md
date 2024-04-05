@@ -214,7 +214,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 * [vim-abolish](https://github.com/tpope/vim-abolish)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
-* [vim-bbye](https://github.com/moll/vim-bbye)
 * [vim-commentary](https://github.com/tpope/vim-commentary)
 * [vim-cutlass](https://github.com/svermeulen/vim-cutlass)
 * [vim-devicons](https://github.com/ryanoasis/vim-devicons)
