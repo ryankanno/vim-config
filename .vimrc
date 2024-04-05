@@ -41,7 +41,6 @@ if !exists('g:vscode')
     Plug 'vim-airline/vim-airline-themes'
     Plug 'Chiel92/vim-autoformat'
     Plug 'tpope/vim-commentary'
-    Plug 'itchyny/vim-cursorword'
     Plug 'svermeulen/vim-cutlass'
     Plug 'ryanoasis/vim-devicons'
     Plug 'jmcantrell/vim-diffchanges'
@@ -852,6 +851,8 @@ let g:move_key_modifier = 'A'
 " mini.nvim
 if has('nvim')
 lua << EOF
+    require('mini.cursorword').setup()
+
     require('mini.bufremove').setup()
     vim.keymap.set('n', '<leader>Bd', function()
       MiniBufremove.delete()
