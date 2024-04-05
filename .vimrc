@@ -54,7 +54,6 @@ if !exists('g:vscode')
     Plug 'matze/vim-move'
     Plug 'simnalamburt/vim-mundo'
     Plug 'osyo-manga/vim-over'
-    Plug 'junegunn/vim-peekaboo'
     Plug 'junegunn/vim-plug'
     Plug 'sheerun/vim-polyglot'
     Plug 'tpope/vim-projectionist'
@@ -87,6 +86,7 @@ if !exists('g:vscode')
 
         Plug 'onsails/lspkind.nvim'
 
+        Plug 'utilyre/barbecue.nvim'
         Plug 'smoka7/hop.nvim'
         Plug 'nvim-tree/nvim-tree.lua'
         Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.10.0'}
@@ -95,14 +95,14 @@ if !exists('g:vscode')
         Plug 'zbirenbaum/copilot.lua'
         Plug 'zbirenbaum/copilot-cmp'
 
-        Plug 'SmiteshP/nvim-navic'
-        Plug 'utilyre/barbecue.nvim'
-
         Plug 'echasnovski/mini.nvim'
+        Plug 'SmiteshP/nvim-navic'
+        Plug 'gennaro-tedesco/nvim-peekup'
     else
         Plug 'github/copilot.vim'
         Plug 'moll/vim-bbye'
         Plug 'itchyny/vim-cursorword'
+        Plug 'junegunn/vim-peekaboo'
     endif
 endif
 
@@ -999,6 +999,11 @@ xmap im <Plug>(textobj-sandwich-literal-query-i)
 xmap am <Plug>(textobj-sandwich-literal-query-a)
 omap im <Plug>(textobj-sandwich-literal-query-i)
 omap am <Plug>(textobj-sandwich-literal-query-a)
+
+" nvim.peekup
+let g:peekup_open = '<leader>"'
+let g:peekup_paste_before = '<leader>P'
+let g:peekup_paste_after = '<leader>p'
 
 " goyo + limelight
 autocmd BufLeave goyo_pad setlocal norelativenumber
