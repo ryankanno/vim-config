@@ -40,7 +40,6 @@ if !exists('g:vscode')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'Chiel92/vim-autoformat'
-    Plug 'moll/vim-bbye'
     Plug 'tpope/vim-commentary'
     Plug 'itchyny/vim-cursorword'
     Plug 'svermeulen/vim-cutlass'
@@ -99,6 +98,8 @@ if !exists('g:vscode')
 
         Plug 'SmiteshP/nvim-navic'
         Plug 'utilyre/barbecue.nvim'
+
+        Plug 'echasnovski/mini.nvim'
     else
         Plug 'github/copilot.vim'
     endif
@@ -848,8 +849,18 @@ let g:indent_guides_enable_on_vim_startup = 1
 " vim-move
 let g:move_key_modifier = 'A'
 
-" vim-bbye
-nnoremap <Leader>q :Bdelete<CR>
+" mini.nvim
+if has('nvim')
+lua << EOF
+    require('mini.bufremove').setup()
+    vim.keymap.set('n', '<leader>Bd', function()
+      MiniBufremove.delete()
+    end, {})
+    vim.keymap.set('n', '<leader>Bw', function()
+      MiniBufremove.wipeout()
+    end, {})
+EOF
+endif
 
 " toggleterm.nvim
 if has('nvim')
