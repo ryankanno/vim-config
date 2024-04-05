@@ -101,6 +101,8 @@ if !exists('g:vscode')
         Plug 'echasnovski/mini.nvim'
     else
         Plug 'github/copilot.vim'
+        Plug 'moll/vim-bbye'
+        Plug 'itchyny/vim-cursorword'
     endif
 endif
 
