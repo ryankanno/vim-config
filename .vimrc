@@ -61,10 +61,10 @@ if !exists('g:vscode')
     Plug 'sheerun/vim-polyglot'
     Plug 'tpope/vim-projectionist'
     Plug 'tpope/vim-repeat'
+    Plug 'machakann/vim-sandwich'
     Plug 'tpope/vim-speeddating'
     Plug 'mhinz/vim-startify'
     Plug 'dstein64/vim-startuptime'
-    Plug 'tpope/vim-surround'
     Plug 'aperezdc/vim-template'
     Plug 'vim-test/vim-test'
     Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
@@ -970,6 +970,9 @@ lua << EOF
     })
 EOF
 endif
+
+" vim-sandwich
+runtime macros/sandwich/keymap/surround.vim
 
 " goyo + limelight
 autocmd BufLeave goyo_pad setlocal norelativenumber
