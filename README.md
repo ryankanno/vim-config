@@ -57,6 +57,18 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Open https://devdocs.io using word under cursor</td>
         </tr>
         <tr>
+            <td>&lt;Leader&gt;"</td>
+            <td>Open peekup register window</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;"p</td>
+            <td>Open peekup register window + paste after</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;"P</td>
+            <td>Open peekup register window + paste before</td>
+        </tr>
+        <tr>
             <td>&lt;Leader&gt;B</td>
             <td>Start a `:Buffers` search using FZF</td>
         </tr>
