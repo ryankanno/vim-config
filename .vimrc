@@ -376,7 +376,7 @@ let g:which_key_map =  {}
 let g:which_key_use_floating_win = 0
 let g:which_key_sep = '→'
 let g:which_key_sort_horizontal = 1
-" let g:which_key_ignore_outside_mappings = 1
+let g:which_key_ignore_outside_mappings = 1
 
 " <Leader>? to show which_key menu
 nnoremap <leader>? :WhichKey ','<CR>
@@ -1002,8 +1002,10 @@ omap am <Plug>(textobj-sandwich-literal-query-a)
 
 " nvim.peekup
 let g:peekup_open = '<leader>"'
-let g:peekup_paste_before = '<leader>P'
-let g:peekup_paste_after = '<leader>p'
+let g:peekup_paste_before = '<leader>"P'
+let g:peekup_paste_after = '<leader>"p'
+let g:which_key_map['"P']= ['<Plug>PeekupPasteBefore', 'paste register selection before']
+let g:which_key_map['"p']= ['<Plug>PeekupPasteAfter', 'paste register selection after']
 
 " goyo + limelight
 autocmd BufLeave goyo_pad setlocal norelativenumber
