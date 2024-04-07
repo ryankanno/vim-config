@@ -1,1 +1,11 @@
-# Rope project settings.ropeproject.vim/templates/.ropeproject/tags.temptags.locktags
+# rope project settings
+.ropeproject
+.vim/templates/.ropeproject/
+
+# vim-plug
+.vim/plugged/
+
+# universal-ctags
+tags.temp
+tags.lock
+tags
