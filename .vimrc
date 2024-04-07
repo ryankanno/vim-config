@@ -3,6 +3,7 @@
 " @ryankanno
 "
 
+" vim-plug (d/l + install)
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -31,6 +32,7 @@ if !exists('g:vscode')
     Plug 'cohama/lexima.vim'
     Plug 'junegunn/limelight.vim'
     Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap'}
+    Plug 'justinmk/molokai'
     Plug 'myusuf3/numbers.vim'
     Plug 'ethanmuller/scratch.vim'
     Plug 'ervandew/supertab'
@@ -175,7 +177,9 @@ set synmaxcol=256
 
 set termguicolors               " sets colors
 set background=dark             " sets the background color (I like it dark)
-colorscheme molokai            " <3 colorscheme ftw.
+
+" Molokai
+colorscheme molokai             " <3 colorscheme ftw.
 " }}}
 
 " Visual {{{
