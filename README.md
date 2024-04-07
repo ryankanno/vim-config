@@ -220,7 +220,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 * [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
 * [scratch.vim](https://github.com/ethanmuller/scratch.vim)
-* [supertab](http://github.com/ervandew/supertab)
 * [tagbar](https://github.com/majutsushi/tagbar)
 * [targets.vim](https://github.com/wellle/targets.vim)
 * [tasklist](http://github.com/vim-scripts/TaskList)

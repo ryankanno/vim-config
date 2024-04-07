@@ -35,7 +35,6 @@ if !exists('g:vscode')
     Plug 'justinmk/molokai'
     Plug 'myusuf3/numbers.vim'
     Plug 'ethanmuller/scratch.vim'
-    Plug 'ervandew/supertab'
     Plug 'majutsushi/tagbar'
     Plug 'wellle/targets.vim'
     Plug 'vim-scripts/TaskList.vim'
