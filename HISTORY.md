@@ -1,5 +1,9 @@
 # History
 
+## 2024-04-06
+
+* [feat] - Added editorconfig-vim
+
 ## 2024-04-02
 
 * [feat] - Added vim-projectionist
