@@ -43,7 +43,6 @@ if !exists('g:vscode')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'Chiel92/vim-autoformat'
-    Plug 'tpope/vim-commentary'
     Plug 'svermeulen/vim-cutlass'
     Plug 'ryanoasis/vim-devicons'
     Plug 'jmcantrell/vim-diffchanges'
@@ -104,6 +103,7 @@ if !exists('g:vscode')
     else
         Plug 'github/copilot.vim'
         Plug 'moll/vim-bbye'
+        Plug 'tpope/vim-commentary'
         Plug 'itchyny/vim-cursorword'
         Plug 'junegunn/vim-peekaboo'
     endif
@@ -404,11 +404,24 @@ map <Leader>B :<C-u>Buffers<CR>
 let g:which_key_map['B'] = [':Buffers', 'fzf buffer search']
 
 " <Leader>cc to comment
+if has('nvim')
+lua << EOF
+    require('mini.comment').setup({
+        mappings = {
+            comment = '<Leader>c',
+            comment_line = '<Leader>cc',
+            comment_visual = '<Leader>c',
+            text_object = '<Leader>c',
+        }
+    })
+EOF
+else
 nmap <Leader>cc <Plug>CommentaryLine
 let g:which_key_map.c = {
             \ 'name'  : '+comments',
             \ 'c'     : ['<Plug>CommentaryLine', 'comment line'],
             \ }
+endif
 
 " <Leader>cd switches to directory of open buffer
 nnoremap <Leader>cd :cd %:p:h<CR>:pwd<CR>
