@@ -456,7 +456,7 @@ let g:devdocs_filetype_map = {
 
 augroup plugin-devdocs
     autocmd!
-    autocmd FileType bash,c,cpp,go,rust,python nmap <buffer>K <Plug>(devdocs-under-cursor)
+    autocmd FileType bash,c,cpp,go,rust,python nmap <buffer><leader>DD <Plug>(devdocs-under-cursor)
 augroup END
 
 " <Leader>nt to toggle NvimTreeToggle
