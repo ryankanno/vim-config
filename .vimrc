@@ -52,7 +52,6 @@ if !exists('g:vscode')
     Plug 'ludovicchabant/vim-gutentags'
     Plug 'nathanaelkane/vim-indent-guides'
     Plug 'andymass/vim-matchup'
-    Plug 'matze/vim-move'
     Plug 'simnalamburt/vim-mundo'
     Plug 'osyo-manga/vim-over'
     Plug 'junegunn/vim-plug'
@@ -104,6 +103,7 @@ if !exists('g:vscode')
         Plug 'moll/vim-bbye'
         Plug 'tpope/vim-commentary'
         Plug 'itchyny/vim-cursorword'
+        Plug 'matze/vim-move'
         Plug 'junegunn/vim-peekaboo'
     endif
 endif
@@ -864,8 +864,14 @@ let g:templates_directory="$HOME/.vim/templates"
 " vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
 
-" vim-move
+" vim-move / mini.move
+if has('nvim')
+lua << EOF
+    require('mini.move').setup()
+EOF
+else
 let g:move_key_modifier = 'A'
+endif
 
 " mini.nvim
 if has('nvim')
