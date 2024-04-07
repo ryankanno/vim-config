@@ -21,6 +21,7 @@ call plug#begin()
 if !exists('g:vscode')
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'rhysd/devdocs.vim'
+    Plug 'editorconfig/editorconfig-vim'
     Plug 'mattn/emmet-vim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
@@ -1006,6 +1007,10 @@ let g:peekup_paste_before = '<leader>"P'
 let g:peekup_paste_after = '<leader>"p'
 let g:which_key_map['"P']= ['<Plug>PeekupPasteBefore', 'paste register selection before']
 let g:which_key_map['"p']= ['<Plug>PeekupPasteAfter', 'paste register selection after']
+
+" editorconfig-vim
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+au FileType gitcommit let b:EditorConfig_disable = 1
 
 " goyo + limelight
 autocmd BufLeave goyo_pad setlocal norelativenumber

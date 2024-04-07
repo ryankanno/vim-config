@@ -202,6 +202,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [copilot.vim](https://github.com/github/copilot.vim)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [devdocs.vim](https://github.com/rhysd/devdocs.vim)
+* [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim)
 * [emmet-vim](https://github.com/mattn/emmet-vim)
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
 * [goyo.vim](https://github.com/phanimahesh/goyo.vim)
