@@ -55,7 +55,6 @@ if !exists('g:vscode')
     Plug 'simnalamburt/vim-mundo'
     Plug 'osyo-manga/vim-over'
     Plug 'junegunn/vim-plug'
-    Plug 'sheerun/vim-polyglot'
     Plug 'tpope/vim-projectionist'
     Plug 'tpope/vim-repeat'
     Plug 'machakann/vim-sandwich'
@@ -105,6 +104,7 @@ if !exists('g:vscode')
         Plug 'itchyny/vim-cursorword'
         Plug 'matze/vim-move'
         Plug 'junegunn/vim-peekaboo'
+        Plug 'sheerun/vim-polyglot'
     endif
 endif
 
