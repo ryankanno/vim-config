@@ -134,7 +134,7 @@ set laststatus=2                " always show last status
 
 set history=10000               " 10000 lines of history
 set undolevels=10000            " 10000 levels of undo
-set clipboard+=unnamed          " share clipboard with win
+set clipboard^=unnamed,unnamedplus " https://stackoverflow.com/questions/30691466/what-is-difference-between-vims-clipboard-unnamed-and-unnamedplus-settings
 set ffs=unix,dos,mac            " set file format to unix, win, then old mac
 set hidden                      " enable hidden files
 set backspace=indent,eol,start  " enable backspace over indent, EOL, START
