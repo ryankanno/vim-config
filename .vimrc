@@ -71,7 +71,10 @@ if !exists('g:vscode')
     if has('nvim')
         Plug 'ray-x/lsp_signature.nvim'
 
+        Plug 'williamboman/mason.nvim'
+        Plug 'williamboman/mason-lspconfig.nvim'
         Plug 'neovim/nvim-lspconfig'
+
         Plug 'hrsh7th/cmp-nvim-lsp'
         Plug 'hrsh7th/cmp-buffer'
         Plug 'hrsh7th/cmp-cmdline'
@@ -578,9 +581,60 @@ nnoremap X D
 " nvim-lsp
 if has('nvim')
 lua << EOF
-    require'lspconfig'.nixd.setup{}
-    require'lspconfig'.pyright.setup{}
-    require'lspconfig'.tailwindcss.setup{}
+    require("mason").setup({
+      automatic_installation = true,
+      ui = {
+        icons = {
+          package_installed = "✓",
+          package_pending = "➜",
+          package_uninstalled = "✗"
+        }
+      }
+    })
+
+    require("mason-lspconfig").setup({
+      ensure_installed = {
+        "bashls",
+        "cssls",
+        "elp",
+        "gopls",
+        "html",
+        "htmx",
+        "jsonls",
+        "lua_ls",
+        "marksman",
+        "nil_ls",
+        "pyright",
+        "ruff_lsp",
+        "rust_analyzer",
+        "tailwindcss",
+        "taplo",
+        "tsserver",
+      }
+    })
+
+    local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+    require'mason-lspconfig'.setup_handlers{
+      function (server_name) -- default handler (optional)
+        require'lspconfig'[server_name].setup{capabilities = lsp_capabilities}
+      end,
+
+      ['pyright'] = function()
+        require'lspconfig'.pyright.setup{
+          settings = {
+            pyright = {
+              disableOrganizeImports = true,
+            },
+            python = {
+              analysis = {
+                ignore = { '*' },
+              }
+            }
+          }
+        }
+      end,
+    }
 
     vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
     vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
@@ -619,15 +673,6 @@ endif
 " luasnip / cmp
 if has('nvim')
 lua << EOF
-    local capabilities = require('cmp_nvim_lsp').default_capabilities()
-    local lspconfig = require('lspconfig')
-    local servers = { 'clangd', 'nixd', 'pyright', 'rust_analyzer', 'tailwindcss', 'tsserver' }
-    for _, lsp in ipairs(servers) do
-      lspconfig[lsp].setup {
-        capabilities = capabilities,
-      }
-    end
-
     local has_words_before = function()
       unpack = unpack or table.unpack
       local line, col = unpack(vim.api.nvim_win_get_cursor(0))

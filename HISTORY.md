@@ -1,5 +1,9 @@
 # History
 
+## 2024-04-24
+
+* [feat] - Added mason.nvim
+
 ## 2024-04-06
 
 * [feat] - Added editorconfig-vim
