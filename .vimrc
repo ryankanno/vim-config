@@ -620,15 +620,20 @@ lua << EOF
         require'lspconfig'[server_name].setup{capabilities = lsp_capabilities}
       end,
 
+      -- https://github.com/astral-sh/ruff-lsp/issues/384
       ['pyright'] = function()
         require'lspconfig'.pyright.setup{
           settings = {
             pyright = {
               disableOrganizeImports = true,
+              disableTaggedHints = true,
             },
             python = {
               analysis = {
-                ignore = { '*' },
+                diagnosticSeverityOverrides = {
+                  -- https://github.com/microsoft/pyright/blob/main/docs/configuration.md#type-check-diagnostics-settings
+                  reportUndefinedVariable = "none",
+                },
               }
             }
           }
