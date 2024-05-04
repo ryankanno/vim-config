@@ -56,6 +56,7 @@ if !exists('g:vscode')
     Plug 'osyo-manga/vim-over'
     Plug 'junegunn/vim-plug'
     Plug 'tpope/vim-projectionist'
+    Plug 'vimjas/vim-python-pep8-indent'
     Plug 'tpope/vim-repeat'
     Plug 'machakann/vim-sandwich'
     Plug 'tpope/vim-speeddating'
@@ -577,6 +578,7 @@ nnoremap X D
 " nvim-lsp
 if has('nvim')
 lua << EOF
+    require'lspconfig'.nixd.setup{}
     require'lspconfig'.pyright.setup{}
 
     vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
@@ -922,6 +924,10 @@ lua << EOF
         highlight = {
             enable = true,
             additional_vim_regex_highlighting = false
+        },
+        indent = {
+            enable = true,
+            disable = { "yaml", "python" }
         }
     })
 EOF
