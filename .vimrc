@@ -580,6 +580,7 @@ if has('nvim')
 lua << EOF
     require'lspconfig'.nixd.setup{}
     require'lspconfig'.pyright.setup{}
+    require'lspconfig'.tailwindcss.setup{}
 
     vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
     vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
@@ -620,7 +621,7 @@ if has('nvim')
 lua << EOF
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
     local lspconfig = require('lspconfig')
-    local servers = { 'clangd', 'rust_analyzer', 'pyright', 'tsserver' }
+    local servers = { 'clangd', 'nixd', 'pyright', 'rust_analyzer', 'tailwindcss', 'tsserver' }
     for _, lsp in ipairs(servers) do
       lspconfig[lsp].setup {
         capabilities = capabilities,
