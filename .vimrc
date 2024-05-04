@@ -81,6 +81,7 @@ if !exists('g:vscode')
         Plug 'hrsh7th/cmp-emoji'
         Plug 'hrsh7th/cmp-path'
         Plug 'lukas-reineke/cmp-rg'
+        Plug 'ray-x/cmp-treesitter'
         Plug 'hrsh7th/nvim-cmp'
 
         Plug 'L3MON4D3/LuaSnip', {'tag': 'v2.*', 'do': 'make install_jsregexp'}
@@ -631,7 +632,6 @@ lua << EOF
             python = {
               analysis = {
                 diagnosticMode = "off",
-                typeCheckingMode = "off",
                 diagnosticSeverityOverrides = {
                   -- https://github.com/microsoft/pyright/blob/main/docs/configuration.md#type-check-diagnostics-settings
                   reportUndefinedVariable = "none",
@@ -706,6 +706,7 @@ lua << EOF
           mode = "symbol_text",
           menu = ({
             copilot = "[Copilot]",
+            treesitter = "[Tree]",
             buffer = "[Buffer]",
             nvim_lsp = "[LSP]",
             luasnip = "[LuaSnip]",
@@ -751,6 +752,7 @@ lua << EOF
       }),
       sources = cmp.config.sources({
         { name = 'copilot', group_index = 2 },
+        { name = 'treesitter', group_index = 2 },
         { name = 'nvim_lsp', group_index = 2 },
         { name = 'luasnip', group_index = 2 },
         { name = 'buffer', group_index = 2 },
