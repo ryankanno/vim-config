@@ -212,6 +212,8 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [limelight.vim](https://github.com/junegunn/limelight.vim)
 * [luasnip](https://github.com/L3MON4D3/LuaSnip)
 * [luasnip-snippets](https://github.com/mireq/luasnip-snippets)
+* [mason.nvim](https://github.com/williamboman/mason.nvim)
+* [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
 * [mini.nvim](https://github.com/echasnovski/mini.nvim)
 * [notational-fzf-vim](https://github.com/alok/notational-fzf-vim)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim)
