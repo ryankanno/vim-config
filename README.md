@@ -45,14 +45,6 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>%</td>
         </tr>
         <tr>
-            <td>dc</td>
-            <td>Diff of current buffer</td>
-        </tr>
-        <tr>
-            <td>dp</td>
-            <td>Patch of current buffer</td>
-        </tr>
-        <tr>
             <td>&lt;Leader&gt;DD</td>
             <td>Open https://devdocs.io using word under cursor</td>
         </tr>
@@ -229,7 +221,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-commentary](https://github.com/tpope/vim-commentary)
 * [vim-cutlass](https://github.com/svermeulen/vim-cutlass)
 * [vim-devicons](https://github.com/ryanoasis/vim-devicons)
-* [vim-diffchanges](http://github.com/jmcantrell/vim-diffchanges)
 * [vim-disapprove-deep-indentation](https://github.com/dodie/vim-disapprove-deep-indentation)
 * [vim-fold-cycle](https://github.com/arecarn/vim-fold-cycle)
 * [vim-fugitive](http://github.com/tpope/vim-fugitive)
