@@ -44,7 +44,6 @@ if !exists('g:vscode')
     Plug 'Chiel92/vim-autoformat'
     Plug 'svermeulen/vim-cutlass'
     Plug 'ryanoasis/vim-devicons'
-    Plug 'jmcantrell/vim-diffchanges'
     Plug 'dodie/vim-disapprove-deep-indentation'
     Plug 'arecarn/vim-fold-cycle'
     Plug 'tpope/vim-fugitive'
@@ -425,15 +424,6 @@ nnoremap <Leader>dbc :DapContinue<CR>
 
 " <Leader>dbo to open DapUI
 nnoremap <Leader>dbo :lua require("dapui").open()<CR>
-
-" <Leader>d to make you smile
-map <Leader>d :Nyan<CR>
-
-" <Leader>dc to show diff of current buffer
-map <Leader>dc :DiffChangesDiffToggle<CR>
-
-" <Leader>dp to show patch of current buffer
-map <Leader>dp :DiffChangesPatchToggle<CR>
 
 " <Leader>f to start an `rg` search using FZF
 map <Leader>f :Rg<space>
@@ -1169,11 +1159,18 @@ lua << EOF
         require("mini.clue").gen_clues.windows(),
         require("mini.clue").gen_clues.z(),
         { mode = "n", keys = "<leader>t", desc = "+tests" },
+        { mode = "n", keys = "<leader>db", desc = "+dap" },
       },
     })
 
     miniclue = require('mini.clue')
+
+    miniclue.set_mapping_desc('n', '<leader><leader>', 'hop word')
+    miniclue.set_mapping_desc('n', '<leader>_', 'hop line start')
     miniclue.set_mapping_desc('n', '<leader>B', 'fzf buffer search')
+    miniclue.set_mapping_desc('n', '<leader>dbb', 'toggle breakpoint')
+    miniclue.set_mapping_desc('n', '<leader>dbc', 'continue')
+    miniclue.set_mapping_desc('n', '<leader>dbo', 'open dapui')
     miniclue.set_mapping_desc('n', '<leader>F', 'fzf files search')
     miniclue.set_mapping_desc('n', '<leader>f', 'fzf ripgrep search')
     miniclue.set_mapping_desc('n', '<leader>h', 'previous jumplist position')
@@ -1193,6 +1190,7 @@ lua << EOF
     miniclue.set_mapping_desc('n', '<leader>u', 'toggle Mundo')
     miniclue.set_mapping_desc('n', '<leader>W', 'fzf windows search')
     miniclue.set_mapping_desc('n', '<leader>y', 'toggle YankRing')
+
 EOF
 endif
 
