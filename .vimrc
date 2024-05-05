@@ -64,7 +64,6 @@ if !exists('g:vscode')
     Plug 'dstein64/vim-startuptime'
     Plug 'aperezdc/vim-template'
     Plug 'vim-test/vim-test'
-    Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
     Plug 'tadaa/vimade'
     Plug 'vim-scripts/YankRing.vim'
 
@@ -379,22 +378,6 @@ nmap Y y$
 nnoremap ; :
 vnoremap ; :
 
-" set which_key menu
-autocmd! User vim-which-key call which_key#register(',', 'g:which_key_map')
-
-nnoremap <silent> <leader>      :<c-u>WhichKey ','<CR>
-vnoremap <silent> <leader>      :<c-u>WhichKeyVisual ','<CR>
-
-let g:which_key_map =  {}
-let g:which_key_use_floating_win = 0
-let g:which_key_sep = '→'
-let g:which_key_sort_horizontal = 1
-let g:which_key_ignore_outside_mappings = 1
-
-" <Leader>? to show which_key menu
-nnoremap <leader>? :WhichKey ','<CR>
-let g:which_key_map['?'] = 'show help'
-
 " clear search matching across all buffers
 noremap <Leader><space> :noh<CR>:call clearmatches()<CR>
 
@@ -409,7 +392,6 @@ map <Leader>_ :HopLineStart<CR>
 
 " <Leader>B to open :Buffers
 map <Leader>B :<C-u>Buffers<CR>
-let g:which_key_map['B'] = [':Buffers', 'fzf buffer search']
 
 " <Leader>cc to comment
 if has('nvim')
@@ -424,11 +406,7 @@ lua << EOF
     })
 EOF
 else
-nmap <Leader>cc <Plug>CommentaryLine
-let g:which_key_map.c = {
-            \ 'name'  : '+comments',
-            \ 'c'     : ['<Plug>CommentaryLine', 'comment line'],
-            \ }
+  nmap <Leader>cc <Plug>CommentaryLine
 endif
 
 " <Leader>cd switches to directory of open buffer
@@ -460,18 +438,14 @@ map <Leader>dp :DiffChangesPatchToggle<CR>
 
 " <Leader>f to start an `rg` search using FZF
 map <Leader>f :Rg<space>
-let g:which_key_map['f'] = [':Rg', 'fzf ripgrep search']
 
 " <Leader>F to start a `Files` search using FZF
 map <Leader>F :<C-u>Files<CR>
-let g:which_key_map['F'] = [':Files', 'fzf files search']
 
 " <Leader>h/l to go to previous/next in jumplist
 nnoremap <Leader>h <C-O>
-let g:which_key_map['h'] = ['<C-O>', 'previous jumplist position']
 
 nnoremap <Leader>l <C-i>
-let g:which_key_map['l'] = ['<C-i>', 'next jumplist position']
 
 " <Leader>hn to HopNodes
 map <Leader>hn :HopNodes<CR>
@@ -495,16 +469,9 @@ map <Leader>nt :NvimTreeToggle<CR>
 " <Leader>nf to reveal file in active buffer in NvimTree
 map <Leader>nf :NvimTreeFindFile<CR>
 
-let g:which_key_map.n = {
-            \ 'name'  : '+nvimtree',
-            \ 't'     : [':NvimTreeToggle', 'toggle NvimTree'],
-            \ 'f'     : [':NvimTreeFindFile', 'reveal file in NvimTree'],
-            \ }
-
 " <Leader>num to toggle relative numbers
 map <Leader>num :NumbersToggle<CR>
 let g:numbers_exclude = ['goyo_pad', 'minibufexpl', 'nvim-tree', 'tagbar']
-let g:which_key_map['num'] = [":NumbersToggle", "toggle relative line numbers"]
 
 " <Leader>o for OverCommandLine
 map <Leader>o :OverCommandLine<CR>
@@ -521,11 +488,9 @@ endif
 
 " <Leader>s to open scratch in horizontal split window
 map <Leader>s :Sscratch<CR>
-let g:which_key_map['s'] = [':Sscratch', 'open horizontal scratch']
 
 " <Leader>S to open scratch in vertical split window
 map <Leader>S :Vscratch<CR>
-let g:which_key_map['S'] = [':Vscratch', 'open vertical scratch']
 
 " CTags
 set tags+=./tags;/
@@ -535,7 +500,6 @@ map <D-]> :vsplit <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " <Leader>tb to open Tagbar
 map <Leader>tb :TagbarToggle<CR>
-let g:which_key_map['tb'] = [":TagbarToggle", "toggle Tagbar"]
 let g:tagbar_type_javascript = {
             \ 'ctagstype': 'javascript',
             \ 'kinds': [
@@ -557,11 +521,9 @@ let g:tagbar_type_javascript = {
 nnoremap <Leader>u :MundoToggle<CR>
 let g:mundo_prefer_python3 = 1
 let g:mundo_right = 1
-let g:which_key_map['u'] = [':MundoToggle', 'toggle Mundo']
 
 " <Leader>W to open :Windows
 map <Leader>W :<C-u>Windows<CR>
-let g:which_key_map['W'] = [':Windows', 'fzf windows search']
 
 " <Leader>ws to clean trailing white space
 map <Leader>ws :%s/\s\+$//e<CR>
@@ -573,7 +535,6 @@ map <Leader>x <Plug>TaskList
 map <Leader>y :YRShow<CR>
 let g:yankring_window_height = 16
 let g:yankring_max_history = 1024
-let g:which_key_map['y'] = [':YRShow', 'toggle YankRing']
 
 " <F2> to toggle invisible characters
 map <silent> <F2> :set invlist<CR>
@@ -947,8 +908,6 @@ endif
 " mini.nvim
 if has('nvim')
 lua << EOF
-    require('mini.cursorword').setup()
-
     require('mini.bufremove').setup()
     vim.keymap.set('n', '<leader>Bd', function()
       MiniBufremove.delete()
@@ -956,6 +915,8 @@ lua << EOF
     vim.keymap.set('n', '<leader>Bw', function()
       MiniBufremove.wipeout()
     end, {})
+
+    require('mini.cursorword').setup()
 EOF
 endif
 
@@ -973,8 +934,6 @@ lua << EOF
         direction = 'horizontal',
     })
 EOF
-
-let g:which_key_map['T'] = [':ToggleTerm', 'toggle terminal']
 
 tmap <C-h> <C-\><C-N><C-h>
 tmap <C-l> <C-\><C-N><C-l>
@@ -1010,16 +969,6 @@ nmap <silent> <leader>tf :TestFile<CR>
 nmap <silent> <leader>ta :TestSuite<CR>
 nmap <silent> <leader>tl :TestLast<CR>
 nmap <silent> <leader>tlv :TestVisit<CR>
-
-let g:which_key_map.t = {
-            \ 'name'  : '+tests',
-            \ 'a'     : [':TestSuite', 'runs whole test suite'],
-            \ 'c'     : [':TestClass', 'runs nearest test class'],
-            \ 'f'     : [':TestFile', 'runs all tests in file'],
-            \ 'l'     : [':TestLast', 'runs last test'],
-            \ 'lv'    : [':TestVisit', 'visits last test file'],
-            \ 'n'     : [':TestNearest', 'runs test nearest to cursor'],
-            \ }
 
 " copilot.lua
 if has('nvim')
@@ -1102,8 +1051,6 @@ omap am <Plug>(textobj-sandwich-literal-query-a)
 let g:peekup_open = '<leader>"'
 let g:peekup_paste_before = '<leader>"P'
 let g:peekup_paste_after = '<leader>"p'
-let g:which_key_map['"P']= ['<Plug>PeekupPasteBefore', 'paste register selection before']
-let g:which_key_map['"p']= ['<Plug>PeekupPasteAfter', 'paste register selection after']
 
 " editorconfig-vim
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
@@ -1171,6 +1118,85 @@ lua << EOF
   dap.listeners.before.event_exited.dapui_config = function()
     dapui.close()
   end
+EOF
+endif
+
+" mini.clue
+if has('nvim')
+lua << EOF
+    require('mini.clue').setup({
+      window = {
+        config = {
+          anchor = "SW",
+          width = math.floor(0.618 * vim.o.columns),
+          row = "auto",
+          col = "auto",
+        },
+      },
+      triggers = {
+        -- Leader triggers
+        { mode = "n", keys = "<Leader>" },
+        { mode = "x", keys = "<Leader>" },
+
+        -- Built-in completion
+        { mode = "i", keys = "<C-x>" },
+
+        -- `g` key
+        { mode = "n", keys = "g" },
+        { mode = "x", keys = "g" },
+
+	    -- Marks
+        { mode = "n", keys = "'" },
+        { mode = "n", keys = "`" },
+        { mode = "x", keys = "'" },
+        { mode = "x", keys = "`" },
+
+	    -- Registers
+        { mode = "n", keys = '"' },
+        { mode = "x", keys = '"' },
+        { mode = "i", keys = "<C-r>" },
+        { mode = "c", keys = "<C-r>" },
+
+	    -- Window commands
+        { mode = "n", keys = "<C-w>" },
+
+        -- `z` key
+        { mode = "n", keys = "z" },
+        { mode = "x", keys = "z" },
+      },
+      clues = {
+        -- Enhance this by adding descriptions for <Leader> mapping groups
+        require("mini.clue").gen_clues.builtin_completion(),
+        require("mini.clue").gen_clues.g(),
+        require("mini.clue").gen_clues.marks(),
+        require("mini.clue").gen_clues.registers(),
+        require("mini.clue").gen_clues.windows(),
+        require("mini.clue").gen_clues.z(),
+        { mode = "n", keys = "<leader>t", desc = "+tests" },
+      },
+    })
+
+    miniclue = require('mini.clue')
+    miniclue.set_mapping_desc('n', '<leader>B', 'fzf buffer search')
+    miniclue.set_mapping_desc('n', '<leader>F', 'fzf files search')
+    miniclue.set_mapping_desc('n', '<leader>f', 'fzf ripgrep search')
+    miniclue.set_mapping_desc('n', '<leader>h', 'previous jumplist position')
+    miniclue.set_mapping_desc('n', '<leader>l', 'next jumplist position')
+    miniclue.set_mapping_desc('n', '<leader>nt', 'toggle NvimTree')
+    miniclue.set_mapping_desc('n', '<leader>nf', 'reveal file in NvimTree')
+    miniclue.set_mapping_desc('n', '<leader>num', 'toggle relative line numbers')
+    miniclue.set_mapping_desc('n', '<leader>s', 'open horizontal scratch')
+    miniclue.set_mapping_desc('n', '<leader>S', 'open vertical scratch')
+    miniclue.set_mapping_desc('n', '<leader>tb', 'toggle Tagbar')
+    miniclue.set_mapping_desc('n', '<leader>ta', 'runs whole test suite')
+    miniclue.set_mapping_desc('n', '<leader>tc', 'runs nearest test class')
+    miniclue.set_mapping_desc('n', '<leader>tf', 'runs all tests in file')
+    miniclue.set_mapping_desc('n', '<leader>tl', 'runs last test')
+    miniclue.set_mapping_desc('n', '<leader>tlv', 'visit last test file')
+    miniclue.set_mapping_desc('n', '<leader>tn', 'runs test nearest to cursor')
+    miniclue.set_mapping_desc('n', '<leader>u', 'toggle Mundo')
+    miniclue.set_mapping_desc('n', '<leader>W', 'fzf windows search')
+    miniclue.set_mapping_desc('n', '<leader>y', 'toggle YankRing')
 EOF
 endif
 
