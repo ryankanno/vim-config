@@ -1,8 +1,9 @@
 # History
 
-## 2024-04-24
+## 2024-05-04
 
 * [feat] - Added mason.nvim
+* [feat] - Added nvim-dap
 
 ## 2024-04-06
 

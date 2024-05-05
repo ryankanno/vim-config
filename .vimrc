@@ -90,6 +90,10 @@ if !exists('g:vscode')
 
         Plug 'onsails/lspkind.nvim'
 
+        Plug 'mfussenegger/nvim-dap'
+        Plug 'nvim-neotest/nvim-nio'
+        Plug 'rcarriga/nvim-dap-ui'
+
         Plug 'utilyre/barbecue.nvim'
         Plug 'smoka7/hop.nvim'
         Plug 'nvim-tree/nvim-tree.lua'
@@ -435,6 +439,15 @@ nnoremap <Leader>cf :let @+=expand("%")<CR>
 
 " <Leader>cF copies absolute path to clipboard
 nnoremap <Leader>cF :let @+=expand("%:p")<CR>
+
+" <Leader>dbb to toggle breakpoint
+nnoremap <Leader>dbb :DapToggleBreakpoint<CR>
+
+" <Leader>dbc to continue debugging
+nnoremap <Leader>dbc :DapContinue<CR>
+
+" <Leader>dbo to open DapUI
+nnoremap <Leader>dbo :lua require("dapui").open()<CR>
 
 " <Leader>d to make you smile
 map <Leader>d :Nyan<CR>
@@ -1095,6 +1108,71 @@ let g:which_key_map['"p']= ['<Plug>PeekupPasteAfter', 'paste register selection 
 " editorconfig-vim
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 au FileType gitcommit let b:EditorConfig_disable = 1
+
+" nvim-dap / nvim-dap-ui
+if has('nvim')
+lua << EOF
+  local dap = require('dap')
+
+  dap.adapters.python = function(cb, config)
+    if config.request == 'attach' then
+      ---@diagnostic disable-next-line: undefined-field
+      local port = (config.connect or config).port
+      ---@diagnostic disable-next-line: undefined-field
+      local host = (config.connect or config).host or '127.0.0.1'
+      cb({
+        type = 'server',
+        port = assert(port, '`connect.port` is required for a python `attach` configuration'),
+        host = host,
+        options = {
+          source_filetype = 'python',
+        },
+      })
+    else
+      cb({
+        type = 'executable',
+        command = os.getenv("HOME") .. "/.anyenv/envs/pyenv/versions/3.11.0/bin/python",
+        args = { '-m', 'debugpy.adapter' },
+        options = {
+          source_filetype = 'python',
+        },
+      })
+    end
+  end
+
+  dap.configurations.python = {
+    {
+      type = 'python'; -- the type here established the link to the adapter definition: `dap.adapters.python`
+      request = 'launch';
+      name = "Launch file";
+      -- Options below are for debugpy, see https://github.com/microsoft/debugpy/wiki/Debug-configuration-settings for supported options
+      program = "${file}"; -- This configuration will launch the current file if used.
+      pythonPath = function()
+        -- debugpy supports launching an application with a different interpreter then the one used to launch debugpy itself.
+        -- The code below looks for a `venv` or `.venv` folder in the current directly and uses the python within.
+        -- You could adapt this - to for example use the `VIRTUAL_ENV` environment variable.
+        return os.getenv("VIRTUAL_ENV") .. "/bin/python"
+      end;
+    },
+  }
+
+  local dapui = require("dapui")
+  dapui.setup()
+
+  dap.listeners.before.attach.dapui_config = function()
+    dapui.open()
+  end
+  dap.listeners.before.launch.dapui_config = function()
+    dapui.open()
+  end
+  dap.listeners.before.event_terminated.dapui_config = function()
+    dapui.close()
+  end
+  dap.listeners.before.event_exited.dapui_config = function()
+    dapui.close()
+  end
+EOF
+endif
 
 " goyo + limelight
 autocmd BufLeave goyo_pad setlocal norelativenumber
