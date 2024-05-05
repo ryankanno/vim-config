@@ -992,6 +992,9 @@ command! -nargs=0 OpenGitGutterQuickFix GitGutterQuickFix | exe "norm mQ" | cope
 
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
+nmap <leader>hp <Plug>(GitGutterPreviewHunk)
+nmap <leader>hs <Plug>(GitGutterStageHunk)
+nmap <leader>hu <Plug>(GitGutterUndoHunk)
 nnoremap <silent> <leader>hf :GitGutterFold<CR>
 nnoremap <silent> <leader>hq :OpenGitGutterQuickFix<CR>
 
@@ -1174,6 +1177,11 @@ lua << EOF
     miniclue.set_mapping_desc('n', '<leader>F', 'fzf files search')
     miniclue.set_mapping_desc('n', '<leader>f', 'fzf ripgrep search')
     miniclue.set_mapping_desc('n', '<leader>h', 'previous jumplist position')
+    miniclue.set_mapping_desc('n', '<leader>hf', 'git fold')
+    miniclue.set_mapping_desc('n', '<leader>hs', 'stage git hunk')
+    miniclue.set_mapping_desc('n', '<leader>hp', 'preview git hunk')
+    miniclue.set_mapping_desc('n', '<leader>hq', 'git quick fix')
+    miniclue.set_mapping_desc('n', '<leader>hu', 'undo git hunk')
     miniclue.set_mapping_desc('n', '<leader>l', 'next jumplist position')
     miniclue.set_mapping_desc('n', '<leader>nt', 'toggle NvimTree')
     miniclue.set_mapping_desc('n', '<leader>nf', 'reveal file in NvimTree')
