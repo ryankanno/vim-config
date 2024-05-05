@@ -218,6 +218,8 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [notational-fzf-vim](https://github.com/alok/notational-fzf-vim)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim)
 * [nvim-cmp](https://github.com/hrsh7th/nvim-cmp/) w/ [cmp-buffer](https://github.com/hrsh7th/cmp-buffer), [cmp-path](https://github.com/hrsh7th/cmp-path), [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline), [cmp-treesitter](https://github.com/ray-x/cmp-treesitter)
+* [nvim-dap](https://github.com/mfussenegger/nvim-dap)
+* [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
 * [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 * [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 * [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
