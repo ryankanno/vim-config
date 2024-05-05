@@ -97,10 +97,6 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>Toggle Numbers.vim (relative/absolute)</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;o</td>
-            <td>Toggle OverCommandLine</td>
-        </tr>
-        <tr>
             <td>&lt;Leader&gt;p</td>
             <td>Ctrl-P</td>
         </tr>
@@ -243,7 +239,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-matchup](https://github.com/andymass/vim-matchup)
 * [vim-move](https://github.com/matze/vim-move)
 * [vim-mundo](https://github.com/simnalamburt/vim-mundo)
-* [vim-over](https://github.com/osyo-manga/vim-over)
 * [vim-peekaboo](https://github.com/junegunn/vim-peekaboo)
 * [vim-plug](https://github.com/junegunn/vim-plug)
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot)

@@ -53,7 +53,6 @@ if !exists('g:vscode')
     Plug 'nathanaelkane/vim-indent-guides'
     Plug 'andymass/vim-matchup'
     Plug 'simnalamburt/vim-mundo'
-    Plug 'osyo-manga/vim-over'
     Plug 'junegunn/vim-plug'
     Plug 'tpope/vim-projectionist'
     Plug 'vimjas/vim-python-pep8-indent'
@@ -472,9 +471,6 @@ map <Leader>nf :NvimTreeFindFile<CR>
 " <Leader>num to toggle relative numbers
 map <Leader>num :NumbersToggle<CR>
 let g:numbers_exclude = ['goyo_pad', 'minibufexpl', 'nvim-tree', 'tagbar']
-
-" <Leader>o for OverCommandLine
-map <Leader>o :OverCommandLine<CR>
 
 " ctrl-p shortcuts
 let g:ctrlp_map = '<Leader>p'
