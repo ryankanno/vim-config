@@ -446,6 +446,7 @@ let g:devdocs_filetype_map = {
             \ 'javascriptreact': 'react',
             \ 'javascript.test': 'jest',
             \ }
+let g:devdocs_open_cmd = 'firefox'
 
 augroup plugin-devdocs
     autocmd!
