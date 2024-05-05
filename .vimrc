@@ -604,10 +604,10 @@ lua << EOF
       end,
     }
 
-    vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
-    vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
-    vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-    vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
+    vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, { desc = 'diagnostic.open_float' })
+    vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'diagnostic.goto_prev' })
+    vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'diagnostic.goto_next' })
+    vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, { desc = 'diagnostic.setloclist' })
 
     vim.api.nvim_create_autocmd('LspAttach', {
       group = vim.api.nvim_create_augroup('UserLspConfig', {}),
@@ -898,10 +898,10 @@ lua << EOF
     require('mini.bufremove').setup()
     vim.keymap.set('n', '<leader>Bd', function()
       MiniBufremove.delete()
-    end, {})
+    end, { desc = "buffer delete" })
     vim.keymap.set('n', '<leader>Bw', function()
       MiniBufremove.wipeout()
-    end, {})
+    end, { desc = "buffer wipeout" })
 
     require('mini.cursorword').setup()
 EOF
@@ -1153,6 +1153,10 @@ lua << EOF
         -- `z` key
         { mode = "n", keys = "z" },
         { mode = "x", keys = "z" },
+
+        -- `space` key
+        { mode = "n", keys = "<SPACE>" },
+        { mode = "x", keys = "<SPACE>" },
       },
       clues = {
         -- Enhance this by adding descriptions for <Leader> mapping groups
