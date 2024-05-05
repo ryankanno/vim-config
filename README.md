@@ -45,10 +45,6 @@ Just pass "UNINSTALL" to the install.sh script.
             <td>%</td>
         </tr>
         <tr>
-            <td>&lt;Leader&gt;DD</td>
-            <td>Open https://devdocs.io using word under cursor</td>
-        </tr>
-        <tr>
             <td>&lt;Leader&gt;"</td>
             <td>Open peekup register window</td>
         </tr>
@@ -63,6 +59,10 @@ Just pass "UNINSTALL" to the install.sh script.
         <tr>
             <td>&lt;Leader&gt;B</td>
             <td>Start a `:Buffers` search using FZF</td>
+        </tr>
+        <tr>
+            <td>&lt;Leader&gt;DD</td>
+            <td>Open https://devdocs.io using word under cursor</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;f</td>
