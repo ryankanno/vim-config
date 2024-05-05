@@ -255,6 +255,5 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-startuptime](https://github.com/dstein64/vim-startuptime)
 * [vim-template](https://github.com/aperezdc/vim-template)
 * [vim-test](https://github.com/vim-test/vim-test)
-* [vim-which-key](https://github.com/liuchengxu/vim-which-key)
 * [vimade](https://github.com/tadaa/vimade)
 * [yankring](https://www.vim.org/scripts/script.php?script_id=1234)
