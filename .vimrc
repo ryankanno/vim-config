@@ -1198,6 +1198,7 @@ lua << EOF
     miniclue.set_mapping_desc('n', '<leader>tn', 'runs test nearest to cursor')
     miniclue.set_mapping_desc('n', '<leader>u', 'toggle Mundo')
     miniclue.set_mapping_desc('n', '<leader>W', 'fzf windows search')
+    miniclue.set_mapping_desc('n', '<leader>x', 'toggle TaskList')
     miniclue.set_mapping_desc('n', '<leader>y', 'toggle YankRing')
 
 EOF
