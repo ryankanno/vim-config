@@ -1028,7 +1028,7 @@ EOF
 endif
 
 " vim-sandwich
-runtime macros/sandwich/keymap/surround.vim
+let g:sandwich#recipes = deepcopy(g:sandwich#default_recipes)
 xmap is <Plug>(textobj-sandwich-query-i)
 xmap as <Plug>(textobj-sandwich-query-a)
 omap is <Plug>(textobj-sandwich-query-i)
@@ -1162,6 +1162,13 @@ lua << EOF
         -- `space` key
         { mode = "n", keys = "<SPACE>" },
         { mode = "x", keys = "<SPACE>" },
+
+        -- `s` key
+        { mode = "n", keys = "s" },
+        { mode = "x", keys = "s" },
+
+        -- `i` key
+        { mode = "x", keys = "i" },
       },
       clues = {
         -- Enhance this by adding descriptions for <Leader> mapping groups
