@@ -615,24 +615,29 @@ lua << EOF
         -- Enable completion triggered by <c-x><c-o>
         vim.bo[ev.buf].omnifunc = 'v:lua.vim.lsp.omnifunc'
 
-        local opts = { buffer = ev.buf }
-        vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
-        vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
-        vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
-        vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
-        vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
-        vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, opts)
-        vim.keymap.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, opts)
-        vim.keymap.set('n', '<space>wl', function()
-          print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-        end, opts)
-        vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, opts)
-        vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, opts)
-        vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, opts)
-        vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
-        vim.keymap.set('n', '<space>f', function()
-          vim.lsp.buf.format { async = true }
-        end, opts)
+        local function buf_set_keymap(key, func, desc, ...)
+          local rest = { ... }
+          local need_xmap = rest[1]
+          local mode = need_xmap and { 'n', 'x' } or 'n'
+          local opts = { buffer = ev.buf, desc = 'lsp.' .. desc }
+          vim.keymap.set(mode, key, func, opts)
+        end
+
+        buf_set_keymap('gD', vim.lsp.buf.declaration, 'declaration')
+        buf_set_keymap('gd', vim.lsp.buf.definition, 'definition')
+        buf_set_keymap('gi', vim.lsp.buf.implementation, 'implementation')
+        buf_set_keymap('<C-k>', vim.lsp.buf.signature_help, 'signature_help')
+        buf_set_keymap('K', vim.lsp.buf.hover, 'hover')
+
+        buf_set_keymap('<SPACE>wa', vim.lsp.buf.add_workspace_folder, 'add_workspace_folder')
+        buf_set_keymap('<SPACE>wr', vim.lsp.buf.remove_workspace_folder, 'remove_workspace_folder')
+        buf_set_keymap('<SPACE>wl', function() vim.print(vim.lsp.buf.list_workspace_folders()) end, 'list_workspace_folders')
+
+        buf_set_keymap('<SPACE>D', vim.lsp.buf.type_definition, 'type_definition')
+        buf_set_keymap('<SPACE>rn', vim.lsp.buf.rename, 'rename')
+        buf_set_keymap('<SPACE>ca', vim.lsp.buf.code_action, 'code_action', true)
+        buf_set_keymap('gr', vim.lsp.buf.references, 'references')
+        buf_set_keymap('<SPACE>f', function() vim.lsp.buf.format { async = true } end, 'format', true)
       end,
     })
 EOF
