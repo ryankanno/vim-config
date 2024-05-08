@@ -638,6 +638,17 @@ lua << EOF
         buf_set_keymap('<SPACE>ca', vim.lsp.buf.code_action, 'code_action', true)
         buf_set_keymap('gr', vim.lsp.buf.references, 'references')
         buf_set_keymap('<SPACE>f', function() vim.lsp.buf.format { async = true } end, 'format', true)
+
+        if vim.lsp.get_clients == nil then
+          vim.lsp.get_clients = vim.lsp.get_active_clients
+        end
+
+        for _, client in pairs(vim.lsp.get_clients()) do
+          if client.name == "tailwindcss" then
+            client.server_capabilities.completionProvider.triggerCharacters = { '"', "'", "`", ".", "(", "[", "!", "/", ":" }
+          end
+        end
+
       end,
     })
 EOF
