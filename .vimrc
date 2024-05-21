@@ -86,6 +86,7 @@ if !exists('g:vscode')
         Plug 'mireq/luasnip-snippets'
 
         Plug 'onsails/lspkind.nvim'
+        Plug 'folke/trouble.nvim', {'branch': 'dev'}
 
         Plug 'mfussenegger/nvim-dap'
         Plug 'nvim-neotest/nvim-nio'
@@ -962,6 +963,20 @@ lua << EOF
         }
     })
 EOF
+endif
+
+" trouble
+if has('nvim')
+lua << EOF
+    require("trouble").setup({})
+EOF
+
+nnoremap <silent> <leader>xx <cmd>Trouble diagnostics toggle<CR>
+nnoremap <silent> <leader>xX <cmd>Trouble diagnostics toggle filter.buf=0<CR>
+nnoremap <silent> <leader>cs <cmd>Trouble symbols toggle focus=false<CR>
+nnoremap <silent> <leader>cl <cmd>Trouble lsp toggle focus=false win.position=right<CR>
+nnoremap <silent> <leader>xL <cmd>Trouble loclist toggle<CR>
+nnoremap <silent> <leader>xQ <cmd>Trouble qflist toggle<CR>
 endif
 
 " vim-test
