@@ -975,6 +975,7 @@ nnoremap <silent> <leader>xx <cmd>Trouble diagnostics toggle<CR>
 nnoremap <silent> <leader>xX <cmd>Trouble diagnostics toggle filter.buf=0<CR>
 nnoremap <silent> <leader>cs <cmd>Trouble symbols toggle focus=false<CR>
 nnoremap <silent> <leader>cl <cmd>Trouble lsp toggle focus=false win.position=right<CR>
+nnoremap <silent> <leader>cls <cmd>Trouble lsp_document_symbols toggle focus=false win.position=right<CR>
 nnoremap <silent> <leader>xL <cmd>Trouble loclist toggle<CR>
 nnoremap <silent> <leader>xQ <cmd>Trouble qflist toggle<CR>
 endif
@@ -1214,6 +1215,9 @@ lua << EOF
     miniclue.set_mapping_desc('n', '<leader><leader>', 'hop word')
     miniclue.set_mapping_desc('n', '<leader>_', 'hop line start')
     miniclue.set_mapping_desc('n', '<leader>B', 'fzf buffer search')
+    miniclue.set_mapping_desc('n', '<leader>cs', 'toggle symbols (Trouble)')
+    miniclue.set_mapping_desc('n', '<leader>cl', 'toggle lsp (Trouble)')
+    miniclue.set_mapping_desc('n', '<leader>cls', 'toggle lsp symbols (Trouble)')
     miniclue.set_mapping_desc('n', '<leader>dbb', 'toggle breakpoint')
     miniclue.set_mapping_desc('n', '<leader>dbc', 'continue')
     miniclue.set_mapping_desc('n', '<leader>dbo', 'open dapui')
@@ -1241,8 +1245,11 @@ lua << EOF
     miniclue.set_mapping_desc('n', '<leader>u', 'toggle Mundo')
     miniclue.set_mapping_desc('n', '<leader>W', 'fzf windows search')
     miniclue.set_mapping_desc('n', '<leader>x', 'toggle TaskList')
+    miniclue.set_mapping_desc('n', '<leader>xx', 'toggle diagnostics (Trouble)')
+    miniclue.set_mapping_desc('n', '<leader>xX', 'toggle current buffer diagnostics (Trouble)')
+    miniclue.set_mapping_desc('n', '<leader>xL', 'toggle location list (Trouble)')
+    miniclue.set_mapping_desc('n', '<leader>xQ', 'toggle quick fix list (Trouble)')
     miniclue.set_mapping_desc('n', '<leader>y', 'toggle YankRing')
-
 EOF
 endif
 
