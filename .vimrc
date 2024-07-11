@@ -86,7 +86,7 @@ if !exists('g:vscode')
         Plug 'mireq/luasnip-snippets'
 
         Plug 'onsails/lspkind.nvim'
-        Plug 'folke/trouble.nvim', {'branch': 'dev'}
+        Plug 'folke/trouble.nvim'
 
         Plug 'mfussenegger/nvim-dap'
         Plug 'nvim-neotest/nvim-nio'
