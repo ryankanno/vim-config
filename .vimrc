@@ -558,11 +558,16 @@ lua << EOF
     require("mason-lspconfig").setup({
       ensure_installed = {
         "bashls",
+        "clangd",
         "cssls",
+        "dagger",
+        "dockerls",
+        "docker_compose_language_service",
         "elp",
         "gopls",
         "html",
         "htmx",
+        "jinja_lsp",
         "jsonls",
         "lua_ls",
         "marksman",
@@ -573,6 +578,7 @@ lua << EOF
         "tailwindcss",
         "taplo",
         "tsserver",
+        "zls"
       }
     })
 
