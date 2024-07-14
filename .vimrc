@@ -1292,7 +1292,7 @@ lua << EOF
     miniclue.set_mapping_desc('n', '<leader>xX', 'toggle current buffer diagnostics (Trouble)')
     miniclue.set_mapping_desc('n', '<leader>xL', 'toggle location list (Trouble)')
     miniclue.set_mapping_desc('n', '<leader>xQ', 'toggle quick fix list (Trouble)')
-    miniclue.set_mapping_desc('n', '<leader>y', 'toggle YankRing')
+    miniclue.set_mapping_desc('n', '<leader>Y', 'toggle YankyRingHistory')
 EOF
 endif
 
