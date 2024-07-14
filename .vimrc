@@ -42,7 +42,6 @@ if !exists('g:vscode')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'Chiel92/vim-autoformat'
-    Plug 'svermeulen/vim-cutlass'
     Plug 'ryanoasis/vim-devicons'
     Plug 'dodie/vim-disapprove-deep-indentation'
     Plug 'arecarn/vim-fold-cycle'
@@ -63,9 +62,10 @@ if !exists('g:vscode')
     Plug 'aperezdc/vim-template'
     Plug 'vim-test/vim-test'
     Plug 'tadaa/vimade'
-    Plug 'vim-scripts/YankRing.vim'
 
     if has('nvim')
+        Plug 'gbprod/cutlass.nvim'
+        Plug 'gbprod/yanky.nvim'
         Plug 'ray-x/lsp_signature.nvim'
 
         Plug 'williamboman/mason.nvim'
@@ -109,9 +109,11 @@ if !exists('g:vscode')
         Plug 'moll/vim-bbye'
         Plug 'tpope/vim-commentary'
         Plug 'itchyny/vim-cursorword'
+        Plug 'svermeulen/vim-cutlass'
         Plug 'matze/vim-move'
         Plug 'junegunn/vim-peekaboo'
         Plug 'sheerun/vim-polyglot'
+        Plug 'vim-scripts/YankRing.vim'
     endif
 endif
 
@@ -520,10 +522,8 @@ map <Leader>ws :%s/\s\+$//e<CR>
 " <Leader>x to show TODO list
 map <Leader>x <Plug>TaskList
 
-" <Leader>y to bring up YankRing
-map <Leader>y :YRShow<CR>
-let g:yankring_window_height = 16
-let g:yankring_max_history = 1024
+" <Leader>y to bring up yanky.nvim
+map <Leader>Y :YankyRingHistory<CR>
 
 " <F2> to toggle invisible characters
 map <silent> <F2> :set invlist<CR>
@@ -541,6 +541,42 @@ xnoremap x d
 
 nnoremap xx dd
 nnoremap X D
+
+if has('nvim')
+lua << EOF
+  require("cutlass").setup({
+    cut_key = 'x',
+  })
+EOF
+endif
+
+" yanky.nvim
+if has('nvim')
+lua << EOF
+  require("yanky").setup({})
+  vim.keymap.set({"n","x"}, "p", "<Plug>(YankyPutAfter)")
+  vim.keymap.set({"n","x"}, "P", "<Plug>(YankyPutBefore)")
+  vim.keymap.set({"n","x"}, "gp", "<Plug>(YankyGPutAfter)")
+  vim.keymap.set({"n","x"}, "gP", "<Plug>(YankyGPutBefore)")
+
+  vim.keymap.set("n", "<c-p>", "<Plug>(YankyPreviousEntry)")
+  vim.keymap.set("n", "<c-n>", "<Plug>(YankyNextEntry)")
+
+  -- vim-unimpaired
+  vim.keymap.set("n", "]p", "<Plug>(YankyPutIndentAfterLinewise)")
+  vim.keymap.set("n", "[p", "<Plug>(YankyPutIndentBeforeLinewise)")
+  vim.keymap.set("n", "]P", "<Plug>(YankyPutIndentAfterLinewise)")
+  vim.keymap.set("n", "[P", "<Plug>(YankyPutIndentBeforeLinewise)")
+
+  vim.keymap.set("n", ">p", "<Plug>(YankyPutIndentAfterShiftRight)")
+  vim.keymap.set("n", "<p", "<Plug>(YankyPutIndentAfterShiftLeft)")
+  vim.keymap.set("n", ">P", "<Plug>(YankyPutIndentBeforeShiftRight)")
+  vim.keymap.set("n", "<P", "<Plug>(YankyPutIndentBeforeShiftLeft)")
+
+  vim.keymap.set("n", "=p", "<Plug>(YankyPutAfterFilter)")
+  vim.keymap.set("n", "=P", "<Plug>(YankyPutBeforeFilter)")
+EOF
+endif
 
 " nvim-lsp
 if has('nvim')

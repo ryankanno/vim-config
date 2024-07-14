@@ -151,7 +151,7 @@ Just pass "UNINSTALL" to the install.sh script.
         </tr>
         <tr>
             <td>&lt;Leader&gt;Y</td>
-            <td>Bring up the YankRing</td>
+            <td>Bring up YankRing history</td>
         </tr>
         <tr>
             <td>&lt;Leader&gt;z</td>
@@ -189,6 +189,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [copilot.lua](https://github.com/zbirenbaum/copilot.lua) w/ [copilot-cmp](https://github.com/zbirenbaum/copilot-cmp/)
 * [copilot.vim](https://github.com/github/copilot.vim)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
+* [cutlass.nvim](https://github.com/gbprod/cutlass.nvim)
 * [devdocs.vim](https://github.com/rhysd/devdocs.vim)
 * [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim)
 * [emmet-vim](https://github.com/mattn/emmet-vim)
@@ -219,7 +220,6 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-abolish](https://github.com/tpope/vim-abolish)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
 * [vim-commentary](https://github.com/tpope/vim-commentary)
-* [vim-cutlass](https://github.com/svermeulen/vim-cutlass)
 * [vim-devicons](https://github.com/ryanoasis/vim-devicons)
 * [vim-disapprove-deep-indentation](https://github.com/dodie/vim-disapprove-deep-indentation)
 * [vim-fold-cycle](https://github.com/arecarn/vim-fold-cycle)
@@ -242,4 +242,4 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [vim-template](https://github.com/aperezdc/vim-template)
 * [vim-test](https://github.com/vim-test/vim-test)
 * [vimade](https://github.com/tadaa/vimade)
-* [yankring](https://www.vim.org/scripts/script.php?script_id=1234)
+* [yanky.nvim](https://github.com/gbprod/yanky.nvim)
