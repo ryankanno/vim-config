@@ -185,6 +185,8 @@ Just pass "UNINSTALL" to the install.sh script.
 
 Here are the plugins I use on the daily.  They are pretty amazing. :D
 
+Note: Some are only loaded in vim
+
 * [barbecue.nvim](https://github.com/utilyre/barbecue.nvim)
 * [copilot.lua](https://github.com/zbirenbaum/copilot.lua) w/ [copilot-cmp](https://github.com/zbirenbaum/copilot-cmp/)
 * [copilot.vim](https://github.com/github/copilot.vim)
@@ -195,6 +197,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 * [emmet-vim](https://github.com/mattn/emmet-vim)
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
 * [goyo.vim](https://github.com/phanimahesh/goyo.vim)
+* [hlchunk.nvim](https://github.com/shellRaining/hlchunk.nvim)
 * [hop.nvim](https://github.com/phaazon/hop.nvim)
 * [is.vim](https://github.com/haya14busa/is.vim)
 * [lexima.vim](https://github.com/cohama/lexima.vim)

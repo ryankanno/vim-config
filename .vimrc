@@ -48,7 +48,6 @@ if !exists('g:vscode')
     Plug 'tpope/vim-fugitive'
     Plug 'airblade/vim-gitgutter'
     Plug 'ludovicchabant/vim-gutentags'
-    Plug 'nathanaelkane/vim-indent-guides'
     Plug 'andymass/vim-matchup'
     Plug 'simnalamburt/vim-mundo'
     Plug 'junegunn/vim-plug'
@@ -65,6 +64,7 @@ if !exists('g:vscode')
 
     if has('nvim')
         Plug 'gbprod/cutlass.nvim'
+        Plug 'shellRaining/hlchunk.nvim'
         Plug 'gbprod/yanky.nvim'
         Plug 'ray-x/lsp_signature.nvim'
 
@@ -110,6 +110,7 @@ if !exists('g:vscode')
         Plug 'tpope/vim-commentary'
         Plug 'itchyny/vim-cursorword'
         Plug 'svermeulen/vim-cutlass'
+        Plug 'nathanaelkane/vim-indent-guides'
         Plug 'matze/vim-move'
         Plug 'junegunn/vim-peekaboo'
         Plug 'sheerun/vim-polyglot'
@@ -546,6 +547,30 @@ if has('nvim')
 lua << EOF
   require("cutlass").setup({
     cut_key = 'x',
+  })
+EOF
+endif
+
+" hlchunk.nvim
+if has('nvim')
+lua << EOF
+  require('hlchunk').setup({
+    indent = {
+      enable = true,
+      use_treesitter = true
+    },
+    chunk = {
+      enable = true,
+      use_treesitter = true
+    },
+    blank = {
+      enable = false,
+      use_treesitter = true
+    },
+    line_num = {
+      enable = true,
+      use_treesitter = true
+    }
   })
 EOF
 endif
