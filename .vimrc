@@ -610,7 +610,7 @@ lua << EOF
         "marksman",
         "nil_ls",
         "pyright",
-        "ruff_lsp",
+        "ruff",
         "rust_analyzer",
         "tailwindcss",
         "taplo",
