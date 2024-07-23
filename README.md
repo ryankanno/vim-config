@@ -220,6 +220,7 @@ Note: Some are only loaded in vim
 * [targets.vim](https://github.com/wellle/targets.vim)
 * [tasklist](http://github.com/vim-scripts/TaskList)
 * [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
+* [transparent.nvim](https://github.com/xiyaowong/transparent.nvim)
 * [vim-abolish](https://github.com/tpope/vim-abolish)
 * [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
 * [vim-commentary](https://github.com/tpope/vim-commentary)

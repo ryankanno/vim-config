@@ -104,6 +104,7 @@ if !exists('g:vscode')
         Plug 'echasnovski/mini.nvim'
         Plug 'SmiteshP/nvim-navic'
         Plug 'gennaro-tedesco/nvim-peekup'
+        Plug 'xiyaowong/transparent.nvim'
     else
         Plug 'github/copilot.vim'
         Plug 'moll/vim-bbye'
