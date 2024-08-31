@@ -187,6 +187,7 @@ Here are the plugins I use on the daily.  They are pretty amazing. :D
 
 Note: Some are only loaded in vim
 
+* [avante.nvim](https://github.com/yetone/avante.nvim)
 * [barbecue.nvim](https://github.com/utilyre/barbecue.nvim)
 * [copilot.lua](https://github.com/zbirenbaum/copilot.lua) w/ [copilot-cmp](https://github.com/zbirenbaum/copilot-cmp/)
 * [copilot.vim](https://github.com/github/copilot.vim)

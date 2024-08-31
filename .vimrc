@@ -105,6 +105,14 @@ if !exists('g:vscode')
         Plug 'SmiteshP/nvim-navic'
         Plug 'gennaro-tedesco/nvim-peekup'
         Plug 'xiyaowong/transparent.nvim'
+
+        " avante
+        Plug 'stevearc/dressing.nvim'
+        Plug 'nvim-lua/plenary.nvim'
+        Plug 'MunifTanjim/nui.nvim'
+        Plug 'HakonHarnes/img-clip.nvim'
+        Plug 'MeanderingProgrammer/render-markdown.nvim'
+        Plug 'yetone/avante.nvim'
     else
         Plug 'github/copilot.vim'
         Plug 'moll/vim-bbye'
@@ -1346,6 +1354,15 @@ function! s:goyo_leave()
     NumbersEnable
     Limelight!
 endfunction
+
+" avante.nvim
+if has('nvim')
+lua << EOF
+require('img-clip').setup ({})
+require('render-markdown').setup ({})
+require('avante').setup ({})
+EOF
+endif
 
 function! NyanMe()
     hi NyanFur             guifg=#BBBBBB
