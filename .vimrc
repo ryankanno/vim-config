@@ -648,7 +648,7 @@ lua << EOF
         "rust_analyzer",
         "tailwindcss",
         "taplo",
-        "tsserver",
+        "ts_ls",
         "zls"
       }
     })
