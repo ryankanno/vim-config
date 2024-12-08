@@ -1132,6 +1132,7 @@ EOF
 endif
 
 " vim-sandwich
+runtime macros/sandwich/keymap/surround.vim
 let g:sandwich#recipes = deepcopy(g:sandwich#default_recipes)
 xmap is <Plug>(textobj-sandwich-query-i)
 xmap as <Plug>(textobj-sandwich-query-a)
