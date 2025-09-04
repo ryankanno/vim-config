@@ -328,7 +328,7 @@ autocmd BufNewFile,BufRead *.jinja,*.jinja2,*.j2 set filetype=jinja
 autocmd FileType css setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType html,htmldjango,xhtml,haml,jinja setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 textwidth=0
 autocmd FileType javascript,typescript,typescriptreact,javascriptreact setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType json setlocal fdm=syntax
+autocmd FileType json setlocal fdm=syntax expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType make setlocal noexpandtab
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
