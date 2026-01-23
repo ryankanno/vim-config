@@ -524,8 +524,8 @@ let g:mundo_prefer_python3 = 1
 let g:mundo_right = 1
 
 " <Leader>ui to insert a uuid
-nnoremap <leader>ui :r! uuidgen \| tr '[:upper:]' '[:lower:]'<CR>
-inoremap <c-u> <esc>:r! uuidgen \| tr '[:upper:]' '[:lower:]'<CR>i
+nnoremap <leader>ui :r! uuidgen \| tr '[:upper:]' '[:lower:]' \| tr -d '\n'<CR>
+inoremap <c-u> <esc>:r! uuidgen \| tr '[:upper:]' '[:lower:]' \| tr -d '\n'<CR>i
 
 " <Leader>W to open :Windows
 map <Leader>W :<C-u>Windows<CR>
