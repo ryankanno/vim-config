@@ -1022,7 +1022,7 @@ endif
 " treesitter
 if has('nvim')
 lua << EOF
-    require("nvim-treesitter.configs").setup({
+    require("nvim-treesitter.config").setup({
         ensure_installed = "all",
         sync_install = false,
         auto_install = true,
