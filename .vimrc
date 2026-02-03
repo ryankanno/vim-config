@@ -611,6 +611,8 @@ endif
 " nvim-lsp
 if has('nvim')
 lua << EOF
+    local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
+
     require("mason").setup({
       automatic_installation = true,
       ui = {
@@ -646,36 +648,35 @@ lua << EOF
         "taplo",
         "ts_ls",
         "zls"
+      },
+      handlers = {
+        function(server_name)
+          local server_config = {
+            name = server_name,
+            capabilities = lsp_capabilities,
+          }
+          vim.lsp.config(server_config)
+          vim.lsp.enable(server_name)
+        end,
       }
     })
 
-    local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
-
-    require'mason-lspconfig'.setup_handlers{
-      function (server_name) -- default handler (optional)
-        require'lspconfig'[server_name].setup{capabilities = lsp_capabilities}
-      end,
-
-      -- https://github.com/astral-sh/ruff-lsp/issues/384
-      ['pyright'] = function()
-        require'lspconfig'.pyright.setup{
-          settings = {
-            pyright = {
-              disableOrganizeImports = true,
-              disableTaggedHints = true,
+    require('lspconfig').pyright.setup{
+      settings = {
+        pyright = {
+          disableOrganizeImports = true,
+          disableTaggedHints = true,
+        },
+        python = {
+          analysis = {
+            diagnosticMode = "off",
+            diagnosticSeverityOverrides = {
+              -- https://github.com/microsoft/pyright/blob/main/docs/configuration.md#type-check-diagnostics-settings
+              reportUndefinedVariable = "none",
             },
-            python = {
-              analysis = {
-                diagnosticMode = "off",
-                diagnosticSeverityOverrides = {
-                  -- https://github.com/microsoft/pyright/blob/main/docs/configuration.md#type-check-diagnostics-settings
-                  reportUndefinedVariable = "none",
-                },
-              }
-            }
           }
         }
-      end,
+      }
     }
 
     vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, { desc = 'diagnostic.open_float' })
